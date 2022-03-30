@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+    #container
+    {
+        width: 800px;
+        display: flex;
+        margin: auto;
+    }
+    #container>div
+    {
+        height: 300px;
+        width: 400px;
+    }
+    div>h1{
+        font-family: 'Roboto', sans-serif;
+        color:#202340;
+    }
+    input
+    {
+        height: 35px;
+        width: 350px;
+    }
+    form>button
+    {
+        height: 35px;
+        width: 350px;
+        color: white;
+        border: 1px solid #202340;
+        background-color: #202340;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    p
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        color: black;
+        font-weight: 400;
+    }
+    button
+    {
+        height: 40px;
+        width: 250px;
+        border: 1px solid #202340;
+        color: #202340;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+    }
+    #container>div:nth-child(2)
+    {
+        padding-top: 70px;
+    }
+    div>p:nth-child(1)
+    {
+        font-size: 22px;
+    }
+    #bottom
+    {
+        height: 100px;
+        width: 100%;
+        background-color: #202340b2;
+    }
+    p+button:hover
+    {
+        border: 1px solid #202340;
+        background-color: #202340;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+    }
+   
+
+
+    </style>
+</head>
+<body>
+     <div id="container">
+        
+        <div>
+            <h1>Sign in</h1>
+            <form action="">
+                <p>Email address:</p>
+                <input type="email" placeholder="yourname@example.com">
+                <p>Password:</p>
+                <input type="Password" placeholder="please enter your password">
+                <p>Forgot your password?</p>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div>
+            <p>Don't have an account?</p> 
+            <p>With a SHOP.COM account, you can enjoy the following benefits: up to 50% Cashback on eligible purchases, redeem discount coupons, order status and history, saved payment options and addresses, exclusive emails and more. <a href="">Learn more.</a> </p>
+            <button id="signup">Create Your New Account</button>
+        </div>
+    </div>
+    <div id="bottom">
+
+    </div>
+</body>
+<script>
+    document.querySelector("#signup").addEventListener("click",signupfunction);
+    function signupfunction()
+    {
+        window.location.href="signup.html"
+    }
+</script>
+</html>
