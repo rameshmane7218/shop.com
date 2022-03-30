@@ -223,6 +223,7 @@ nav{
     text-decoration: none;
     font-size: 13px;
     color: black;
+    font-weight: normal;
 }
 .headerRightBtm-dept-item>a:hover{
     color: teal;
