@@ -1,6 +1,23 @@
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background:gray;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #5e5c66;
+}
+
+
 #homepageBody{
     width: 99.86%;
-    height: 2000px;
+    /* height: 2000px; */
+    box-sizing: border-box;
     border: 1px solid red;
 }
 #sub-header_1{
@@ -68,6 +85,7 @@
 }
 #spring>a>img{
     width: 100%;
+    height: 300px;
 }
 #personalized-wrapper{
     display: flex;
@@ -77,7 +95,7 @@
     background-color: white;
     /* border: 1px solid red; */
     margin: 10px;
-    height: 405px;
+    height: 410px;
     width: 24%;
 }
 /* #personalized-wrapper>div>div{
@@ -207,6 +225,11 @@
     justify-content: center;
     margin: 10px;
 }
+.shop40_cashback_2_img>div>p{
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+}
 
 
 
@@ -232,6 +255,44 @@
     display: flex;
     justify-content: center;
     margin: 10px;
+}
+
+#springEssTitle, #featuredCatTitle{
+    background-color: white;
+    text-align: center;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+}
+#springEssTitle>h2, #featuredCatTitle>h2{
+    margin: 0px;
+}
+#springEssDiv, #featuredCatDiv{
+    background-color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    padding: 0px 20px 20px 20px;
+}
+#springEssDiv>div, #featuredCatDiv>div{
+    margin-top: 35px;
+}
+#imgdiv:active{
+   border: 1px dashed gray;
+}
+#imgDesign{
+    height: 155px;
+    width: 155px;
+    border: 10px solid #cbcdd4;
+    border-radius: 50%;
+}
+#nameid{
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0px;
 }
 
 
