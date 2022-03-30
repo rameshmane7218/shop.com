@@ -56,7 +56,7 @@ body{
     /* border: 1px dashed red; */
     cursor: pointer;
 }
-.leftHeaderLogoBox>div>img{
+.leftHeaderLogoBox>div>a>img{
     height: 45px;
     width: 100%;
     margin-right: 10px;
