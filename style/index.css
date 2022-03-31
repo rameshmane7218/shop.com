@@ -13,12 +13,14 @@
     background: #5e5c66;
 }
 
-
+*{
+    font-family: 'Roboto', sans-serif;
+}
 #homepageBody{
     width: 99.86%;
     /* height: 2000px; */
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #sub-header_1{
     /* border: 1px dashed blue; */
@@ -95,7 +97,8 @@
     background-color: white;
     /* border: 1px solid red; */
     margin: 10px;
-    height: 410px;
+    /* height: 410px; */
+    box-sizing: border-box;
     width: 24%;
 }
 /* #personalized-wrapper>div>div{
@@ -148,7 +151,7 @@
     margin-bottom: 5px;
 }
 .seeMoreStores_more{
-    height: 150px;
+    height: 180px;
     display: flex;
     justify-content: left;
     align-items: flex-end; 
@@ -194,7 +197,7 @@
 /* ************** */
 #afterLogoPart{
     margin: 20px;
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
     background-color: #f0f1f7;
 }
 #shop40_cashback_2,#cashback_2{
@@ -242,6 +245,7 @@
     gap: 10px;   
     padding: 10px;
     padding-bottom: 20px;
+    margin-top: 10px;
 }
 /* #cashback_2>div>div{
     border: 1px solid greenyellow;
@@ -296,49 +300,145 @@
 }
 
 
+/* scrolling page starts here */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#box{
-    /* border: 1px solid red; */
+/* Hot New Products  */
+/* Cleaning & Health Have Never Been More Important  */
+/* Best of Web Prices & Instant Cashback! */
+/* Top sellers */
+/* Our Brands */
+#HotNewProducts,#cleaningHelth,#webprices,#HealthyEss,#anniversaryColl,#topSellers,#ourBrands{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+#ourBrands{
+    margin-bottom: -20px;
+}
+#webpricesDiv,#HealthyEssDiv,#anniversaryCollDiv,#topSellersDiv,#ourBrandsDiv{
+    display: flex;
+}
+#HotNewProductsTitle,#cleaningHelthTitle,#webpricesTitle,#HealthyEssTitle,#anniversaryCollTitle,#topSellersTitle{
+    background-color: white;
+}
+#HotNewProductsTitle>p,#cleaningHelthTitle>p,#webpricesTitle>p,#HealthyEssTitle>p,#anniversaryCollTitle>p,#topSellersTitle>p,#ourBrandsTitle>p{
+    font-size: 38px;
+    font-family: "Oswald", "sans-serif";
+    font-weight: 400;
+    margin: 0;
+    padding: 20px;
+}
+#topSellersTitle>p,#ourBrandsTitle>p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#HotNewProductsDiv,#cleaningHelthDiv,#webScrollDiv,#HealthyEssScrollDiv,#anniversaryCollScrollDiv{
+    /* border: 1px solid blue; */
+    background-color: white;
+    display: flex;  
+    overflow:scroll;
+    overflow-y: hidden;  
+}
+#HotNewProductsDiv::-webkit-scrollbar,
+#cleaningHelthDiv::-webkit-scrollbar,
+#webScrollDiv::-webkit-scrollbar,
+#HealthyEssScrollDiv::-webkit-scrollbar,
+#anniversaryCollScrollDiv::-webkit-scrollbar
+{
+    height: 10px;
+}
+#topSellersDiv,#ourBrandsDiv{
+    background-color: white;
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     grid-template-rows: auto;
-    margin: 20px;
+    padding: 20px;
+}
+.namebox>p{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 26px;
+}
+.namebox>p:hover{
+    color: rgb(2, 187, 187);
+}
 
+#HotNewProductsDiv>div,#cleaningHelthDiv>div,#webScrollDiv>div,#HealthyEssScrollDiv>div,#anniversaryCollScrollDiv>div,#topSellersDiv>div{
+    margin: 5px;
+    padding: 10px;
+    padding-bottom: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-#box>div{
-    height: 200px;
-    /* border: 1px dashed blue; */
-    background-color: teal;
+#webScrollDiv img,#anniversaryCollScrollDiv img,#HealthyEssScrollDiv img{
+    padding-left: 60px;
+    padding-right: 60px;
+    /* width: 400px; */
 }
+.bottomPart{
+    color: black;
+}
+.bottomPart>div:nth-child(1){
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: normal;
+    padding-right: 20px;
+}
+.bottomPart>div:nth-child(1):hover{
+    color: rgb(2, 187, 187);
+}
+.bottomPart>div:nth-child(2){
+    font-size: 14px;
+}
+.bottomPart>div:nth-child(2){
+    font-size: 14px;
+}
+.bottomPart>div:nth-child(3){
+    font-size: 12px;
+    font-weight: normal;
+}
+.bottomPart>div:nth-child(4){
+    font-size: 14px;
+    font-weight: normal;
+    color: teal;
+}
+.bottomPart>div:nth-child(4):hover{
+    color: rgb(2, 187, 187);
+}
+
+/* scrolling page Hot New Products & Cleaning & Health Have Never Been More Importantend here */
+
+
+/* bottom White Section  */
+#bottomWhiteSec{
+    height: 100px;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
