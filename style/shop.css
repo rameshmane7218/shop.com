@@ -1,0 +1,468 @@
+body{
+    margin : 0px;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+#main_{
+    width: 100%;
+    height: 800px;
+    background-image: url("https://img.shop.com/Image/resources/images/travel_bg_desktop.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+
+    display: flex;
+    
+    justify-content:space-between ;
+}
+#form{
+width: 45%;
+height: 650px;
+background-color: whitesmoke;
+align-self: center;
+
+}
+.addbox
+{
+    background-color: whitesmoke;
+    height: 180px;
+    width: 180px;
+    margin: 10px;
+    align-self: center;
+    text-align: center;
+    line-height: 20px;
+    color: #623938;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.add_img{
+    width: 100%;
+    height: 85%;
+}
+
+/* first second and third all three are the child div of form container which is on center*/
+#first{
+  
+    width: 90%;
+    margin: auto;
+    height: 25%;
+}
+#first_h{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin: 10px;
+    text-align: center;
+}
+#first_box{
+    width: 75%;
+    height: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icondiv{
+    
+        border: 1px solid #3fbdd7 ;
+        border-radius: 10px;
+        height: 100%;
+        width: 25%;
+        justify-content: center;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+}
+.icondiv >i{
+    
+    font-size: 20px;
+} 
+.icondiv:hover{
+color: teal;
+}
+.icondiv>p{
+    margin: 0px;
+    
+}
+
+
+
+/* starting the secound styling */
+#secound{
+    
+    width: 90%;
+    margin: auto;
+    height: 55%;
+}
+.part-one{
+    width: 100%;
+    height: 45%;
+}
+
+#booking_selection{
+    width: 100%;
+   cursor: pointer;
+    height: 40px;
+    margin-bottom: 5px;
+}
+#itsmychoice{
+    display: flex;
+   justify-content: space-between;
+    
+    margin-top: 10px;
+    
+}
+#itsmychoice>div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+#itsmychoice>div:nth-child(2){
+    width: 90%;
+}
+
+.chotu{
+    width: 30px;
+    height: 20px;
+margin: 8px;
+
+
+
+}
+#airport{
+    margin-left: 0px;
+    width: 98%;
+    height: 40px;
+    cursor: pointer;
+    border: 1px soild blue;
+   
+   
+}
+#check_date{
+    
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.check_in,.check_out{
+    
+    margin-top: 5px;
+    width: 48%;
+    margin: bottom 5px;
+    
+}
+.chotu1{
+    
+    height: 100%;
+    display: flex;
+    
+}
+.dateremote{
+    width: 80%;
+    cursor: pointer;
+}
+
+
+
+
+/* this is another selection */
+.part-two{
+    width: 100%;
+       height: 50%;
+       /* border: 1px solid black; */
+}
+#count{
+     
+    margin-bottom: 0px;
+    width: 100%;
+    height: 60px;
+}
+#count>span:nth-child(1){
+    line-height: 2px;
+}
+#symbol_
+{
+    width: 18%;
+    display: flex;
+    height: 35px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#plus,#minus{
+    border: 1px solid black;
+    width: 50%;
+
+    text-align: center;
+    font-size: 26px;
+    background-color: #f5bc6e;
+}
+
+
+
+
+
+
+#nombers{
+
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+#email{
+    
+    display: flex;
+    height: 20%;
+    margin-top: 10px;
+}
+#email>div:nth-child(1){
+    border: 1px solid white;
+    background-color: #f5bc6e;
+    margin: 0px;
+}
+#email>div:nth-child(2){
+    width: 50%;
+    margin: -1px;
+    height: 100%;
+    border: 1px solid white;
+}
+
+#email_img{
+    background-color: black;
+}
+#emailbox{
+    width: 90%;
+    height: 85%;
+    margin: 0px;
+cursor: pointer;
+}
+#btn{
+    height: 60px;
+margin: auto;
+display: flex;
+justify-content: space-around;
+}
+#button{
+    height: 70%;
+    border-radius: 30px;
+    width: 60%;
+    margin-top: 10px;
+    color:  #545871;
+    border-color:  #545871;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* starting the third styling */
+#third{
+   
+    width: 90%;
+    margin: auto;
+    height: 18%;
+}
+.termsofuse:hover{
+    cursor: pointer;
+    color: teal;
+    
+}.termsofuse{
+    text-decoration: underline;
+}
+
+#third>h4{
+    margin-top: 8px;
+    text-align: center;
+    color: #b85c00;
+    }
+    #third>p:nth-child(2){
+        
+        line-height: 9px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 12px;
+    margin-bottom: 10px;
+    
+    }
+    #third>p:nth-child(3){
+        text-align: center;
+       padding: 20px;
+       padding-left: 0%;
+     margin: auto   ;
+        width: 100%;
+        font-size:10px;
+      
+        ;
+    }
+    
+
+    /* the third part is end now  */
+    /* bottom style here */
+    #bottom_{
+      
+        width: 100%;
+        height: 450px;
+        margin-top: 45px;
+    }
+    #bottom_1{
+       background-color: #545871;
+        width: 100%;
+        height: 120px;
+        color: white;
+    }
+    #bottom_line1{
+        padding-top: 10px;
+        width: 100%;
+        height: 30%;
+       
+    display: flex;
+    justify-content: space-around;
+    }
+    #line1_left,#line1_right{
+        width: 50%;
+        height: 100%;
+       
+    }
+    #line1_left{
+        border: 1px soild #000000;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .left_text{
+        align-self: center;
+        padding-left: 10px;
+    }
+#left_btn{
+    height: 85%;
+    margin-left: 15px;
+}
+    #left_email{
+        margin-left: 10px;
+        width: 100%;
+        height: 70%;
+    }
+    #left_email>div:nth-child(1){
+        line-height: 5px;
+    }
+    #line1_right{
+        text-align: end;
+        margin-right: 10px;
+        align-self: center;
+        color: #f0e7d5;
+    }
+    /* botom_1 has end here */
+
+    #bottom_line2{
+       
+        width: 100%;
+        height: auto;
+        padding-top: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+#two_left{
+    
+    height: 100%;
+    width: 65%;
+    padding-top: 5px;
+    color: #ffffe8;
+    padding-left: 10px;
+}
+#two_right{
+
+    height: 40px;
+    width: 32%;
+    display: flex;
+    justify-content: end; 
+}
+.link_img{
+    width: 60%;
+    margin: 5px;
+}
+.social_link{ 
+    width: 15%;
+}
+    #bottom_line3{
+      
+        width: 100%;
+        height: 30%;
+        padding-top: 5px;
+    }
+    #bottom_line3 >p{
+        margin: 0%;
+        padding-left: 10px;
+    }
+
+/* the next bottom two is starting here */
+
+
+
+    #bottom_2{
+        background-color: whitesmoke;
+        width: 100%;
+        height: 100px;
+    }
+#bottom_2>div:nth-child(1){
+    padding-left: 10px;
+    line-height: 12px;
+    font-size: 13px;
+    color: #807070;
+}
+#bottom_2>div:nth-child(2){
+    padding-left: 10px;
+    line-height: 14px;
+    font-size: 15px;
+    color: #807070;
+}
+.BLU_:hover{
+    color: blue;
+    cursor: pointer;
+}
+/* the bottom three is started here */
+
+
+#bottom_end{
+    border: 1px dashed red;
+    width: 100%;
+    height: 100%;
+}
+
+#company_logo{
+   
+    width: 75%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    }
+#company_logo>div{
+    
+    width: 12%;
+}
+#lastend{
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    cursor: pointer;
+/* this has an error the img is not visible */
+}
+.choti{
+    width: 95%;
+    height: 90%;
+}
