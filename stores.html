@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mainbox{
+            height:700px;
+            width:100%;
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap:20x;
+            background-color: #F0F1F7;
+            
+         }
+        #mainbox>div{
+            /* border: 1px solid black;  */
+            margin: 10px;
+            background-color: white;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(2,100px);
+        }
+        #mainbox>div>div{
+          /* border: 1px solid black; */
+          display: flex
+        }
+        img{
+            height: 100%;
+            width: 30%;
+            padding-left: 10px;
+        }
+        #last{
+           /* background-color:#9597A6; */
+           height: 30px;
+           width: 100%;
+           display: grid;
+           grid-template-columns: repeat(3,40px);
+           border: 1px solid black;
+           grid-template-rows: auto;
+           justify-content: right;
+           background-color: #9597A6;
+        }
+        #last>.icon{
+            border: 1px solid black;
+        }
+     
+        h6{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        #b{
+            margin-top: -30px;
+            /* padding-left: 30px; */
+            height: 30px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #b:hover{
+            background-color: rgb(11, 11, 68);
+            color:white
+        }
+        #r1{
+            padding-left: 30px;
+        }
+        p{
+            padding-left: 10px;
+            font-size: 14px;
+        }
+    .button{
+            background-color: rgb(4, 4, 53);
+            color: white;
+            margin-top: -30px;
+            /* padding-left: 30px; */
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        h2{
+            margin-bottom: 5px;
+        }
+        
+       
+    </style>
+</head>
+<body>
+
+
+    <h2>Featured Stores</h2>
+     <div id="mainbox">
+         <!-- div1 -->
+        <div>
+            <div>
+                <img src="https://img.shop.com/Image/featuredstore/ca_eng_bedbathandbeyond_cuisinart_hd_mp-14316_dec181549553338902.jpg"/>
+                 <div id="r1">
+                       <h6>Bed Bath & Beyond</h6>
+                       <div id="b">Visit Partener store</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>One of the largest selections of products for your home 
+                          anywhere, at everyday low prices!</p>
+                    <p>  +Up to 2.00%Cashback</p>  
+                   <div id="last">
+                       <div class="icon"><i class="fa-solid fa-envelopes"></i></div>
+                       <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                       <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                   </div>
+                </div>
+            </div>
+        </div>
+         <!-- div2 -->
+        <div>
+            <div>
+                <img src="https://img.shop.com/Image/featuredstore/ellenmoves1617140728088.jpg"/>
+                 <div id="r1">
+                     <h6>Eleven Moves</h6>
+                     <div id="b">Visit Partener store</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                   <p>Innovative yoga mats created through a combination
+                     of art, technology, and spirituality.Made for your </p>
+                   <p>  +Up to 2.00%Cashback</p>  
+                   <div id="last">
+                       <div class="icon"><i class="fa-solid fa-envelopes"></i></div>
+                       <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                       <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                   </div>
+                </div>
+            </div>
+        </div>
+         <!-- div3 -->
+        <div>
+            <div>
+                <img src="https://img.shop.com/Image/featuredstore/us-en-blairtech-featuredstore-fillin-oct201602867043361.jpg"/>
+                 <div id="r1">
+                     <h6> Blair Tech</h6>
+                     <div class="button">shop now</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Blair Technology Group is one of just 20 official Microsoft 
+                    Authorized Refurbishers (MAR) in the</p>
+                    <p>  +Up to 2.00%Cashback</p>  
+                    <div id="last">
+                        <div class="icon"><i class="fa-solid fa-envelopes"></i></div>
+                        <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- div4 -->
+        <div>
+            <div>
+                <img src="https://img.shop.com/Image/featuredstore/us-en-aloyoaga-featuredstore-hd-fillin-oct201602866346016.jpg"/>
+                 <div id="r1">
+                    <h6>Alo Yoga</h6>
+                    <div class="button">shop Now</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                   <p>At Alo Yoga, we are relentless about making the best yoga 
+                    clothing in the world explicitly to inspire yogis </p>
+                   <p>  +Up to 2.00%Cashback</p>  
+                  <div id="last">
+                    <div class="icon"><i class="fa-solid fa-envelopes"></i></div>
+                    <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+         <!-- div5 -->
+        <div>
+            <div>
+                <img src="https://img.shop.com/Image/featuredstore/us-en-underarmour-featuredstore-fillin-oct20_125x125-img1602866537073.jpg"/>
+                 <div id="r1">
+                    <h6>Under Armour</h6>
+                    <div class="button">Shop Now</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                     <p>Under Armour’s mission is to make you better.
+                     That means everything Under Armour makes—shoes,</p>
+                     <p>  +Up to 2.00%Cashback</p>  
+                   <div id="last">
+                       <div class="icon"><i class="fa-solid fa-envelopes"></i></div>
+                       <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                       <div class="icon"><i class="fa-brands fa-twitter"></i></div>  
+                   </div>
+                </div>
+            </div>
+        </div>
+         <!-- div6 -->
+        <div>
+            <div>
+                <img src="https://img.shop.com/Image/featuredstore/us_eng_buybuybaby_logo_featuredstore_fillin_aug20164.png"/>
+                 <div id="r1">
+                    <h6>BuyBuyBaby</h6>
+                    <div id="b">Visit Partener store</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Shop buybuy BABY for a fantastic selection of baby merchandise.</p>
+                    <p>  +Up to 2.00%Cashback</p>  
+                  <div id="last">
+                    <div class="icon"><i class="fa-solid fa-envelopes"></i></div>
+                    <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+         <!-- div7 -->
+        <div>
+            <div>
+                <img src="https://img.shop.com/Image/featuredstore/us-en-kiwico-featuredstore-fillin-oct201602867353502.png"/>
+                 <div id="r1">
+                    <h6>KiwiCo Store</h6>
+                    <div class="button">Shop now</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>KiwiCo offers eight different product lines spanning a variety of interests and age ranges
+                     -- for kids from </p>
+                    <p>  +Up to 2.00%Cashback</p>  
+                   <div id="last">
+                       <div class="icon"><i class="fa-solid fa-envelopes"></i></div>
+                       <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                       <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                   </div>
+                </div>
+            </div>
+        </div>
+         <!-- div8 -->
+        <div>
+            <div>
+                <img src="https://img.shop.com/Image/featuredstore/us_eng_kohls_hd_june1915598778667431560460720972.jpg"/>
+                 <div id="r1">
+                    <h6>Kohls</h6>
+                    <div id="b">Visit Partener store</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Kohl’s is a leading retailer with a commitment to 
+                    inspiring & empowering families to lead fulfilled.</p> 
+                    <p >  +Up to 2.00%Cashback</p> 
+                  <div id="last">
+                    <div class="icon"><i class="fa-solid fa-envelopes"></i></div>
+                    <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+         <!-- div9 -->
+        <div>
+            <div>
+                <img src="https://img.shop.com/Image/featuredstore/us_eng_raise.com_logo_featuredstore_fillin_aug20168.jpg"/>
+                 <div id="r1">
+                    <h6>Raise.com</h6>
+                    <div id="b">Visit Partener store</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Shoppers buy discounted gift cards to save, 
+                    and sellers earn cash to spend however they want.</p>
+                    <p >  +Up to 2.00%Cashback</p>  
+                    <div id="last">
+                        <div class="icon"><i class="fa-solid fa-envelopes"></i></div>
+                        <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- div10 -->
+        <div>
+            <div>
+                <img src="https://img.shop.com/Image/featuredstore/us_eng_egiftcardcenter_featuredstores_20177.png"/>
+                 <div id="r1">
+                    <h6>eGift Cards from SHOP.COM</h6>
+                    <div class="button">Shop Now</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Looking for a last-minute gift? Fuel your Shopping Annuity with the 
+                    SHOP.COM eGift Card Center.</p>
+                    <p >  +Up to 2.00%Cashback</p>  
+                    <div id="last">
+                        <div class="icon"><i class="fa-solid fa-envelopes"></i></div>
+                        <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- div11 -->
+        <div>
+            <div>
+                <img src="https://img.shop.com/Image/featuredstore/us_eng_shopgroceries_logo_featuredstore_fillin_aug20161.gif"/>
+                 <div id="r1">
+                    <h6>SHOP.COM Groceries</h6>
+                    <div class="button">Shop Now</div>
+                </div>
+            </div>
+            <div>
+                <div>
+                     <p>Shop from 1,000s of items and get them delivered right to your front door.</p>
+                     <p>  +Up to 2.00%Cashback</p>  
+                     <div id="last">
+                        <div class="icon"><i class="fa-solid fa-envelopes"></i></div>
+                        <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
