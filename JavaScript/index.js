@@ -1,3 +1,91 @@
+// before "S" logo container
+// cashback_6 starts here 
+all_2_cashbackData = [
+    {
+        imgUrl: "https://www.shop.com/feo-cdn/M/6/sX-B3itR8.webp",
+        pageLink: "https://www.shop.com/Shopping+Annuity+reg+Brand+Premium+Balance+Belly+Tea-1925855947-p+.xhtml?tkr=220223154747",
+        cashback:"2% $ Cashback",
+        sale: ""
+    },
+    {
+        imgUrl: "https://www.shop.com/feo-cdn/z/2/c3Haj4jgI.webp",
+        pageLink: "https://www.shop.com/MycoAdapt-1926928560-p+.xhtml?tkr=220223155317",
+        cashback:"2% $ Cashback",
+        sale: ""
+    },
+    {
+        imgUrl: "https://www.shop.com/feo-cdn/U/W/qop5zYXfc.webp",
+        pageLink: "https://www.shop.com/GlutaQ-1926928562-p+.xhtml?tkr=220224104726",
+        cashback:"2% $ Cashback",
+        sale: ""
+    },
+    {
+        imgUrl: "https://www.shop.com/feo-cdn/T/A/1eXAnfLQ4.jpg",
+        pageLink: "https://www.shop.com/Daily+Greens-1926928561-p+.xhtml?tkr=220223151737",
+        cashback:"2% $ Cashback",
+        sale: ""
+    },
+    {
+        imgUrl: "https://www.shop.com/feo-cdn/J/o/ZZzVXE2Cs.webp",
+        pageLink: "https://www.shop.com/Rastellis-v274355-c+.xhtml?tkr=220302165157",
+        cashback:"9% $ Cashback",
+        sale: ""
+    },
+    {
+        imgUrl: "https://www.shop.com/feo-cdn/Q/9/2-2fr95pI.webp",
+        pageLink: "https://www.shop.com/Shopping+Annuity+reg+Brand+Premium+Flushable+Wipes+150+Count-1925345712-p+.xhtml?tkr=220223160255",
+        cashback:"2% $ Cashback",
+        sale: ""
+    },
+    {
+        imgUrl: "https://www.shop.com/feo-cdn/A/j/u-mSDOcIA.webp",
+        pageLink: "https://www.shop.com/nbts/b48228-link_off.xhtml?tkr=220328131309",
+        cashback:"2% $ Cashback",
+        sale: ""
+    },
+    {
+        imgUrl: "https://img.shop.com/Image/homepage/us-en-toryburch-slipper-banner-mar221648672437364.jpeg",
+        pageLink: "https://www.shop.com/nbts/b48230-link_off.xhtml?tkr=220328143223",
+        cashback:"2% $ Cashback",
+        sale: "Tory Burch Sale: Shop Sandals, Totes, Mini Bags and More"
+    },
+];
+
+all_2_cashbackData.map(function(el){
+    var box = document.createElement("div");
+
+    var anch = document.createElement("a");
+    anch.href = el.pageLink;
+
+    var imgBox = document.createElement("div");
+    var img = document.createElement("img");
+    img.src = el.imgUrl;
+
+    anch.append(img);
+    imgBox.append(anch);
+
+    var cashbackBox = document.createElement("div");
+
+    var para = document.createElement("p");
+    para.setAttribute("id","cashback")
+    para.textContent = el.cashback;
+
+    cashbackBox.append(para );
+
+    var saleBox = document.createElement("div");
+    var para = document.createElement("p");
+    para.setAttribute("id","sale")
+    para.textContent = el.sale;
+
+    saleBox.append(para);
+    box.append(imgBox,cashbackBox,saleBox)
+
+    document.querySelector("#all_2_cashbackRightDiv").append(box)
+});
+// cashback_2 end here 
+
+
+
 
 //Spring Essential data start
 

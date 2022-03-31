@@ -191,7 +191,56 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px;
 }
+#all_2_cashbackSec{
+   display: flex;
+   justify-content: center;
+   background-color: white;
+    
+}
+#all_2_cashbackSec>div{
+    display: flex;
+    margin: 10px 10px 75px 0px;
+}
+#all_2_cashbackLeftDiv{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
 
+#all_2_cashbackRightDiv{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    
+}
+#all_2_cashbackRightDiv>div{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+}
+#cashback{
+    font-size: 16px;
+    text-align: center;
+}
+#sale{
+    margin-top: -10px;
+    font-size: 11px;
+    text-align: center;
+}
+#all_2_cashbackRightDiv img{
+    width: 100%;
+}
+
+/* logo part  */
+
+#logopart>img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    margin-top: -65px;
+    margin-bottom: -85px;
+}
 
 
 /* ************** */
@@ -320,6 +369,9 @@
 }
 #HotNewProductsTitle,#cleaningHelthTitle,#webpricesTitle,#HealthyEssTitle,#anniversaryCollTitle,#topSellersTitle{
     background-color: white;
+}
+#HotNewProductsTitle{
+    padding-top: 40px;
 }
 #HotNewProductsTitle>p,#cleaningHelthTitle>p,#webpricesTitle>p,#HealthyEssTitle>p,#anniversaryCollTitle>p,#topSellersTitle>p,#ourBrandsTitle>p{
     font-size: 38px;
