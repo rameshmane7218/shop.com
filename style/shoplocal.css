@@ -1,0 +1,153 @@
+#bar
+{margin: auto;
+width: 95%;
+height: 70px;
+border: 0px solid black;
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+#bar img{
+width: 180px;
+height: 50px;
+}
+#imglen{
+width: 200px;
+height: 40px;
+}
+#butns div{
+width: 180px;
+height: 35px;
+border: 0px solid black;
+margin: auto;
+}
+#butns{
+display: flex;
+}
+#butns img{
+width: 30px;
+height: 30px;
+margin-top:3px;
+display: inline;
+}
+#butns h3{
+display: inline;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#butns button:hover{
+background-color: rgb(255, 255, 255);
+color: rgb(12, 172, 172);
+}
+#map img{
+width: 100%;
+height: 300px;
+}
+#search{
+width: 97%;
+height:70px;
+background-color: #202340;
+padding: 15px;
+}
+#search div{
+width: 700px;
+height: 57px;
+background-color: white;
+margin: auto;
+border-radius: 5px;
+text-align: center;
+align-items: center;
+}
+#search{
+display: flex;
+margin: auto;
+margin-top: -5px;
+}
+#search h3{
+display: inline;
+margin: auto;
+
+}
+#palceholder{
+width: 280px;
+height: 50px;
+border: 0px;
+padding-left: 10px;
+}
+#searchresult{
+width: 400px;
+height: 200px;
+border: 0px solid black;
+margin: auto;
+text-align: center;
+margin-top: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#topheading{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 400;
+}
+#countryimg{
+width: 100%;
+height: 200px;
+border: 0px solid black;
+display: flex;
+justify-content: space-around;
+}
+#countryimg div{
+border: 0px solid black;
+width: 200px;
+height: 180px;
+}
+#zipemail {
+margin-top: 20px;
+}
+#zipemail p{
+display: inline;
+padding-right: 20px;
+font-weight: 600;
+}
+.placeholder{
+width: 250px;
+height: 35px;
+}
+#bar button {
+margin-left: 20px;
+height: 45px;
+width: 200px;
+color: rgb(0, 0, 0);
+background-color: white;
+border: 0px;
+align-items: center;
+text-align: center;
+display: flex;
+justify-content: center;
+
+}
+#bar button:hover{
+background-color: #e6e7ee;
+}
+#zipemail button{
+width: 90px;
+height: 40px;
+background-color: #414467;
+color: white;
+font-weight: 600;
+}
+#zipemail button:hover{
+background-color:#55576d ;
+}
+#countryimg img{
+width: 100%;
+display: flex;
+}
+#countryimg h3{
+margin-top: -30px;
+color: white;
+padding-left: 10px;
+font-weight: 700;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#checkbox{
+width: 20px;
+height: 20px;
+}

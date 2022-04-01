@@ -1,9 +1,11 @@
 *{
     font-family: 'Roboto', sans-serif;
+   
 }
 #footer{
     background-color: #f0f1f7;
     padding-top: 50px;
+    margin-top: 100px;
 }
 .link-to{
     background-color: #545871;
