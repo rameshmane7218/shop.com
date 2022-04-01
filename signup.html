@@ -120,109 +120,9 @@
     </style>
 </head>
 <body>
-    <header id="main_header">
-        <section id="mainSection">
-            <!-- Left header box -->
-            <section id="headerLeft">
-                <div class="leftHeaderLogoBox" title="SHOP.COM helps you Shop Smart and Save Big by helping you compare prices across your favorite online stores!">
-                    <a href="index.html"></a>
-                    <div>
-                        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="SHOP.COM">
-                    </div>
-                </div>
-                <div class="sideBarMenu">
-                    <div> 
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                    <div>
-                        <span>Categories</span>
-                    </div>
-                </div>
-            </section>
+  
     
-             <!-- Right header box -->
-            <section id="headerRight">
-                <div class="headerRightTop">
-                    <div id="quick-search">
-                        <form id="serch-form">
-                            <div class="header-search__input-container">
-                                <div class="header-dept__select">
-                                    <select name="select_dept" id="search-in-dept">
-                                        <option value="All Departments">All Departments</option>
-                                        <option value="Auto">Auto</option>
-                                        <option value="Baby">Baby</option>
-                                        <option value="Beauty">Beauty</option>
-                                        <option value="Books">Books</option>
-                                        <option value="Business">Business</option>
-                                        <option value="Cameras">Cameras</option>
-                                        <option value="Clothes">Clothes</option>
-                                    </select>
-                                </div>
-                                <div class="verticalLine"></div>
-                                <div class="header-search__input-box">
-                                    <input type="search" placeholder="Search SHOP.COM…">
-                                </div>
-                                <div class="searchLogo">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div id="womenHistoryImg">
-                        <img src="https://img.shop.com/Image/header2013/shop-usa-99472-womans-history-month-banner-header1646750930780.png" alt="Celebrating Womens's History">
-                    </div>
-                </div>
-                <div class="headerRightBtm">
-                    <section>
-                        <nav aria-label="Department List">
-                            <ul class="headerRightBtm-dept-list">
-                                <li class="headerRightBtm-dept-item">
-                                    <a href="">Exclusive Brands</a>
-                                </li>
-                                <li class="headerRightBtm-dept-item">
-                                    <a href="">Stores</a>
-                                </li>
-                                <li class="headerRightBtm-dept-item">
-                                    <a href="">Deals</a>
-                                </li>
-                                <li class="headerRightBtm-dept-item">
-                                    <a href="">SHOP Travel</a>
-                                </li>
-                                <li class="headerRightBtm-dept-item">
-                                    <a href="">Departments</a>
-                                </li>
-                                <li class="headerRightBtm-dept-item">
-                                    <a href="">ShopBuddy</a>
-                                </li>
-                                <li class="headerRightBtm-dept-item">
-                                    <a href="">SHOP Local</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </section>
-                    <div>
-                        <div class="icon">
-                            <div><i class="fa-solid fa-user"></i></div>
-                            <div><span>Sign in</span></div>
-                            
-                        </div>
-    
-                        <div class="icon">
-                            <div> <i class="fa-solid fa-arrow-rotate-left"></i></div>
-                            <div><span>Orders</span></div>
-                        </div>
-                        <div class="icon">
-                            <div> <i class="fa-solid fa-cart-shopping"></i></div>
-                            <div><span>Cart</span></div>
-                           
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-    </header>
-    
-    <!-- Navbar/Header End-->
+
     <div class="container">
     <div>
         <div>
@@ -277,13 +177,13 @@
         </div>
     </div>
     <div id="box4">
-        <button id="create-account">Create your new account</button>
+        <button id="createacc">Create your new account</button>
         <p>By creating an account, you are agreeing to our Terms of Service and Privacy Policy.</p>
     </div>
-    <!-- Footer End -->
 </body>
 <script>
-    document.querySelector("#create-account").addEventListener("click",signup)
+   
+   document.querySelector("#createacc").addEventListener("click",signup)
     function signup()
     {
         var userdata=JSON.parse(localStorage.getItem("signupdata"))||[];
@@ -292,9 +192,10 @@
         if(firstpassword==secondpassword)
         {
             var password=firstpassword;
+            alert("Sign Up Sucessfull");
         }
         else{
-            alert("Password Doesn't Match")
+            alert("Password Doesn't Match");
         }
        var signupobj={
            username:document.querySelector("#name").value+"."+document.querySelector("#lastname").value,
@@ -303,8 +204,10 @@
            usermobilenumber:document.querySelector("#mobilenumber").value,
            refferlemail:document.querySelector("#friendemail").value,
        }
+       window.location.href="orders.html"
        userdata.push(signupobj);
        localStorage.setItem("signupdata",JSON.stringify(userdata));
+       
     }
 </script>
 </html>
