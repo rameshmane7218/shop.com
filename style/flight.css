@@ -17,8 +17,8 @@ body{
     justify-content:space-between ;
 }
 #form{
-width: 50%;
-height: 700px;
+width: 45%;
+height: 650px;
 background-color: whitesmoke;
 align-self: center;
 
@@ -95,64 +95,67 @@ color: teal;
     
     width: 90%;
     margin: auto;
-    height: 55%;
-    border: 1px solid red;
+    height: auto;
+    
 }
 .part-one{
     width: 100%;
     height: 45%;
 }
-
+#radio_color{
+    background-color: #f5bc6e;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
 #CheapOair{
     width: 100%;
    cursor: pointer;
     height: 40px;
     margin-bottom: 5px;
 }
-#radio_trip{
-    background-color: #f5bc6e;
-}
 
-#from_to{
-    border: 1px solid red;
+
+.from_to{
+    
     width: 100%;
-    height: 40px;
-    margin-top: 5px;
+    height: 35px;
+    margin-top: 18px;
     display: flex;
     justify-content: space-between;
 }
 #from_1{
-    border: 1px dashed black;
-    width: 50%;
+    
+    width: 200px;
     height: 100%;
     display: flex;
     justify-content: space-between;
   
     }
     #from_2{
-        border: 1px dashed black;
-        width: 50%;
+       border: 1px solid black;
+        width: 200px;
         height: 100%;
         display: flex;
-        justify-content: space-between;
+        
     }
 .icon-div{
     justify-content: center;
     border: 1px solid rgb(0, 0, 0);
     width: 20%;
-    height: 100%;
+    height: 95%;
     display: flex;
     text-align: center;
     justify-content: center;
     background-color: #f5bc6e;
 }
+
 .icon-div>i{
-    margin-top: 10px;
+    margin-top: 9px;
     font-size: 20px;
 }
 .div-text{
     justify-content: center;
-    border: 1px solid rgb(212, 83, 83);
+    /* border: 1px solid red; */
     width: 80%;
     height: 100%;
 }
@@ -161,38 +164,11 @@ color: teal;
     height: 87%;
 }
 #from_2{
-    border: 1px dashed black;
+    
     width: 45%;
     height: 100%;
 }
 
-
-
-
-#check_date{
-    
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-.check_in,.check_out{
-    
-    margin-top: 5px;
-    width: 48%;
-    margin: bottom 5px;
-    
-}
-.chotu1{
-    background-color: #f5bc6e;
-    height: 100%;
-    display: flex;
-}
-.dateremote{
-    width: 80%;
-    cursor: pointer;
-}
 
 
 
@@ -202,74 +178,70 @@ color: teal;
     width: 100%;
        height: 50%;
 }
-#count{
-     
-    margin-bottom: 8px;
-    width: 100%;
-    height: 60px;
-}
-#count>span:nth-child(1){
-    line-height: 2px;
-}
-#symbol_
-{
-    width: 20%;
-    display: flex;
-    height: 40px;
-    justify-content: space-between;
-    cursor: pointer;
-}
 
-#plus,#minus{
-    border: 1px solid black;
-    width: 50%;
-    padding: 7px;
-    text-align: center;
-    font-size: 26px;
-    background-color: #f5bc6e;
-}
-
-
-
-
-
-
-#nombers{
-
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    
-}
 
 #email{
     
     display: flex;
-    height: 20%;
-    margin-top: 15px;
+    justify-content: space-between;
+    margin-top: 18px;
 }
-#email>div:nth-child(1){
-    border: 1px solid white;
+.icon--div{
+    width: 10%;
+    height: 35px;
+    border: 1px solid rgb(0, 0, 0);
     background-color: #f5bc6e;
-    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#email>div:nth-child(2){
-    width: 50%;
-    margin: -1px;
-    height: 100%;
-    border: 1px solid white;
-}
-#email_img{
-    background-color: black;
-}
-#emailbox{
+
+#em-box{
     width: 90%;
-    height: 85%;
-    margin: 0px;
-cursor: pointer;
+    height: 35px;
 }
+#email-box{
+    width: 97%;
+    height: 30px;
+    padding-left: 10px ;
+}
+
+#member{
+margin-top: 18px;
+width: 100%;
+height: 35px;
+display: flex;
+}
+#member_left{
+    border: 1px solid rgb(69, 80, 38);
+    height: 35px;
+    width: 10%;
+    background-color: #f5bc6e;
+    display: flex;
+    
+justify-content: center;
+align-items: center;
+
+ 
+}
+#member_right{
+    border: 1px solid black;
+    height: 35px;
+    width: 40%;
+}
+#right_email{
+    width: 99%;
+    height: 84%;
+}
+
+#txt{
+    padding-left: 10px;
+    font-family: roboto;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
 #btn{
     height: 60px;
 margin: auto;
@@ -280,14 +252,11 @@ justify-content: space-around;
     height: 70%;
     border-radius: 30px;
     width: 60%;
-    margin-top: 10px;
+    margin-top: 18px;
     color:  #545871;
     border-color:  #545871;
     cursor: pointer;
 }
-
-
-
 
 
 
