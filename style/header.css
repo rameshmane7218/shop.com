@@ -131,6 +131,9 @@ body{
 .navbar >ul,.navbar >a,.navbar >h3{
     margin-left: 20px;
 }
+.navbar >h3{
+    font-weight: bold !important;
+}
 .navbar::-webkit-scrollbar{
     width: 15px;
 }
