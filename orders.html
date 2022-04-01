@@ -15,6 +15,18 @@
 <link rel="stylesheet" href="/style/header.css">
 <link rel="stylesheet" href="/style/footer.css">
     <style>
+        #toppart
+        {
+            padding-left: 280px;
+        }
+        #output
+        {
+           width: 70%;
+           background-color: brown;
+           color: black;
+           border-radius: 4px;
+           padding-left: 30px;
+        }
     #container
     {
         width: 800px;
@@ -61,11 +73,7 @@
         color:#202340;
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
-    }
-    #container>div:nth-child(2)
-    {
-        padding-top: 70px;
-    }
+    }    
     div>p:nth-child(1)
     {
         font-size: 22px;
@@ -77,6 +85,12 @@
         color: white;
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
+        
+    }
+    #inner-text
+    {
+        font-size: 18px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
    
 
@@ -85,13 +99,17 @@
 </head>
 
 <body>
-   
+   <div id="toppart">
+    <h1>Sign in</h1>
+    <div id="output"></div>
+   </div>
     
      <div id="container">
         
         <div>
-            <h1>Sign in</h1>
+            
             <form action="">
+                
                 <p>Email address:</p>
                 <input id="email1" type="email" placeholder="yourname@example.com">
                 <p>Password:</p>
@@ -122,21 +140,29 @@
         var signupdetails =JSON.parse(localStorage.getItem("signupdata"));
         var emailaddress=document.querySelector("#email1").value;
         var password1=document.querySelector("#password1").value;
-        signupdetails.map(function(el)
-        {
-            if(emailaddress==el.useremail&&password1==el.userpassword)
-            {
-                alert("Login Sucessfull");
-                window.location.href="index.html";
-            }
-            else
-            {
-                alert("Incorrect Email Or Password");
-            }
-             
-        })
-       
+        var x=false;
+        for(var i=0;i<signupdetails.length;i++)
+       {
+           if(emailaddress==signupdetails[i].useremail&&password1==signupdetails[i].userpassword)
+           {
+               x=true;
+               break;
+           }
+       }
+       if(x==true)
+       {
+           alert("Login Sucessful");
+           window.location.href="index.html";
+       }
+       else{
+           var output=document.createElement("p");
+           output.innerText="Incorrect Email Or Password";
+           output.setAttribute("id","inner-text")
+           document.querySelector("#output").append(output);
+          
+       }
     }
+    
     
    
 </script>
