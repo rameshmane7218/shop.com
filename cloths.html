@@ -1,640 +1,1181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloths Page</title>
+    <title>Shop Fashion | Clothes & Clothing Accessories | SHOP.COM</title>
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <script src="https://kit.fontawesome.com/b0071033d8.js" crossorigin="anonymous"></script>
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <style>
-        *{
+        * {
             font-family: 'Inter', sans-serif;
             font-family: 'Roboto', sans-serif;
         }
-        #container{
+
+        #container {
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
             gap: 20px;
 
         }
-        #container>div{
-            /* padding: 20px; */
+
+        #container>div {
+            padding-top: 20px;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
         }
-        #container>div:hover{
+
+        #container>div:hover {
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
-        #box2{
+
+        #box2 {
             padding: 20px;
         }
-        #strick{
+
+        #strick {
             display: flex;
         }
-        #strick>p:first-child{
+
+        #strick>p:first-child {
             text-decoration: line-through;
         }
-        h3{
+
+        h3 {
             font-size: 16px;
             line-height: 20px;
             margin: 0px;
         }
-        p{
+
+        p {
             margin: 2px;
         }
-        #logo{
-            height:15px ;
+
+        #logo {
+            height: 15px;
             width: 15px;
             margin-right: 5px;
         }
-        
-        #sortdiv{
+
+        #sortdiv {
             height: 100px;
         }
-        #bottom{
+
+        #bottom {
             display: flex;
             /* border: 1px dashed red; */
             justify-content: space-between;
             margin-top: 20px;
             margin-bottom: 0px;
         }
-        #bottom>div{
+
+        #bottom>div {
             width: 50%;
             /* border: 1px dashed blue; */
         }
-       .detailBtn{
+
+        .detailBtn {
             width: 100%;
             height: 30px;
             font-weight: bold;
             cursor: pointer;
             /* background-color:#414467; */
         }
-       .buyOptionBtn{
+
+        .buyOptionBtn {
             width: 100%;
             height: 30px;
             font-weight: bold;
             cursor: pointer;
-            background-color:#414467;
+            background-color: #414467;
             color: white;
         }
-        #bottom>div:nth-child(2){
-            background-color:#414467;
-        }
 
+        #bottom>div:nth-child(2) {
+            background-color: #414467;
+        }
     </style>
 </head>
+
 <body>
+    <!-- Navbar/Header Start-->
+
+<header id="main_header">
+    <section id="mainSection">
+        <!-- Left header box -->
+        <section id="headerLeft">
+            <div class="leftHeaderLogoBox" title="SHOP.COM helps you Shop Smart and Save Big by helping you compare prices across your favorite online stores!">
+                <a href="index.html">
+                    <div>
+                        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="SHOP.COM">
+                    </div>
+                </a>
+            </div>
+            <div class="sideBarMenu">
+                <div class="menuIcon"> 
+                    <span><i class="fa-solid fa-bars"></i></span>
+                    <span>Categories</span>
+                </div>
+                <div class="navbar">
+                    <a href="javascript:void(0)">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <div class="navTitle">
+                        <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="logo" width="36px" height="36px">
+                        <h2>SHOP.COM</h2>
+                    </div>
+                    <!-- for mobile user  -->
+                    <h3 class="account" style="font-weight: normal;">Account</h3>
+                    <ul class="navList account1">
+                        <li class="navItem account2">
+                            <a href="https://www.shop.com/nbts/login-myaccount.xhtml?hamm=1" class="navLink">
+                                <i class="fa-solid fa-user"></i>
+                                    Sign In
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://www.shop.com/nbts/account/order-history?hca=1" class="navLink">
+                                <i class="fa-solid fa-truck"></i>
+                                Track Orders
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://www.shop.com/nbts/account/order-history?hca=2" class="navLink">
+                                <i class="fa-solid fa-arrow-rotate-left"></i>
+                                Reorder Items
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://www.shop.com/info/help?hca=3" class="navLink">
+                                <i class="fa-solid fa-circle-question"></i>
+                                Help
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink">
+                                <i class="fa-solid fa-circle-user"></i>
+                                My Account 
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- for laptop user as well as mobile user -->
+                    <h3 class="categories">Categories</h3>
+                    <ul class="navList categories hrline">
+                        <li class="navItem">
+                            <a href="https://www.shop.com/nbts/login-myaccount.xhtml?hamm=1" class="navLink">
+                                Easter 
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://www.shop.com/nbts/account/order-history?hca=1" class="navLink">
+                                Gift Center
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://www.shop.com/nbts/account/order-history?hca=2" class="navLink">
+                                SHOP.COM Home Warranties
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://www.shop.com/info/help?hca=3" class="navLink">
+                                Onecart Exclusive Deals
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="cloths.html" class="navLink shops">
+                                <span> Clothes </span> 
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink shops">
+                                <span>  Shoes  </span> 
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink shops">
+                                <span>  Beauty  </span> 
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink shops">
+                                <span>  Home  </span> 
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink shops">
+                                <span>  Electronics  </span> 
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink shops">
+                                <span>  Health & Nutrition </span> 
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink shops">
+                                <span>  Jewelry  </span> 
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink shops">
+                                <span>  Kids  </span> 
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink shops">
+                                <span>  Pet Supplies  </span> 
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink shops">
+                                <span>  Food & Drink  </span> 
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink shops">
+                                <span>  Sports  </span> 
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink shops">
+                                <span>   Travel   </span> 
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink">
+                                SHOP Travel 
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink">
+                                All Stores 
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink shops">
+                                <span>    Exclusive Brands    </span> 
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="#" class="navLink">
+                                All Departments 
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- laptop account section  -->
+                    <h3 style="font-weight: normal;">Account</h3>
+                    <ul class="navList hrline">
+                        <li class="navItem">
+                            <a href="https://www.shop.com/nbts/account/order-history?hca=1" class="navLink">
+                                <i class="fa-solid fa-truck"></i>
+                                Track Orders
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://www.shop.com/nbts/account/order-history?hca=2" class="navLink">
+                                <i class="fa-solid fa-arrow-rotate-left"></i>
+                                Reorder Items
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://www.shop.com/info/help?hca=3" class="navLink">
+                                <i class="fa-solid fa-circle-question"></i>
+                                Help
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- features section  -->
+                    <h3 style="font-weight: normal;">Features</h3>
+                    <ul class="navList ">
+                        <li class="navItem">
+                            <a href="https://img.shop.com/Image/resources/images/icon-list-manager-24px.svg" class="navLink">
+                                <i class="fa-solid fa-list"></i>
+                                List Manager
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://img.shop.com/Image/resources/images/icon-gift-registry-24px.svg" class="navLink">
+                                <i class="fa-solid fa-gift"></i>
+                                Gift Registry
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://www.shop.com/ccn%5Fegift%5Fpurchase.xhtml?hcf=3" class="navLink">
+                                <i class="fa-brands fa-internet-explorer"></i>
+                                eGifts
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://img.shop.com/Image/resources/images/icon-price-alerts-24px.svg" class="navLink">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                Price Alerts
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://img.shop.com/Image/resources/images/icon-services-24px.svg" class="navLink">
+                                <i class="fa-solid fa-bell-concierge"></i>
+                                Shop Services 
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://img.shop.com/Image/resources/images/icon-shoplocal-24px.svg" class="navLink">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Shop Local
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://img.shop.com/Image/resources/images/icon-shopbuddy-24px.svg" class="navLink">
+                                <i class="fa-solid fa-person"></i>
+                                Shopbuddy
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://img.shop.com/Image/resources/images/icon-trends-24px.svg" class="navLink">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                Trends
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://img.shop.com/Image/resources/images/icon-deals-24px.svg" class="navLink">
+                                <i class="fa-solid fa-tag"></i>
+                                Deals
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://img.shop.com/Image/resources/images/icon-car-saver-24px.svg" class="navLink">
+                                <i class="fa-solid fa-car"></i>
+                                Carsaver
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://img.shop.com/Image/resources/images/icon-best-of-web-24px.svg" class="navLink">
+                                <i class="fa-solid fa-star"></i>
+                                Best of Web
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="https://img.shop.com/Image/resources/images/np-icon.svg" class="navLink">
+                                <i class="fa-solid fa-stethoscope"></i>
+                                Nutri-Physical
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+         <!-- Right header box -->
+        <section id="headerRight">
+            <div class="headerRightTop">
+                <div id="quick-search">
+                    <form id="serch-form">
+                        <div class="header-search__input-container">
+                            <div class="header-dept__select">
+                                <select name="select_dept" id="search-in-dept">
+                                    <option value="All Departments">All Departments</option>
+                                    <option value="Auto">Auto</option>
+                                    <option value="Baby">Baby</option>
+                                    <option value="Beauty">Beauty</option>
+                                    <option value="Books">Books</option>
+                                    <option value="Business">Business</option>
+                                    <option value="Cameras">Cameras</option>
+                                    <option value="Clothes">Clothes</option>
+                                </select>
+                            </div>
+                            <div class="verticalLine"></div>
+                            <div class="header-search__input-box">
+                                <input type="search" placeholder="Search SHOP.COM…">
+                            </div>
+                            <div class="searchLogo">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="womenHistoryImg">
+                    <a href="womenshistory.html">
+                        <img src="https://img.shop.com/Image/header2013/shop-usa-99472-womans-history-month-banner-header1646750930780.png" alt="Celebrating Womens's History">
+                    </a>
+                </div>
+            </div>
+            <div class="headerRightBtm">
+                <section>
+                    <nav aria-label="Department List">
+                        <ul class="headerRightBtm-dept-list">
+                            <li class="headerRightBtm-dept-item">
+                                <a href="#">Exclusive Brands</a>
+                            </li>
+                            <li class="headerRightBtm-dept-item">
+                                <a href="stores.html">Stores</a>
+                            </li>
+                            <li class="headerRightBtm-dept-item">
+                                <a href="deals.html">Deals</a>
+                            </li>
+                            <li class="headerRightBtm-dept-item">
+                                <a href="shoptravel.html">SHOP Travel</a>
+                            </li>
+                            <li class="headerRightBtm-dept-item">
+                                <a href="department.html">Departments</a>
+                            </li>
+                            <li class="headerRightBtm-dept-item">
+                                <a href="shopebuddy.html">ShopBuddy</a>
+                            </li>
+                            <li class="headerRightBtm-dept-item">
+                                <a href="shoplocal.html">SHOP Local</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <div>
+                    <div class="icon">
+                        <div><i class="fa-solid fa-user"></i></div>
+                        <div><span>Sign in</span></div>
+                        
+                    </div>
+
+                    <div class="icon">
+                        <div> <i class="fa-solid fa-arrow-rotate-left"></i></div>
+                        <div><span>Orders</span></div>
+                    </div>
+                    <div class="icon">
+                        <div> <i class="fa-solid fa-cart-shopping"></i></div>
+                        <div><span>Cart</span></div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</header>
+
+<!-- Navbar/Header End-->
+
+
+
     <h1>Cloths page</h1>
     <div id="sortdiv">Sort By :
-        <select id="sort"> 
+        <select id="sort">
             <option value="">Best Match</option>
-            <option value="male">Male Product</option>
-            <option value="female">Female Product</option>
+            <option value="mens">Male Product</option>
+            <option value="women">Female Product</option>
             <option value="htl">Price High To Low</option>
             <option value="lth">Price Low To High</option>
         </select>
     </div>
     <div id="container"></div>
+
+    <!-- Footer Start  -->
+<footer id="footer">
+    <div class="link-to">
+         <section id="footerSection1">
+             <div class="emailDeals-signUp">
+                 <form id="emailDeals-signUp">
+                     <label for="">Get Email Deals & Earn Cashback</label>
+                     <div>
+                         <input type="email"placeholder="enter email address...">
+                     </div>
+                     <button>Sign Up</button>
+                 </form>
+             </div>
+             <div class="linkToPage">
+                 <a href="">
+                     <div class="link-logo"></div>
+                     Link to this page
+                 </a>
+                 <div>
+                     and tell all of your friends!
+                 </div>
+                 
+             </div>
+             
+         </section>
+    </div>
+    <section class="footer_links">
+        <div>
+            <nav class="footer_lisnks BusinessInformation">
+                 <div class="left">
+                     <p class="aboutUs"><a href="https://www.shop.com/info/about-us">About Us</a></p>
+                 </div>
+                 <div id="verticalLine"></div>
+                 <div class="left">
+                     <p class="aboutUs"><a href="https://www.shop.com/info/help">Help</a></p>
+                 </div>
+                 <div id="verticalLine"></div>
+                 <div class="left">
+                     <p class="aboutUs"><a href="https://www.shop.com/accessibility.xhtml">Accessibility Statement</a></p>
+                 </div>
+                 <div id="verticalLine"></div>
+                 <div class="left">
+                     <p class="aboutUs"><a href="https://www.shop.com/info/contact-us">Contact Us</a></p>
+                 </div>
+                 <div id="verticalLine"></div>
+                 <div class="left">
+                     <p class="aboutUs"><a href="https://www.shop.com/info/partner-with-us">Partner With Us</a></p>
+                 </div>
+                 <div id="verticalLine"></div>
+                 <div class="left">
+                     <p class="aboutUs"><a href="https://www.shop.com/info/services">Services</a></p>
+                 </div>
+                 <div id="verticalLine"></div>
+
+                 <div class="left selectCountry">
+                     <select name="Country/Region" id="Country/Region">
+                         <option value="">Country/Region</option>
+                         <option value=""><a href="https://www.shop.com/?tkr=s16770">United State</a> </option>
+                         <option value=""><a href="https://ca.shop.com/?tkr=s16771">Canada</a></option>
+                         <option value=""><a href="https://uk.shop.com/?tkr=s16773">United Kingdom</a></option>
+                         <option value=""><a href="https://au.shop.com/?tkr=s16774">Australia</a></option>
+                         <option value=""><a href="https://tw.shop.com/?tkr=s16777">Taiwan</a></option>
+                         <option value=""><a href="https://hk.shop.com/?tkr=s16776">Hong King</a></option>
+                         <option value=""><a href="https://sg.shop.com/?tkr=s16778">Singapore</a></option>
+                         <option value=""><a href="https://my.shop.com/?tkr=s38724">Malaysia</a></option>
+                     </select>
+                 </div>
+                 <div id="verticalLine"></div>
+                 <div class="left selectCountry connect">
+                     <select name="connect" id="connect">
+                         <option value="">Connect</option>
+                         <option value=""><a href="https://www.instagram.com/shopcom/"><span></span> Instagram</a> </option>
+                         <option value=""><a href="http://www.facebook.com/shop.com">Facebook</a></option>
+                         <option value=""><a href="http://www.youtube.com/marketamerica">YouTube</a></option>
+                         <option value=""><a href="http://www.twitter.com/shopcom">Twitter</a></option>
+                         <option value=""><a href="http://www.pinterest.com/shopcom">Pinterest</a></option>
+                     </select>
+                 </div>
+                 <div id="verticalLine"></div>
+
+
+                 <div class="left">
+                     <p class="aboutUs"><a href="https://www.shop.com/info/launch-my-site">Own Your Own SHOP Site</a></p>
+                 </div>
+               
+             </nav>
+             <div class="socialMedia">
+                 <ul>
+                     <li><a href="" title="Share via Email"><i class="fa-solid fa-envelope"></i></a></li>
+                     <li><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1606041479702106&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv6.0%2Fdialog%2Fshare%3Fchannel%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df1bf23847ca3344%2526domain%253Dwww.shop.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.shop.com%25252Ff238a956d46e7a8%2526relation%253Dopener%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df2a20089b359314%2526domain%253Dwww.shop.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.shop.com%25252Ff238a956d46e7a8%2526relation%253Dopener%2526frame%253Df1237357fb0b0b8%2526result%253D%252522xxRESULTTOKENxx%252522%26display%3Dpopup%26href%3Dhttps%253A%252F%252Fwww.shop.com%252F%253Fcredituser%253DR0001007%26description%3DCome%2Blook%2Bat%2Bthis%2Bawesome%2Bpage%2Bat%2BSHOP.COM.%2BMake%2Ban%2Baccount%2Bto%2Bearn%2Bcashback%2Bon%2Bpurchases%2Bnow.%26client_id%3D1606041479702106%26ret%3Dlogin%26sdk%3Djoey%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.shop.com%252F&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2a20089b359314%26domain%3Dwww.shop.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.shop.com%252Ff238a956d46e7a8%26relation%3Dopener%26frame%3Df1237357fb0b0b8%26result%3D%257B%2522error_code%2522%253A4201%252C%2522error_message%2522%253A%2522User%2Bcanceled%2Bthe%2BDialog%2Bflow%2522%257D%26error_code%3D4201%26error_message%3DUser%2Bcanceled%2Bthe%2BDialog%2Bflow%26e2e%3D%257B%257D&display=popup&locale=en_GB" title="Share via Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                     <li><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fwww.shop.com&text=Come+look+at+this+awesome+page+at+SHOP.COM.+Make+an+account+to+earn+cashback+on+purchases+now.&url=https%3A%2F%2Fwww.shop.com%2F%3Fcredituser%3DR0001007" title="Share via Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                     <li><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.shop.com%2F%3Fcredituser%3DR0001007&description=Come+look+at+this+awesome+page+at+SHOP.COM.+Make+an+account+to+earn+cashback+on+purchases+now.&media=https://img.shop.com/Image/images/shopcom/shop-s-logo-1200x630.jpg" title="Share via Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                 </ul>
+
+             </div>
+        </div>
+    </section>
+    <section>
+        <div id="footer__policy-links">
+            <p class="copyright">
+                 © 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners. 
+            </p>
+            <p class="cashback-disclaimer">
+                 Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.
+            </p>
+            <p class="policy">
+                 <a href="https://www.shop.com/info/privacy-policy">Privacy Policy</a> |
+                 <a href="https://www.shop.com/info/terms-of-use">Terms of Use</a> |
+                 <a href="https://www.shop.com/info/advertising-disclosure">Advertising Disclosure</a> |
+                 <a href="https://www.shop.com/info/terms-of-use#return-policy">Return Policy</a> |
+                 <a href="https://www.shop.com/info/shipping-info">Shipping Information</a> 
+            </p>
+        </div>
+        <div id="footer__awards">
+            <div>
+                 <div>
+                     <img src="https://www.shop.com/feo-cdn/7/F/BIyWLz__s.webp" alt="Newsweek Magazine ranks SHOP.COM #19 Best Online Shops 2021 in the 'Universal Provider' Category">
+                 </div>
+                 <div>
+                     <img src="https://www.shop.com/feo-cdn/z/b/qA5FJf0J4.webp" alt="SHOP.COM ranks #11 in Digital Commerce 360's Top 500 and Top 1,000 Online Retailers">
+                 </div>
+                 <div>
+                     <img src="https://www.shop.com/feo-cdn/q/B/9huVMYs4g.webp" alt="SHOP.COM ranks #52 in Digital Commerce 360's Top 100 Marketplaces">
+                 </div>
+                 <div>
+                     <img src="https://www.shop.com/feo-cdn/9/y/SggnBCF2o.webp" alt="SHOP.COM ranks #79 in Digital Commerce 360's Top 1000 Marketplaces">
+                 </div>
+                 <div>
+                     <img src="https://www.shop.com/feo-cdn/o/0/XUDdhleMQ.webp" alt="Market America | SHOP.COM ranks #15 in The Business North Carolina Top 125 Private Companies for 2020">
+                 </div>
+                 <div>
+                     <img src="https://www.shop.com/feo-cdn/u/P/cg2zbaz_s.webp" alt="Market Taiwan Ranks 25th in CommonWealth Magazine's Top 2,000 Largest Enterprises in the 'General Merchandise Retail Business' Category">
+                 </div>
+                 <div>
+                     <img src="https://www.shop.com/feo-cdn/K/F/E44Pe49Qs.webp" alt="BBB Torch Awards for Ethics, 2018 Winner. Click for the Business Review of Market America|SHOP.COM, global e-commerce and digital marketing company in Greensboro NC">
+                 </div>
+                 <div>
+                     <img src="https://www.shop.com/feo-cdn/-/t/ClOpnn4rs.webp" alt="BBB Accredited Business. BBB Rating: A+ as of 2/1/2022. Click for Profile, Business Review of Market America|SHOP.COM, global e-commerce and digital marketing company Greensboro NC">
+                 </div>  
+            </div>
+        </div>
+        <div id="digicert">
+            <div>
+                 <img src="https://portsgroup.com/wp-content/uploads/2021/10/digicert-site-seal-static.png" alt="DigiCert Seal">
+            </div>
+        </div>
+    </section>
+    
+</footer>
+
+<!-- Footer End -->
 </body>
+
 </html>
 
+<script src="JavaScript/header.js"></script>
 <script>
+
+
+
     clothsData = [
         // Womens Database
         {
-            imgUrl:"https://img.shop.com/Image/290000/291200/291280/products/1927528513.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/290000/291200/291280/products/1927528513.jpg?size=400x400",
             name: "Women's A Goofy Movie Powerline Retro Racerback Tank Top",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Fifth Sun",
             strikedoffprice: "$29.99",
-            price:17.98,
+            price: 17.98,
             cashback: "+$1.08 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/250000/253200/253251/products/1917834914.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/250000/253200/253251/products/1917834914.jpg?size=400x400",
             name: "Calvin Klein Womens Zippered Pockets Quilted Jacket",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Tags Weekly",
             strikedoffprice: "$139.50",
-            price:93.58,
+            price: 93.58,
             cashback: "+ $1.87 / 2% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/280000/288000/288080/products/1895035692.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/280000/288000/288080/products/1895035692.jpg?size=400x400",
             name: "Karen - Black Top Quality Fashion Women's Top",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by NotJustLeggings",
             strikedoffprice: "",
-            price:22.50,
+            price: 22.50,
             cashback: "+ $1.80 / 8% $ Cashback",
             shipping: "Free shipping with $40.00 orders",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/250000/253200/253251/products/1920411804.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/250000/253200/253251/products/1920411804.jpg?size=400x400",
             name: "Alfani Womens Turtleneck Elbow-Sleeve Pullover Sweater",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Tags Weekly",
             strikedoffprice: "$49.50",
-            price:40.65,
+            price: 40.65,
             cashback: "+ up to $0.86 / 2% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/278100/278132/products/1921266473.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/278100/278132/products/1921266473.jpg?size=400x400",
             name: "ADRIANNA PAPELL Womens Black Sheer Short Sleeve Illusion Neckline Party T-Shirt",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$109.00",
-            price:28.98,
+            price: 28.98,
             cashback: "+ $0.87 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/278100/278132/products/1920268249.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/278100/278132/products/1920268249.jpg?size=400x400",
             name: "EILEEN FISHER Womens Beige Printed Long Sleeve Crew Neck Knee Length Shift Dress",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$318.00",
-            price:43.98,
+            price: 43.98,
             cashback: "+ $1.32 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/280000/288000/288080/products/1895035695.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/280000/288000/288080/products/1895035695.jpg?size=400x400",
             name: "Karen - Red Top Quality Fashion Women's Top",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by NotJustLeggings",
             strikedoffprice: "",
-            price:22.50,
+            price: 22.50,
             cashback: "+ $1.80 / 8% $ Cashback",
             shipping: "Free shipping with $40.00 orders",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/260000/264900/264928/products/1793153187.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/260000/264900/264928/products/1793153187.jpg?size=400x400",
             name: "Betsey Johnson Women's Star Lace Dress",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Rennde",
             strikedoffprice: "",
-            price:39.99,
+            price: 39.99,
             cashback: "+ $1.80 / 8% $ Cashback",
             shipping: "Free shipping with $40.00 orders",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/280000/288000/288080/products/1893549599.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/280000/288000/288080/products/1893549599.jpg?size=400x400",
             name: "Solid Black - Fur/Fleece FeatherSoft Women's Leggings",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by NotJustLeggings",
             strikedoffprice: "",
-            price:22.00,
+            price: 22.00,
             cashback: "+ up to $2.00 / 8% $ Cashback",
             shipping: "Free shipping with $40.00 orders",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/278100/278132/products/1920681623.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/278100/278132/products/1920681623.jpg?size=400x400",
             name: "NOOKIE Womens Gold Slitted Long Sleeve Asymmetrical Neckline Full-Length Sheath Evening Dress",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$369.00",
-            price:141.98,
+            price: 141.98,
             cashback: "+ up to $2.00 / 8% $ Cashback",
             shipping: "Free shipping with $40.00 orders",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/278100/278132/products/1917711809.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/278100/278132/products/1917711809.jpg?size=400x400",
             name: "INC Womens Black Ruffled Solid Cap Sleeve V Neck Top",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$59.50",
-            price:10.98,
+            price: 10.98,
             cashback: "+ $2.00 / 8% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/278100/278132/products/1924828993.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/278100/278132/products/1924828993.jpg?size=400x400",
             name: "B DARLIN Womens Red Sequined Solid Sleeveless Off Shoulder Maxi Fit + Flare Evening Dress",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$119.00",
-            price:26.98,
+            price: 26.98,
             cashback: "+ $0.81 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/278100/278132/products/1917681724.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/278100/278132/products/1917681724.jpg?size=400x400",
             name: "SLNY Womens Green Short Sleeve Jewel Neck Knee Length Sheath Evening Dress",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$129.00",
-            price:13.98,
+            price: 13.98,
             cashback: "+ $0.42 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/278100/278132/products/1921266291.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/278100/278132/products/1921266291.jpg?size=400x400",
             name: "KENSIE Womens Blue Sleeveless Halter Knee Length Layered Evening Dress",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$118.00",
-            price:21.98,
+            price: 21.98,
             cashback: "+ $0.66 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1918266768.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/273200/273200/products/1918266768.jpg?size=400x400",
             name: "Just USA Womens High Rise Frayed Hem Straight Leg Jeans",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$54.95",
-            price:18.99,
+            price: 18.99,
             cashback: "+ up to $0.44 / 2% $ Cashback",
             shipping: "",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1919388686.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/273200/273200/products/1919388686.jpg?size=400x400",
             name: "Tahari Womens Paisley Midi Wrap Dress",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$158.00",
-            price:33.99,
+            price: 33.99,
             cashback: "+ up to $0.76 / 2% $ Cashback",
             shipping: "",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/278100/278132/products/1917688692.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/278100/278132/products/1917688692.jpg?size=400x400",
             name: "INC Womens Brown Pocketed Bomber Jacket",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$99.50",
-            price:26.98,
+            price: 26.98,
             cashback: "+ $0.81 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1892888246.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/273200/273200/products/1892888246.jpg?size=400x400",
             name: "J Brand Womens 1212 Runway Denim Light Wash Straight Leg Jeans",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$258.00",
-            price:71.99,
+            price: 71.99,
             cashback: "+ up to $0.81 / 2% $ Cashback",
             shipping: "",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1879652198.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/273200/273200/products/1879652198.jpg?size=400x400",
             name: "Spyder Womens Falline Faux Fur Insulated Down Coat",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$650.00",
-            price:67.99,
+            price: 67.99,
             cashback: "+ up to $1.80 / 2% $ Cashback",
             shipping: "",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/278100/278132/products/1921134790.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/278100/278132/products/1921134790.jpg?size=400x400",
             name: "RALPH LAUREN Womens Black Pocketed Raincoat Jacket",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "OneCart StoreSold by BOBBI + BRICKA",
             strikedoffprice: "$150.00",
-            price:58.98,
+            price: 58.98,
             cashback: "+ $1.77 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/278100/278132/products/1917713955.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/278100/278132/products/1917713955.jpg?size=400x400",
             name: "MICHAEL KORS Womens White Leopard Print Long Sleeve Crew Neck Evening Top",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "OneCart StoreSold by BOBBI + BRICKA",
             strikedoffprice: "$98.00",
-            price:26.98,
+            price: 26.98,
             cashback: "+ $0.81 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1903063744.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/273200/273200/products/1903063744.jpg?size=400x400",
             name: "Alex Evenings Womens Metallic Drapey Evening Dress",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$199.00",
-            price:89.55,
+            price: 89.55,
             cashback: "+ $1.79 / 2% $ Cashback",
             shipping: "",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1918012927.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/273200/273200/products/1918012927.jpg?size=400x400",
             name: "Cole Haan Womens Maxi Long Puffer Coat",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$400.00",
-            price:92.99,
+            price: 92.99,
             cashback: "+ up to $3.02 / 2% $ Cashback",
             shipping: "",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/260000/264900/264928/products/1857900261.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/260000/264900/264928/products/1857900261.jpg?size=400x400",
             name: "Calvin Klein Women's Sheer Bell-Sleeve Dress Swim Cover-Up",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Rennde",
             strikedoffprice: "",
-            price:29.98,
+            price: 29.98,
             cashback: "+ up to $1.20 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1893409378.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/273200/273200/products/1893409378.jpg?size=400x400",
             name: "J Brand Womens Alana Denim Medium Wash Skinny Crop Jeans",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "248.00",
-            price:24.99,
+            price: 24.99,
             cashback: "+ $0.50 / 2% $ Cashback",
             shipping: "",
             gender: "women"
         },
         {
-            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1893654631.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/270000/273200/273200/products/1893654631.jpg?size=400x400",
             name: "Laundry by Shelli Segal Womens Comfy Sleepwear Pajama Set",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "58.00",
-            price:10.99,
+            price: 10.99,
             cashback: "+ $0.22 / 2% $ Cashback",
             shipping: "",
             gender: "women"
         },
         // Mens Database
         {
-            imgUrl:"https://img.shop.com/Image/280000/280600/280604/products/1863308674.jpg?size=400x400",
+            imgUrl: "https://img.shop.com/Image/280000/280600/280604/products/1863308674.jpg?size=400x400",
             name: "Red White & Crew Men's Pattern Novelty Crew Socks (3 Pair Pack)",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Belt Outlet",
             strikedoffprice: "$13.95",
-            price:2.77,
+            price: 2.77,
             cashback: "+$0.17 / 6% $ Cashback",
             shipping: "",
             gender: "mens"
         },
-        { 
-            imgUrl:"https://img.shop.com/Image/290000/291200/291280/products/1923230433.jpg?size=400x400",
+        {
+            imgUrl: "https://img.shop.com/Image/290000/291200/291280/products/1923230433.jpg?size=400x400",
             name: "Men's Marvel 10th Anniversary More Than a Fan Long Sleeve Shirt",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Fifth Sun",
             strikedoffprice: "$29.99",
-            price:19.88,
+            price: 19.88,
             cashback: "+$1.19 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
         },
-        { 
-            imgUrl:"https://img.shop.com/Image/290000/291200/291280/products/1924367986.jpg?size=400x400",
+        {
+            imgUrl: "https://img.shop.com/Image/290000/291200/291280/products/1924367986.jpg?size=400x400",
             name: "Men's Mickey & Friends Mickey & Minnie Mouse Cheetah Print Bow Signature Graphic T-Shirt",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Fifth Sun",
             strikedoffprice: "$29.99",
-            price:17.88,
+            price: 17.88,
             cashback: "+$1.08 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
         },
-        { 
-            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1915600809.jpg?size=400x400",
+        {
+            imgUrl: "https://img.shop.com/Image/270000/273200/273200/products/1915600809.jpg?size=400x400",
             name: "Fila Mens Tennis Workout Shorts",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$35.00",
-            price:15.99,
+            price: 15.99,
             cashback: "+$0.32 / 2% $ Cashback",
             shipping: "",
             gender: "mens"
         },
-        { 
-            imgUrl:"https://img.shop.com/Image/280000/289900/289943/products/1907402103.jpg?size=400x400",
+        {
+            imgUrl: "https://img.shop.com/Image/280000/289900/289943/products/1907402103.jpg?size=400x400",
             name: "Screen Stars Fruit Of The Loom Mens Original Short Sleeve Plain Casual T-Shirt",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Pertemba US",
             strikedoffprice: "$12.84",
-            price:10.45,
+            price: 10.45,
             cashback: "+ up to $0.79 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
         },
-        { 
-            imgUrl:"https://img.shop.com/Image/280000/289900/289943/products/1907391135.jpg?size=400x400",
+        {
+            imgUrl: "https://img.shop.com/Image/280000/289900/289943/products/1907391135.jpg?size=400x400",
             name: "Mens 100% Cotton Ribbed /Rib Classic Casual Crew Socks (Pack Of 6) US Size 7-12",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Pertemba US",
             strikedoffprice: "$19.66",
-            price:15.70,
+            price: 15.70,
             cashback: "+ $0.94 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
         },
-        { 
-            imgUrl:"https://img.shop.com/Image/280000/289900/289943/products/1907395424.jpg?size=400x400",
+        {
+            imgUrl: "https://img.shop.com/Image/280000/289900/289943/products/1907395424.jpg?size=400x400",
             name: "Awdis Mens Casual Fashion College/Varsity/Baseball Jacket Sizes XS-2XL /5 Colors",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Pertemba US",
             strikedoffprice: "$35.47",
-            price:20.95,
+            price: 20.95,
             cashback: "+ up to $1.99 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
         },
-        { 
-            imgUrl:"https://img.shop.com/Image/280000/289900/289943/products/1907385153.jpg?size=400x400",
+        {
+            imgUrl: "https://img.shop.com/Image/280000/289900/289943/products/1907385153.jpg?size=400x400",
             name: "Dewalt Mens Cheverley Cargo Shorts",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Pertemba US",
             strikedoffprice: "$75.06",
-            price:56.95,
+            price: 56.95,
             cashback: "+ $3.42 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
         },
-        { 
-            imgUrl:"https://img.shop.com/Image/290000/291200/291280/products/1924367935.jpg?size=400x400",
+        {
+            imgUrl: "https://img.shop.com/Image/290000/291200/291280/products/1924367935.jpg?size=400x400",
             name: "Men's Mickey & Friends Donald Duck Wink Graphic T-Shirt",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Fifth Sun",
             strikedoffprice: "$29.99",
-            price:17.98,
+            price: 17.98,
             cashback: "+ $1.08 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
         },
-        { 
-            imgUrl:"https://img.shop.com/Image/270000/278100/278132/products/1921847697.jpg?size=400x400",
+        {
+            imgUrl: "https://img.shop.com/Image/270000/278100/278132/products/1921847697.jpg?size=400x400",
             name: "PENFIELD Mens Navy Active Regular Fit Athletic Shorts",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$95.00",
-            price:22.98,
+            price: 22.98,
             cashback: "+ $0.69 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
         },
-        { 
-            imgUrl:"https://img.shop.com/Image/260000/266700/266752/products/1886819327.jpg?size=400x400",
+        {
+            imgUrl: "https://img.shop.com/Image/260000/266700/266752/products/1886819327.jpg?size=400x400",
             name: "Ecko Unltd. Men's Jeans Blue 32X29 Denim Skinny Fit Tapered",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Authentic Designer Fashion",
             strikedoffprice: "$79.00",
-            price:32.97,
+            price: 32.97,
             cashback: "+ $1.98 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
         },
-        { 
-            imgUrl:"https://img.shop.com/Image/260000/269300/269358/products/1907223764.jpg?size=400x400",
+        {
+            imgUrl: "https://img.shop.com/Image/260000/269300/269358/products/1907223764.jpg?size=400x400",
             name: "Star Wars Darth Maul Dark Lord of the Sith Neon Retro T-Shirt",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Main Merch",
             strikedoffprice: "",
-            price:27.99,
+            price: 27.99,
             cashback: "+ up to $1.32 / 4% $ Cashback",
             shipping: "",
             gender: "mens"
         },
-        { 
-            imgUrl:"https://img.shop.com/Image/250000/254500/254570/products/1666740432.jpg?size=400x400",
+        {
+            imgUrl: "https://img.shop.com/Image/250000/254500/254570/products/1666740432.jpg?size=400x400",
             name: "Disney Mickey Mouse Hawaii Aloha Mickey Men's T-Shirt",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "by Seven Times Six",
             strikedoffprice: "20.95",
-            price:20.95,
+            price: 20.95,
             cashback: "+ up to $0.44 / 2% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
         },
-        { 
-            imgUrl:"https://img.shop.com/Image/270000/278100/278132/products/1921265221.jpg?size=400x400",
+        {
+            imgUrl: "https://img.shop.com/Image/270000/278100/278132/products/1921265221.jpg?size=400x400",
             name: "HUGO BOSS Mens Burgundy Single Breasted, Extra Slim Fit Suit Wool Blend Suit Separate",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "545.00",
-            price:147.98,
+            price: 147.98,
             cashback: "+ $4.44 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
-        },
+        }
     ];
+
     display(clothsData)
-    function display(clothsData){
-    document.querySelector("#container").innerHTML=""
-    clothsData.map(function (elem){
-    var box=document.createElement("div")   // product div
-    var image=document.createElement("img") // product image
-        image.src=elem.imgUrl
-    var box2=document.createElement("div")
-    box2.setAttribute("id","box2");
-    var name=document.createElement("h3")   // product name
-        name.innerText=elem.name 
-    var box3=document.createElement("div")  // cart logo and seller name
-    var cartLogo=document.createElement("img")
-    var soldBy=document.createElement("span")  
-        soldBy.innerText=elem.soldBy 
-        cartLogo.setAttribute("id","logo")
-        cartLogo.src=elem.cartLogo
-        box3.append(cartLogo,soldBy)  
-    var pricebox=document.createElement("div")   // price and stricked off price
-    pricebox.setAttribute("id","strick")
-    var strikedoffprice=document.createElement("p")
-        strikedoffprice.innerText=elem.strikedoffprice
-    var price=document.createElement("p")
-        price.innerText=elem.price
-        pricebox.append(strikedoffprice,price)
+    function display(clothsData) {
+        document.querySelector("#container").innerHTML = ""
+        clothsData.map(function (elem) {
+            var box = document.createElement("div")   // product div
+            var image = document.createElement("img") // product image
+            image.src = elem.imgUrl
+            var box2 = document.createElement("div")
+            box2.setAttribute("id", "box2");
+            var name = document.createElement("h3")   // product name
+            name.innerText = elem.name
+            var box3 = document.createElement("div")  // cart logo and seller name
+            var cartLogo = document.createElement("img")
+            var soldBy = document.createElement("span")
+            soldBy.innerText = elem.soldBy
+            cartLogo.setAttribute("id", "logo")
+            cartLogo.src = elem.cartLogo
+            box3.append(cartLogo, soldBy)
+            var pricebox = document.createElement("div")   // price and stricked off price
+            pricebox.setAttribute("id", "strick")
+            var strikedoffprice = document.createElement("p")
+            strikedoffprice.innerText = elem.strikedoffprice
+            var price = document.createElement("p")
+            price.innerText = elem.price
+            pricebox.append(strikedoffprice, price)
 
-    var cashback=document.createElement("p")
-        cashback.innerText=elem.cashback
-    var shipping=document.createElement("p")
-        shipping.innerText=elem.shipping
-        
-        box2.append(name,box3,pricebox,cashback,shipping)
+            var cashback = document.createElement("p")
+            cashback.innerText = elem.cashback
+            var shipping = document.createElement("p")
+            shipping.innerText = elem.shipping
 
-    var bottom=document.createElement("div")
-        bottom.setAttribute("id","bottom")
+            box2.append(name, box3, pricebox, cashback, shipping)
 
-    var detail=document.createElement("div")
-        detail.setAttribute("class","detail")
-    var detailBtn = document.createElement("button");
-        detailBtn.setAttribute("class","detailBtn");
-        detailBtn.textContent = "See details"
-        detail.append(detailBtn);
+            var bottom = document.createElement("div")
+            bottom.setAttribute("id", "bottom")
 
-    var buyOption=document.createElement("div")
-        detail.setAttribute("class","buyOption")
-    var buyOptionBtn = document.createElement("button");
-        buyOptionBtn.setAttribute("class","buyOptionBtn");
-        buyOptionBtn.textContent = "Buying Options"
-        buyOption.append(buyOptionBtn);
+            var detail = document.createElement("div")
+            detail.setAttribute("class", "detail")
+            var detailBtn = document.createElement("button");
+            detailBtn.setAttribute("class", "detailBtn");
+            detailBtn.textContent = "See details"
+            detail.append(detailBtn);
 
-        bottom.append(detail,buyOption)        
-        
-    box.append(image,box2,bottom)
-    document.querySelector("#container").append(box)        
-})
-}
+            var buyOption = document.createElement("div")
+            detail.setAttribute("class", "buyOption")
+            var buyOptionBtn = document.createElement("button");
+            buyOptionBtn.setAttribute("class", "buyOptionBtn");
+            buyOptionBtn.textContent = "Buying Options"
+            buyOption.append(buyOptionBtn);
 
-document.querySelector("#sort").addEventListener("change",myFunction)
-function myFunction(){
-    var selected=document.querySelector("#sort").value
-    if(selected == "") window.location.reload();
-    if(selected=="male"){
-        clothsData.sort(function(a,b){
-            if(a.gender>b.gender) return 1
-            if(a.gender<b.gender) return -1
-            return 0
+            bottom.append(detail, buyOption)
+
+            box.append(image, box2, bottom)
+            document.querySelector("#container").append(box)
         })
-        display(clothsData)
     }
-    if(selected=="female"){
-        clothsData.sort(function(a,b){
-            if(a.gender<b.gender) return 1
-            if(a.gender>b.gender) return -1
-            return 0
-        })
-        display(clothsData)
+
+    document.querySelector("#sort").addEventListener("change", myFunction)
+    function myFunction() {
+        var selected = document.querySelector("#sort").value
+        if (selected == "") window.location.reload();
+        if (selected == "mens" || selected == "women") {
+            var filteredList = clothsData.filter(function (el) {
+                return el.gender == selected;
+            });
+            console.log(filteredList);
+            display(filteredList);
+
+        }
+       
+        if (selected == "htl") {
+            clothsData.sort(function (a, b) {
+                return b.price - a.price
+            })
+            display(clothsData)
+        }
+        if (selected == "lth") {
+            clothsData.sort(function (a, b) {
+                return a.price - b.price
+            })
+            display(clothsData)
+        }
     }
-    if(selected=="htl"){
-        clothsData.sort(function(a,b){
-            return b.price - a.price
-        })
-        display(clothsData)
-    }
-    if(selected=="lth"){
-        clothsData.sort(function(a,b){
-            return a.price - b.price
-        })
-        display(clothsData)
-    }
-}    
 
 
 </script>

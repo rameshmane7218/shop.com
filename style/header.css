@@ -132,7 +132,12 @@ body{
 .navbar >ul,.navbar >a,.navbar >h3{
     margin-left: 20px;
 }
+.hrline{
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
 .navbar >h3{
+    margin-bottom: 20px !important;
     font-weight: bold !important;
 }
 .navbar::-webkit-scrollbar{
