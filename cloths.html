@@ -50,7 +50,7 @@
             margin-right: 5px;
         }
         
-        #sort{
+        #sortdiv{
             height: 100px;
         }
         #bottom{
@@ -87,7 +87,15 @@
 </head>
 <body>
     <h1>Cloths page</h1>
-    <div id="sort"></div>
+    <div id="sortdiv">Sort By :
+        <select id="sort"> 
+            <option value="">Best Match</option>
+            <option value="male">Male Product</option>
+            <option value="female">Female Product</option>
+            <option value="htl">Price High To Low</option>
+            <option value="lth">Price Low To High</option>
+        </select>
+    </div>
     <div id="container"></div>
 </body>
 </html>
@@ -101,7 +109,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Fifth Sun",
             strikedoffprice: "$29.99",
-            price: "$17.98",
+            price:17.98,
             cashback: "+$1.08 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
@@ -112,7 +120,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Tags Weekly",
             strikedoffprice: "$139.50",
-            price: "$93.58",
+            price:93.58,
             cashback: "+ $1.87 / 2% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
@@ -123,7 +131,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by NotJustLeggings",
             strikedoffprice: "",
-            price: "$22.50",
+            price:22.50,
             cashback: "+ $1.80 / 8% $ Cashback",
             shipping: "Free shipping with $40.00 orders",
             gender: "women"
@@ -134,7 +142,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Tags Weekly",
             strikedoffprice: "$49.50",
-            price: "$40.65-$42.98",
+            price:40.65,
             cashback: "+ up to $0.86 / 2% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
@@ -145,7 +153,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$109.00",
-            price: "$28.98",
+            price:28.98,
             cashback: "+ $0.87 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
@@ -156,7 +164,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$318.00",
-            price: "$43.98",
+            price:43.98,
             cashback: "+ $1.32 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
@@ -167,7 +175,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by NotJustLeggings",
             strikedoffprice: "",
-            price: "$22.50",
+            price:22.50,
             cashback: "+ $1.80 / 8% $ Cashback",
             shipping: "Free shipping with $40.00 orders",
             gender: "women"
@@ -178,7 +186,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Rennde",
             strikedoffprice: "",
-            price: "$39.99- $49.97",
+            price:39.99,
             cashback: "+ $1.80 / 8% $ Cashback",
             shipping: "Free shipping with $40.00 orders",
             gender: "women"
@@ -189,7 +197,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by NotJustLeggings",
             strikedoffprice: "",
-            price: "$22.00 - $25.00",
+            price:22.00,
             cashback: "+ up to $2.00 / 8% $ Cashback",
             shipping: "Free shipping with $40.00 orders",
             gender: "women"
@@ -200,7 +208,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$369.00",
-            price: "$141.98",
+            price:141.98,
             cashback: "+ up to $2.00 / 8% $ Cashback",
             shipping: "Free shipping with $40.00 orders",
             gender: "women"
@@ -211,7 +219,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$59.50",
-            price: "$10.98",
+            price:10.98,
             cashback: "+ $2.00 / 8% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
@@ -222,7 +230,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$119.00",
-            price: "$26.98",
+            price:26.98,
             cashback: "+ $0.81 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
@@ -233,7 +241,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$129.00",
-            price: "$13.98",
+            price:13.98,
             cashback: "+ $0.42 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
@@ -244,7 +252,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$118.00",
-            price: "$21.98",
+            price:21.98,
             cashback: "+ $0.66 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
@@ -255,7 +263,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$54.95",
-            price: "$18.99 - $21.99",
+            price:18.99,
             cashback: "+ up to $0.44 / 2% $ Cashback",
             shipping: "",
             gender: "women"
@@ -266,7 +274,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$158.00",
-            price: "$33.99 - $37.99",
+            price:33.99,
             cashback: "+ up to $0.76 / 2% $ Cashback",
             shipping: "",
             gender: "women"
@@ -277,7 +285,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$99.50",
-            price: "$26.98",
+            price:26.98,
             cashback: "+ $0.81 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
@@ -288,7 +296,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$258.00",
-            price: "$71.99 - $90.30",
+            price:71.99,
             cashback: "+ up to $0.81 / 2% $ Cashback",
             shipping: "",
             gender: "women"
@@ -299,7 +307,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$650.00",
-            price: "$67.99 - $89.99",
+            price:67.99,
             cashback: "+ up to $1.80 / 2% $ Cashback",
             shipping: "",
             gender: "women"
@@ -310,7 +318,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "OneCart StoreSold by BOBBI + BRICKA",
             strikedoffprice: "$150.00",
-            price: "$58.98",
+            price:58.98,
             cashback: "+ $1.77 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
@@ -321,7 +329,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "OneCart StoreSold by BOBBI + BRICKA",
             strikedoffprice: "$98.00",
-            price: "$26.98",
+            price:26.98,
             cashback: "+ $0.81 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
@@ -332,7 +340,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$199.00",
-            price: "$89.55",
+            price:89.55,
             cashback: "+ $1.79 / 2% $ Cashback",
             shipping: "",
             gender: "women"
@@ -343,7 +351,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$400.00",
-            price: "$92.99 - $150.99",
+            price:92.99,
             cashback: "+ up to $3.02 / 2% $ Cashback",
             shipping: "",
             gender: "women"
@@ -354,7 +362,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Rennde",
             strikedoffprice: "",
-            price: "$29.98 - $39.98",
+            price:29.98,
             cashback: "+ up to $1.20 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "women"
@@ -365,7 +373,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "248.00",
-            price: "$24.99",
+            price:24.99,
             cashback: "+ $0.50 / 2% $ Cashback",
             shipping: "",
             gender: "women"
@@ -376,7 +384,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "58.00",
-            price: "$10.99",
+            price:10.99,
             cashback: "+ $0.22 / 2% $ Cashback",
             shipping: "",
             gender: "women"
@@ -388,7 +396,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Belt Outlet",
             strikedoffprice: "$13.95",
-            price: "$2.77",
+            price:2.77,
             cashback: "+$0.17 / 6% $ Cashback",
             shipping: "",
             gender: "mens"
@@ -399,7 +407,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Fifth Sun",
             strikedoffprice: "$29.99",
-            price: "$19.88",
+            price:19.88,
             cashback: "+$1.19 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
@@ -410,7 +418,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Fifth Sun",
             strikedoffprice: "$29.99",
-            price: "$17.88",
+            price:17.88,
             cashback: "+$1.08 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
@@ -421,7 +429,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
             strikedoffprice: "$35.00",
-            price: "$15.99",
+            price:15.99,
             cashback: "+$0.32 / 2% $ Cashback",
             shipping: "",
             gender: "mens"
@@ -432,7 +440,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Pertemba US",
             strikedoffprice: "$12.84",
-            price: "$10.45-$13.20",
+            price:10.45,
             cashback: "+ up to $0.79 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
@@ -443,7 +451,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Pertemba US",
             strikedoffprice: "$19.66",
-            price: "$15.70",
+            price:15.70,
             cashback: "+ $0.94 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
@@ -454,7 +462,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Pertemba US",
             strikedoffprice: "$35.47",
-            price: "$20.95-$33.20",
+            price:20.95,
             cashback: "+ up to $1.99 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
@@ -465,7 +473,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Pertemba US",
             strikedoffprice: "$75.06",
-            price: "$56.95",
+            price:56.95,
             cashback: "+ $3.42 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
@@ -476,7 +484,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Fifth Sun",
             strikedoffprice: "$29.99",
-            price: "$17.98",
+            price:17.98,
             cashback: "+ $1.08 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
@@ -487,7 +495,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "$95.00",
-            price: "$22.98",
+            price:22.98,
             cashback: "+ $0.69 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
@@ -498,7 +506,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Authentic Designer Fashion",
             strikedoffprice: "$79.00",
-            price: "$32.97",
+            price:32.97,
             cashback: "+ $1.98 / 6% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
@@ -509,7 +517,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by Main Merch",
             strikedoffprice: "",
-            price: "$27.99-$32.99",
+            price:27.99,
             cashback: "+ up to $1.32 / 4% $ Cashback",
             shipping: "",
             gender: "mens"
@@ -520,7 +528,7 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "by Seven Times Six",
             strikedoffprice: "20.95",
-            price: "$20.95",
+            price:20.95,
             cashback: "+ up to $0.44 / 2% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
@@ -531,14 +539,16 @@
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BOBBI + BRICKA",
             strikedoffprice: "545.00",
-            price: "$147.98",
+            price:147.98,
             cashback: "+ $4.44 / 3% $ Cashback",
             shipping: "Free shipping",
             gender: "mens"
         },
     ];
-
-clothsData.map(function (elem){
+    display(clothsData)
+    function display(clothsData){
+    document.querySelector("#container").innerHTML=""
+    clothsData.map(function (elem){
     var box=document.createElement("div")   // product div
     var image=document.createElement("img") // product image
         image.src=elem.imgUrl
@@ -590,6 +600,41 @@ clothsData.map(function (elem){
     box.append(image,box2,bottom)
     document.querySelector("#container").append(box)        
 })
+}
+
+document.querySelector("#sort").addEventListener("change",myFunction)
+function myFunction(){
+    var selected=document.querySelector("#sort").value
+    if(selected == "") window.location.reload();
+    if(selected=="male"){
+        clothsData.sort(function(a,b){
+            if(a.gender>b.gender) return 1
+            if(a.gender<b.gender) return -1
+            return 0
+        })
+        display(clothsData)
+    }
+    if(selected=="female"){
+        clothsData.sort(function(a,b){
+            if(a.gender<b.gender) return 1
+            if(a.gender>b.gender) return -1
+            return 0
+        })
+        display(clothsData)
+    }
+    if(selected=="htl"){
+        clothsData.sort(function(a,b){
+            return b.price - a.price
+        })
+        display(clothsData)
+    }
+    if(selected=="lth"){
+        clothsData.sort(function(a,b){
+            return a.price - b.price
+        })
+        display(clothsData)
+    }
+}    
 
 
 </script>
