@@ -11,3 +11,19 @@ function myFunction() {
     main_header.classList.remove("sticky");
   }
 }
+
+
+// Hamburger menu bar script 
+
+document.querySelector(".fa-bars").addEventListener("click",sidebar);
+
+function sidebar(){
+  document.querySelector(".navbar").style.width = "340px";
+}
+
+document.querySelector(".fa-x").addEventListener("click",closebar);
+
+function closebar(){
+    document.querySelector(".navbar").style.width = "0";
+}
+
