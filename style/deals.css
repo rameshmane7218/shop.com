@@ -1,13 +1,17 @@
 #container{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
     gap:20px;
     background-color: #F0F1F7;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
  }
  #box{
      background-color: white;
      padding-top: 10px;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
  }
  .box1{
      display: flex;
@@ -22,6 +26,9 @@
      justify-content: center;
      align-items: center;
      height: 30px;
+     padding-left: 10px;
+     padding-right: 10px;
+     cursor: pointer;
  }
  .btn:hover{
      background-color: rgb(4, 4, 46);
@@ -31,17 +38,22 @@
      font-family: Arial, Helvetica, sans-serif;
  }
  .cas{
-     font-size: 10px;
-     padding-left: 10px;
+     font-size: 12px;
+     padding-left: 15px;
  }
  .par{
-     font-size: 15px;
+     font-size: 14px;
      padding-left: 20px;
+     line-height: 20px;
  }
- .div2{
+ #container .div2{
      display: flex;
      justify-content: space-between;
-     background-color: rgb(233, 119, 119)
+     background-color: #f55a4d;
+     height: 35px;
+     align-items: center;
+     padding-right: 10px;
+     padding-left: 10px;
   }
   .div2>div{
       color: white;
@@ -53,9 +65,13 @@
   }
   div>i{
       padding-right: 10px;
+      font-size: 25px;
+      cursor: pointer;
   }
+  
   #container2{
     border: 1px solid white;
+    background-color: white;
 }
 #container2>#main{
     display: flex;
@@ -67,6 +83,7 @@
 #btn{
     border: 1px solid black;
     margin-top: 20px;
+    margin-bottom: 20px;
     height: 40px;
     width: 150px;
     display: flex;
@@ -74,6 +91,7 @@
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    cursor: pointer;
 }
 #btn:hover{
   background-color: rgb(12, 12, 54);
@@ -96,6 +114,7 @@
     font-size: 20px;
     color: grey;
     cursor: pointer;
+    
 }
 .div2>i{
     padding-right: 10px;

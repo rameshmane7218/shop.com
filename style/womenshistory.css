@@ -70,6 +70,7 @@
     height: 50px;
     color: white;
     font-weight: 400;
+    border: none;
 
 }
 #womenproduct h1{
@@ -107,12 +108,14 @@
     height: 50px;
     background-color: #4b2973;
     color: white;
+    border: none;
     
 }
 #ownbrand{
-    background-color: #fff3f9;
+    background-color: #faf5ff;
     align-items: center;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 #ownbrand h1{
@@ -148,9 +151,12 @@ border: 0px solid black;
     width: 100%;
 }
 .brandcolm button{
-    width: 120px;
+    width: 140px;
     height: 40px;
-
-    border: 2px solid    #4b2973; ;
+    background-color: #faf5ff;
+    border: 2px solid #4b2973; ;
     
+}
+button{
+    cursor: pointer;
 }
