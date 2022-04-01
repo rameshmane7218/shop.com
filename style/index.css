@@ -1,16 +1,17 @@
 ::-webkit-scrollbar{
-    width: 10px;
+    width: 12px;
 }
 ::-webkit-scrollbar-track{
     box-shadow: inset 0 0 5px grey; 
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb{
-    background:gray;
+    background:#4e5269;
     border-radius: 10px;
+    border: 2px solid white;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background: #5e5c66;
+    background: rgb(72, 70, 79);
 }
 body{
    
@@ -317,7 +318,7 @@ body{
     background-color: white;
     text-align: center;
     /* border: 1px solid red; */
-    margin-top: 10px;
+    margin-top: 20px;
 }
 #springEssTitle>h2, #featuredCatTitle>h2{
     margin: 0px;
@@ -329,6 +330,7 @@ body{
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: auto;
     padding: 0px 20px 20px 20px;
+    margin-bottom: 10px;
 }
 #springEssDiv>div, #featuredCatDiv>div{
     margin-top: 35px;
@@ -472,3 +474,7 @@ body{
     background-color: white;
 }
 
+/* //Footer sign up section visible only on homepage  */
+#emailDeals-signUp{
+    visibility: visible !important;  
+}
