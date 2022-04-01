@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop travel</title>
-    <link rel="stylesheet" href="style/flight.css">
-    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/shop.css">
     <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
     <script src="https://kit.fontawesome.com/b0071033d8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar/Header Start-->
+
+      <!-- Navbar/Header Start-->
 
   <header id="main_header">
     <section id="mainSection">
@@ -119,8 +120,6 @@
 </header>
 
 <!-- Navbar/Header End-->
-
-
     <main id="main_">
 <div class="addbox">
             <!-- this is add -->
@@ -135,15 +134,23 @@
 
 <div id="first_box">
     <!-- (hotal, car , flight will be insite this) -->
-    <div class="icondiv">
-        <i class="fa-solid fa-hotel"></i>
+    <div class="icondiv" onclick="window.location.href='shoptravel.html'">
+
+       
+            <i class="fa-solid fa-hotel"></i>
+        
+        
         <p>Hotel</p>
     </div>
-    <div class="icondiv">
-        <i class="fa-solid fa-jet-fighter"></i>
+    <div class="icondiv" onclick="window.location.href='flight.html'">
+
+        
+            <i class="fa-solid fa-jet-fighter"></i>        
+        
+        
         <p>Flight</p>
     </div>
-    <div class="icondiv">
+    <div class="icondiv" onclick="window.location.href='car.html'">
         <i class="fa-solid fa-car-side"></i>
         <p>Car</p>
 
@@ -156,61 +163,43 @@
 </div>
 <!-- upper is first part -->
 <div id="secound" class=" formchild">
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+
 <div class="part-one">
 <!-- OPTION, AIRPORT ,CHECKIN ,CHECKOUT -->
-<select name="" id="CheapOair">
-<option value="">CheapOair  up tp $5.00 Cashback</option>
-<option value="">Priceline.com</option>
-<option value="">OneTravel.com</option>
-
+<select name="" id="booking_selection">
+            <option value="">Booking.com up to 2.0% Cashback</option>
+            <option value="">IHG hotals & Resorts up to 2.0% Cashback</option>
+            <option value="">Hotels.com up to 2.0% Cashback</option>
+            <option value="">Priceline.com up to 2.0% Cashback</option>
+            <option value="">Vrbo</option>
+            <option value="">CheapOair up to  $5.00 Cashback</option>
+            <option value="">HotalsCombined up to 2.0% Cashback </option>
+            <option value="">Direct travel Network</option>
 </select>
-<span id="radio_trip">
-    <input type="radio" name="" >
-    <span>Round Trip</span>
-</span>
-<span id="radio_trip"      >
-    <!--onefunctionwill come-->    
-    <input type="radio" name="" id="radio_trip">
-    <span>One Trip</span>
-</span>
-
-<div id="from_to">
-    <div id="from_1">
-       <div class="icon-div">
-           <i class="fa-solid fa-location-dot"></i></div>
-       <div class="div-text">
-           <input type="text" name="" class="input_text" >
-       </div>
+<div id="itsmychoice">
+    <div style="border: 1px solid black; background-color: #f5bc6e;">  <img src="https://img.shop.com/Image/resources/images/icon-travel-location.svg"  class="chotu"  alt=""> 
     </div>
-    <div id="from_2">
-        <div class="icon-div">
-            <i class="fa-solid fa-location-dot"></i></div>
-        <div class="div-text">
-            <input type="text" name="" class="input_text" >
-        </div>
+    <div>
+        <input type="text" name="" id="airport" placeholder="City or airport Code">
     </div>
 </div>
-
-
-
-
-
-
-
+<!-- 
+ -->
 
 
 <div id="check_date">
     <div class="check_in">
         <div class="chotu1" >
-            <img src="https://img.shop.com/Image/resources/images/icon-travel-calendar.svg" class="chotu" alt="">
-            <input type="date" name="" class="dateremote">
+            <span style="background-color: #f5bc6e; border: 1px solid black;"><img src="https://img.shop.com/Image/resources/images/icon-travel-calendar.svg"  class="chotu" alt="">
+            </span>          
+              <input type="date" name="" class="dateremote">
         </div>
 
     </div>
     <div class="check_out">
         <div class="chotu1">
-            <img src="https://img.shop.com/Image/resources/images/icon-travel-calendar.svg" class="chotu" alt="">
+            <span style="background-color: #f5bc6e; border: 1px solid black;">
+            <img src="https://img.shop.com/Image/resources/images/icon-travel-calendar.svg" class="chotu" alt=""></span>
             <input type="date" name="" class="dateremote">
         </div>
 
@@ -218,7 +207,6 @@
 </div>
 </div>
 
-<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
 <div class="part-two">
@@ -226,18 +214,59 @@
     <div id="count">
         <!-- here increment and decrement will work -->
 
-<span>Number of Rooms <SPAN id="count_num">0</SPAN></span> 
+
+<span>Number of Rooms <SPAN id="count_num"></SPAN></span> 
 <div id="symbol_">
-    <div id="plus">+</div>
-    <div id="minus">-</div>
+    <div id="plus">
+        <i class="fa-duotone fa-plus"></i>
+    </div>
+    <div id="minus">
+        -
+    </div>
 </div>
 
 <script>
-    document.querySelector("#plus").addEventListener("click", increment)
-    function increment(){
-        var display = document.querySelector("#count_num").innerHTML
-        //tsk is pending
+    var count = 0;
+    document.querySelector("#count_num").innerText = count
+
+    document.querySelector("#plus").addEventListener("click", plus)
+    function plus(){
+        count++;
+if(count<0){
+    count=0
+}
+
+
+
+
+
+        document.querySelector("#count_num").innerText = count
     }
+
+
+    document.querySelector("#minus").addEventListener("click", minus)
+    function minus(){
+        count--;
+    if(count<0){
+        
+        document.querySelector("#count_num").innerText = 0
+
+    }
+else{
+    
+    document.querySelector("#count_num").innerText = count
+
+}
+
+    }
+
+
+
+
+
+
+
+
 </script>
 
 
@@ -245,14 +274,14 @@
     </div>
 <div id="nombers"> 
     <div class="check_in">
-        <div class="chotu1" >
+        <div class="chotu1" style="background-color: #f5bc6e;border: 1px solid black" >
             <img src="https://img.shop.com/Image/resources/images/icon-travel-calendar.svg" class="chotu" alt="">
             <input type="text" name="" placeholder="Number of Adult" class="dateremote">
         </div>
 
     </div>
     <div class="check_out">
-        <div class="chotu1">
+        <div class="chotu1" style="background-color: #f5bc6e; border: 1px solid black;">
             <img src="https://img.shop.com/Image/resources/images/icon-travel-calendar.svg" class="chotu" alt="">
             <input type="text" name="" placeholder="Number of child" class="dateremote">
         </div>
@@ -266,7 +295,7 @@
     <div>
         <input type="email" name="" id="emailbox" placeholder="EMAIL ADDRESS">
     </div>
-   <span>  Provide your email to earn <br> Cashback at Booking.com </span>
+   <span style="color: gray;font-size: 12px;">  Provide your email to earn <br> Cashback at Booking.com </span>
 
 </div>
 <div id="btn">
@@ -283,13 +312,13 @@
 <div id="third" class=" formchild">
 
 
-<h4>Earn $5 Cashback in Free Cashback on your first order*</h4>
-<p style="cursor: pointer;">I donot want Cashback to proceed to Booking.com</p>
+<h4 style="margin-bottom: 5px;margin-top: 14px;">Earn $5 Cashback in Free Cashback on your first order*</h4>
+<p style="cursor: pointer;margin-bottom: -5px;">I donot want Cashback to proceed to Booking.com</p>
 
 <p>*$25 min purchase necessary. Valid First Time Customers Only.
      You will automatically be enrolled in the 
-    Cashback <br> program and agree to our promotional 
-    <span class="termsofuse">Terms and Conditions</span> and SHOP.COM <span class="termsofuse">Terms of Use</span></p>
+    Cashback program and agree to our promotional 
+    <span class="termsofuse">Terms and Conditions</span> and SHOP.COM <br> <span class="termsofuse">Terms of Use</span></p>
 
 
 
@@ -313,6 +342,7 @@
 
     </main>
 <!-- afer you complete the upper add form part -->
+
 
 
 <!-- Footer Start  -->
@@ -466,9 +496,6 @@
 </footer>
 
 <!-- Footer End -->
-
 </body>
 </html>
 <script src="/JavaScript/header.js"></script>
-
-<!-- Hii -->
