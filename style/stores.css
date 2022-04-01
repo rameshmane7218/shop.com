@@ -1,0 +1,119 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap:20px;
+    
+    background-color: #F0F1F7;;
+ }
+ #box{
+     background-color: white;
+     padding-top: 10px;
+ }
+ .box1{
+     display: flex;
+     padding-left: 10px;
+ }
+ .namebox{
+     padding-left: 20px;
+ }
+ .btn{
+     border: 1px solid black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 30px;
+ }
+ .btn:hover{
+     background-color: rgb(4, 4, 46);
+     color: white;
+ }
+ *{
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .cas{
+     font-size: 10px;
+     padding-left: 10px;
+ }
+ .par{
+     font-size: 15px;
+     padding-left: 20px;
+ }
+ .div2{
+     display: flex;
+     justify-content: right;
+     background-color: #9597a6;
+
+ }
+ .div2>i{
+     padding-right: 10px;
+     font-size: 20px;
+     color: white;
+ }
+ #container1{
+    border: 1px solid white;
+    background-color: white;
+}
+#container1>#main{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(233, 220, 220);
+    width: 90%;
+    margin: auto;
+}
+#btn{
+    border: 1px solid black;
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#nam{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#box1{
+    padding-left: 40px;
+}
+#box3{
+     padding-right: 40px;
+}
+#b5{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: grey;
+    cursor: pointer;
+}
+#red:hover{
+    color:red;
+}
+.div>i{
+    padding-right: 10px;
+}
+.div>i:hover{
+    color: black;
+}
+#head{
+    display: flex;
+    padding-left: 70px;
+}
+.allstoreImg{
+    width: 40px;
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.str{
+    font-size: .875em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.csh{
+    font-size: .75em;
+    font-family: Arial, Helvetica, sans-serif;
+}

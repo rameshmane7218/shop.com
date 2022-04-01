@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/b0071033d8.js" crossorigin="anonymous"></script>
+    <title>Shop travel</title>
+    <link rel="stylesheet" href="style/shop.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/stores.css">
+    <script src="https://kit.fontawesome.com/b0071033d8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+
       <!-- Navbar/Header Start-->
 
   <header id="main_header">
@@ -116,17 +120,232 @@
 </header>
 
 <!-- Navbar/Header End-->
+    <main id="main_">
+<div class="addbox">
+            <!-- this is add -->
+<img src="https://img.shop.com/Image/featuredhotdeal/us-eng-travel-media-march221647617486876.png" class="add_img" alt="">
+                      <div>2.0% cashback</div>  
+</div>
+<div id="form">
+            <!-- this will be your form -->
+
+<div id="first" class=" formchild">
+<h1 id="first_h" >SHOP • TRAVEL</h1>
+
+<div id="first_box">
+    <!-- (hotal, car , flight will be insite this) -->
+    <div class="icondiv" onclick="window.location.href='shoptravel.html'">
+
+       
+            <i class="fa-solid fa-hotel"></i>
+        
+        
+        <p>Hotel</p>
+    </div>
+    <div class="icondiv" onclick="window.location.href='flight.html'">
+
+        
+            <i class="fa-solid fa-jet-fighter"></i>        
+        
+        
+        <p>Flight</p>
+    </div>
+    <div class="icondiv" onclick="window.location.href='car.html'">
+        <i class="fa-solid fa-car-side"></i>
+        <p>Car</p>
+
+    </div>
+</div>
+<p style="text-align: center;font-weight: bolder;padding: 2px;">Pick a Travel Partner:</p>
 
 
-    <h2>Featured Stores</h2>
-    <div id="container"></div>
 
-    <div id="head">
-        <h1>All Stores</h1>
-        <img src="https://img.shop.com/Image/resources/images/adobe_pdf_icon_32x32.png" class="allstoreImg"></div>
-        <div id="container1"></div>
+</div>
+<!-- upper is first part -->
+<div id="secound" class=" formchild">
 
-    <!-- Footer Start  -->
+<div class="part-one">
+<!-- OPTION, AIRPORT ,CHECKIN ,CHECKOUT -->
+<select name="" id="booking_selection">
+            <option value="">Booking.com up to 2.0% Cashback</option>
+            <option value="">IHG hotals & Resorts up to 2.0% Cashback</option>
+            <option value="">Hotels.com up to 2.0% Cashback</option>
+            <option value="">Priceline.com up to 2.0% Cashback</option>
+            <option value="">Vrbo</option>
+            <option value="">CheapOair up to  $5.00 Cashback</option>
+            <option value="">HotalsCombined up to 2.0% Cashback </option>
+            <option value="">Direct travel Network</option>
+</select>
+<div id="itsmychoice">
+    <div style="border: 1px solid black; background-color: #f5bc6e;">  <img src="https://img.shop.com/Image/resources/images/icon-travel-location.svg"  class="chotu"  alt=""> 
+    </div>
+    <div>
+        <input type="text" name="" id="airport" placeholder="City or airport Code">
+    </div>
+</div>
+<!-- 
+ -->
+
+
+<div id="check_date">
+    <div class="check_in">
+        <div class="chotu1" >
+            <span style="background-color: #f5bc6e; border: 1px solid black;"><img src="https://img.shop.com/Image/resources/images/icon-travel-calendar.svg"  class="chotu" alt="">
+            </span>          
+              <input type="date" name="" class="dateremote">
+        </div>
+
+    </div>
+    <div class="check_out">
+        <div class="chotu1">
+            <span style="background-color: #f5bc6e; border: 1px solid black;">
+            <img src="https://img.shop.com/Image/resources/images/icon-travel-calendar.svg" class="chotu" alt=""></span>
+            <input type="date" name="" class="dateremote">
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+
+<div class="part-two">
+
+    <div id="count">
+        <!-- here increment and decrement will work -->
+
+
+<span>Number of Rooms <SPAN id="count_num"></SPAN></span> 
+<div id="symbol_">
+    <div id="plus">
+        <i class="fa-duotone fa-plus"></i>
+    </div>
+    <div id="minus">
+        -
+    </div>
+</div>
+
+<script>
+    var count = 0;
+    document.querySelector("#count_num").innerText = count
+
+    document.querySelector("#plus").addEventListener("click", plus)
+    function plus(){
+        count++;
+if(count<0){
+    count=0
+}
+
+
+
+
+
+        document.querySelector("#count_num").innerText = count
+    }
+
+
+    document.querySelector("#minus").addEventListener("click", minus)
+    function minus(){
+        count--;
+    if(count<0){
+        
+        document.querySelector("#count_num").innerText = 0
+
+    }
+else{
+    
+    document.querySelector("#count_num").innerText = count
+
+}
+
+    }
+
+
+
+
+
+
+
+
+</script>
+
+
+
+    </div>
+<div id="nombers"> 
+    <div class="check_in">
+        <div class="chotu1" style="background-color: #f5bc6e;border: 1px solid black" >
+            <img src="https://img.shop.com/Image/resources/images/icon-travel-calendar.svg" class="chotu" alt="">
+            <input type="text" name="" placeholder="Number of Adult" class="dateremote">
+        </div>
+
+    </div>
+    <div class="check_out">
+        <div class="chotu1" style="background-color: #f5bc6e; border: 1px solid black;">
+            <img src="https://img.shop.com/Image/resources/images/icon-travel-calendar.svg" class="chotu" alt="">
+            <input type="text" name="" placeholder="Number of child" class="dateremote">
+        </div>
+
+    </div>
+</div>
+<div id="email">
+    <div>
+        <img src="https://img.shop.com/Image/resources/images/icon-social-email.svg" id="email_img" alt="" class="chotu">
+    </div>
+    <div>
+        <input type="email" name="" id="emailbox" placeholder="EMAIL ADDRESS">
+    </div>
+   <span style="color: gray;font-size: 12px;">  Provide your email to earn <br> Cashback at Booking.com </span>
+
+</div>
+<div id="btn">
+    
+<button id="button"> SEARCH BOOKING.COM</button>
+
+
+</div>
+</div>
+
+</div>
+<!-- upper is secound part -->
+
+<div id="third" class=" formchild">
+
+
+<h4 style="margin-bottom: 5px;margin-top: 14px;">Earn $5 Cashback in Free Cashback on your first order*</h4>
+<p style="cursor: pointer;margin-bottom: -5px;">I donot want Cashback to proceed to Booking.com</p>
+
+<p>*$25 min purchase necessary. Valid First Time Customers Only.
+     You will automatically be enrolled in the 
+    Cashback program and agree to our promotional 
+    <span class="termsofuse">Terms and Conditions</span> and SHOP.COM <br> <span class="termsofuse">Terms of Use</span></p>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<!-- this is third part -->
+                         </div>
+<div class="addbox">
+            <!-- another add -->
+            <img src="https://img.shop.com/Image/featuredhotdeal/us-en-tripcom-summerofsavings2-banner-fillin-jul21-min1626191384619.jpeg" class="add_img" alt="">
+            <div>2.0% cashback</div>   </div>
+
+
+    </main>
+<!-- afer you complete the upper add form part -->
+
+
+
+<!-- Footer Start  -->
 <footer id="footer">
     <div class="link-to">
          <section id="footerSection1">
@@ -279,307 +498,4 @@
 <!-- Footer End -->
 </body>
 </html>
-<script src="/JacaScript/header.js"></script>
-<script>
-var arrobj=[
-    {
-        image:"https://img.shop.com/Image/featuredstore/ca_eng_bedbathandbeyond_cuisinart_hd_mp-14316_dec181549553338902.jpg",
-        name:"Bed Bath & Beyond",
-        button:"Visit Partener store",
-        para:"One of the largest selections of products for your home anywhere, at everyday low prices!art, technology,",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/ellenmoves1617140728088.jpg",
-        name:"Eleven Moves",
-        button:"Visit Partener store",
-        para:"Innovative yoga mats created through a combinat of art, technology, and spirituality.Made for your",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us-en-blairtech-featuredstore-fillin-oct201602867043361.jpg",
-        name:" Blair Tech",
-        button:"shop now<",
-        para:"Blair Technology Group is one of just 20 official Microsoft Authorized Refurbishers (MAR) in the",
-        cash:" +Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us-en-aloyoaga-featuredstore-hd-fillin-oct201602866346016.jpg",
-        name:"Alo Yoga",
-        button:"shop Now",
-        para:"At Alo Yoga, we are relentless about making the best yoga clothing in the world explicitly to inspire yogis",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us-en-underarmour-featuredstore-fillin-oct20_125x125-img1602866537073.jpg",
-        name:"Under Armour",
-        button:"Shop Now",
-        para:"Under Armour’s mission is to make you be That means everything Under Armour makes—shoes",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us_eng_buybuybaby_logo_featuredstore_fillin_aug20164.png",
-        name:"BuyBuyBaby",
-        button:"Visit Partener store",
-        para:"Shop buybuy BABY for a fantastic selection of baby merchandise. we are relentless about making the best yoga clothing ",
-        cash:" +Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us-en-kiwico-featuredstore-fillin-oct201602867353502.png",
-        name:"KiwiCo Store",
-        button:"Shop now",
-        para:"KiwiCo offers eight different product lines spanning a variety of interests and age ranges -- for kids from",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us_eng_kohls_hd_june1915598778667431560460720972.jpg",
-        name:"Kohls",
-        button:"Visit Partener store",
-        para:"Kohl’s is a leading retailer with a commitment to inspiring & empowering families to lead fulfilled.",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us_eng_raise.com_logo_featuredstore_fillin_aug20168.jpg",
-        name:"Raise.com",
-        button:"Visit Partener store",
-        para:"Shoppers buy discounted gift cards to save,and sellers earn cash to spend however they want.",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us_eng_egiftcardcenter_featuredstores_20177.png",
-        name:"eGift Cards from SHOP.COM",
-        button:"Shop Now",
-        para:"Looking for a last-minute gift? Fuel your Shopping Annuity with the SHOP.COM eGift Card Center.",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us_eng_shopgroceries_logo_featuredstore_fillin_aug20161.gif",
-        name:"SHOP.COM Groceries",
-        button:"Shop Now",
-        para:"Shop from 1,000s of items and get them delivered right to your front door. we are relentless about making the best yoga",
-        cash:"+Up to 2.00%Cashback",
-    },
-]
-arrobj.map(function(e){
-var box=document.createElement("div");
-box.setAttribute("id","box")
-var box1=document.createElement("div");
-box1.setAttribute("class","box1")
-    var imgbox=document.createElement("div");
-       var image=document.createElement("img");
-       image.src=e.image;
-       imgbox.append(image);
-    var namebox=document.createElement("div");
-    namebox.setAttribute("class","namebox")
-       var name=document.createElement("h3");
-       name.innerText=e.name;
-       var btn=document.createElement("div");
-       btn.innerText=e.button;
-       btn.setAttribute("class","btn");
-       namebox.append(name,btn)
-box1.append(imgbox,namebox);
-
-var box2=document.createElement("div");
-    var parabox=document.createElement("div");
-        var par=document.createElement("p")
-        par.setAttribute("class","par")
-        par.innerText=e.para;
-        parabox.append(par);
-    var cashbox=document.createElement("div");
-        var cas=document.createElement("p")
-        cas.innerText=e.cash;
-        cas.setAttribute("class","cas")
-        cashbox.append(cas);
-    var div2=document.createElement("div");
-    div2.setAttribute("class","div2")
-            var sym1 = document.createElement("i");
-            sym1.setAttribute("class","fa-solid fa-envelope");
-
-            var sym2 = document.createElement("i");
-            sym2.setAttribute("class","fa-brands fa-facebook-f");
-
-            var sym3 = document.createElement("i");
-            sym3.setAttribute("class","fa-brands fa-twitter");
-
-            div2.append(sym1,sym2,sym3);
-box2.append(parabox,cashbox,div2);
-box.append(box1,box2)
-document.querySelector("#container").append(box);
-});
-</script>
-
-<script>
-    var allstore=[
-        {
-            name:"1-800-GOT-JUNK?",
-            store:"Hot Deals    Special Conditions",
-            pick:"",
-            cashback:"",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"123 Office",
-            store:"",
-            pick:"",
-            cashback:"+Up to 2.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"123InkJets",
-            store:"Hot Deals",
-            pick:"",
-            cashback:"+Up to 8.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"143Vinyl",
-            store:"Hot Deals",
-            pick:"",
-            cashback:"+Up to 2.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"1800AnyLens",
-            store:"Hot Deals  Special Conditions",
-            pick:"",
-            cashback:"+Up to 5.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"1800Baskets.com",
-            store:"Hot Deals  Special Conditions",
-            pick:"",
-            cashback:"+Up to 3.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"1800Flowers.com",
-            store:"Hot Deals",
-            pick:"",
-            cashback:"+Up to 3.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"1800PetMeds",
-            store:"Special Conditions",
-            pick:"",
-            cashback:"+Up to 6.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"1Thrive",
-            store:"Hot Deals",
-            pick:"",
-            cashback:"+Up to 5.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"2xist",
-            store:"Hot Deals  Special Conditions",
-            pick:"",
-            cashback:"+Up to 3.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"360 Cookware",
-            store:"Hot Deals",
-            pick:"",
-            cashback:"+Up to 2.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"39DollarGlasses.com",
-            store:"",
-            pick:"",
-            cashback:"+Up to 6.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"The 3D Gift",
-            store:"Hot Deals",
-            pick:"",
-            cashback:"+Up to 5.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"3D Laser Gifts" ,
-            store:"Hot Deals",       
-            pick:"",
-            cashback:"+Up to 5.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"3PExperts",
-            store:" OneCart®",
-            pick:"",
-            cashback:"+Up to 2.00% $ Cashback",
-            btntext:"shop Now"
-        },
-    ]
-    allstore.map(function(e){
-        var mainbox=document.createElement("div");
-        mainbox.setAttribute("id","main")
-
-        var box1=document.createElement("div");
-        box1.setAttribute("id","box1")
-            var b=document.createElement("div");
-                 var name=document.createElement("p");
-                 name.innerText=e.name;
-                 name.setAttribute("id","nam")
-                 b.append(name);
-            var b1=document.createElement("div");
-            b1.setAttribute("id","b1")
-                // var icon=document.createElement("i");
-                // icon.setAttribute("class","fa-solid fa-fire-flame-curved");
-                 var store=document.createElement("p");
-                 store.innerText=e.store;
-                 store.setAttribute("class","str")
-                 b1.append(store);
-      box1.append(b,b1);
-
-      var box2=document.createElement("div");
-      var b3=document.createElement("div");
-          var cash=document.createElement("p");
-          cash.innerText=e.cashback;
-          cash.setAttribute("class","csh")
-          b3.append(cash);
-      box2.append(b3);
-
-      var box3=document.createElement("div");
-      box3.setAttribute("id","box3")
-         var b4=document.createElement("div");
-             var button=document.createElement("div");
-             button.innerText=e.btntext;
-             button.setAttribute("id","btn")
-             b4.append(button);
-             
-        var b5=document.createElement("div");
-        b5.setAttribute("id","b5")
-            var div1=document.createElement("div");
-            div1.setAttribute("id","red")
-                var sym = document.createElement("i");
-                sym.setAttribute("class","fa-solid fa-heart");
-                div1.append(sym);
-            var div2=document.createElement("div");
-            div2.setAttribute("class","div")
-                var sym1 = document.createElement("i");
-                sym1.setAttribute("class","fa-solid fa-envelope");
-
-                var sym2 = document.createElement("i");
-                sym2.setAttribute("class","fa-brands fa-facebook-f");
-
-                var sym3 = document.createElement("i");
-                sym3.setAttribute("class","fa-brands fa-twitter");
-
-                div2.append(sym1,sym2,sym3);
-                b5.append(div1,div2);
-                box3.append(b4,b5);
-
-    mainbox.append(box1,box2,box3);
-    document.querySelector("#container1").append(mainbox);
-    })
-  
-
-</script>
-
-
+<script src="/JavaScript/header.js"></script>
