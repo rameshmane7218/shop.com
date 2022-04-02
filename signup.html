@@ -1,76 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=div, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style/header.css">
+<link rel="stylesheet" href="/style/footer.css">
 
-    <script src="https://kit.fontawesome.com/b0071033d8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/footer.css">
-
-    <title>SHOP.COM - Online Shopping Marketplace: Clothes, Shoes, Beauty, Electronics and More</title>
-    <link rel="icon" href="//img.shop.com/Image/resources/images/favicon.ico">
+    <title>Document</title>
     <style>
-        .container {
+        
+        
+            
+        
+        .container
+        {
             width: 70%;
             margin: auto;
-            font-size: 14px;
         }
-
-        .container>div {
+        .container>div
+        {
             display: flex;
             gap: 40px;
             font-family: 'Roboto', sans-serif;
-
+           
         }
-
-        .container>div {
+        .container>div{
             width: 50%;
         }
-
-        .container input,
-        #box1 input[type="number"] {
+        input
+        {
             height: 30px;
             width: 400px;
-            margin-top: -5px;
         }
-
-        input::placeholder {
-            font-style: italic;
-            padding-left: 5px;
-        }
-
-        .checkbox-inputs {
+        .checkbox-inputs
+        {
             display: flex;
         }
-
-        #rightcoloumn {
-            margin-top: 80px;
+        #rightcoloumn
+        {
+            margin-top: 100px;
         }
-
-        #rightcoloumn>input:nth-child(2) {
+        #rightcoloumn>input:nth-child(2)
+        {
             margin-bottom: 83px;
-
+            
         }
-
-        .checkbox {
+        .checkbox{
             height: 18px;
             width: 18px;
         }
-
-        #box1 {
+        #box1
+        {
             width: 70%;
             margin: auto;
             font-family: 'Roboto', sans-serif;
-            font-size: 14px;
         }
-
-        #box2 {
+        #box2
+        {
             width: 70%;
             margin: auto;
             border: 0.5px solid grey;
@@ -78,51 +68,42 @@
             margin-left: 200px;
             margin-top: 20px;
             font-family: 'Roboto', sans-serif;
-            font-size: 14px;
         }
-
-        #friendemail {
+        #friendemail
+        {
             width: 95%;
             height: 30px;
         }
-
-        #box3 {
+        #box3
+        {
             width: 70%;
             margin: auto;
             font-family: 'Roboto', sans-serif;
-            font-size: 14px;
         }
-
-        #box4 {
+        #box4
+        {
             width: 70%;
             margin: auto;
             font-family: 'Roboto', sans-serif;
-            font-size: 14px;
         }
-
-        #box5 {
+        #box5
+        {
             width: 70%;
             margin: auto;
             font-family: 'Roboto', sans-serif;
-            font-size: 14px;
         }
-
-        #createacc {
+        button
+        {
             height: 40px;
-            width: 400px;
-            border: 1px solid #202340;
-            color: white;
-            background-color: #414467;
-            font-family: 'Roboto', sans-serif;
-            font-size: 18px;
-            cursor: pointer;
+        width: 400px;
+        border: 1px solid #202340;
+        color: white;
+        background-color: #202340;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
         }
-
-        #createacc:hover {
-            background-color: #202340;
-        }
-
-        #captchabox {
+        #captchabox
+        {
             width: 340px;
             height: 90px;
             display: flex;
@@ -130,416 +111,45 @@
             align-items: center;
             justify-content: space-around;
             margin-bottom: 20px;
-
         }
-
-        #captcha {
+        #captcha
+        {
             height: 70px;
             width: 70px;
         }
     </style>
 </head>
-
 <body>
-
-    <!-- Navbar/Header Start-->
-
-<header id="main_header">
-    <section id="mainSection">
-        <!-- Left header box -->
-        <section id="headerLeft">
-            <div class="leftHeaderLogoBox" title="SHOP.COM helps you Shop Smart and Save Big by helping you compare prices across your favorite online stores!">
-                <a href="index.html">
-                    <div>
-                        <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="SHOP.COM">
-                    </div>
-                </a>
-            </div>
-            <div class="sideBarMenu">
-                <div class="menuIcon"> 
-                    <span><i class="fa-solid fa-bars"></i></span>
-                    <span>Categories</span>
-                </div>
-                <div class="navbar">
-                    <a href="javascript:void(0)">
-                        <i class="fa-solid fa-x"></i>
-                    </a>
-                    <div class="navTitle">
-                        <img src="https://img.shop.com/Image/resources/logos/shop-s-logo-icon.svg" alt="logo" width="36px" height="36px">
-                        <h2>SHOP.COM</h2>
-                    </div>
-                    <!-- for mobile user  -->
-                    <h3 class="account" style="font-weight: normal;">Account</h3>
-                    <ul class="navList account1">
-                        <li class="navItem account2">
-                            <a href="https://www.shop.com/nbts/login-myaccount.xhtml?hamm=1" class="navLink">
-                                <i class="fa-solid fa-user"></i>
-                                    Sign In
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://www.shop.com/nbts/account/order-history?hca=1" class="navLink">
-                                <i class="fa-solid fa-truck"></i>
-                                Track Orders
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://www.shop.com/nbts/account/order-history?hca=2" class="navLink">
-                                <i class="fa-solid fa-arrow-rotate-left"></i>
-                                Reorder Items
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://www.shop.com/info/help?hca=3" class="navLink">
-                                <i class="fa-solid fa-circle-question"></i>
-                                Help
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink">
-                                <i class="fa-solid fa-circle-user"></i>
-                                My Account 
-                            </a>
-                        </li>
-                    </ul>
-
-                    <!-- for laptop user as well as mobile user -->
-                    <h3 class="categories">Categories</h3>
-                    <ul class="navList categories">
-                        <li class="navItem">
-                            <a href="https://www.shop.com/nbts/login-myaccount.xhtml?hamm=1" class="navLink">
-                                Easter 
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://www.shop.com/nbts/account/order-history?hca=1" class="navLink">
-                                Gift Center
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://www.shop.com/nbts/account/order-history?hca=2" class="navLink">
-                                SHOP.COM Home Warranties
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://www.shop.com/info/help?hca=3" class="navLink">
-                                Onecart Exclusive Deals
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink shops">
-                                <span> Clothes </span> 
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink shops">
-                                <span>  Shoes  </span> 
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink shops">
-                                <span>  Beauty  </span> 
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink shops">
-                                <span>  Home  </span> 
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink shops">
-                                <span>  Electronics  </span> 
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink shops">
-                                <span>  Health & Nutrition </span> 
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink shops">
-                                <span>  Jewelry  </span> 
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink shops">
-                                <span>  Kids  </span> 
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink shops">
-                                <span>  Pet Supplies  </span> 
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink shops">
-                                <span>  Food & Drink  </span> 
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink shops">
-                                <span>  Sports  </span> 
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink shops">
-                                <span>   Travel   </span> 
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink">
-                                SHOP Travel 
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink">
-                                All Stores 
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink shops">
-                                <span>    Exclusive Brands    </span> 
-                                <span><i class="fa-solid fa-chevron-right"></i></span>
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="#" class="navLink">
-                                All Departments 
-                            </a>
-                        </li>
-                    </ul>
-
-                    <!-- laptop account section  -->
-                    <h3 style="font-weight: normal;">Account</h3>
-                    <ul class="navList ">
-                        <li class="navItem">
-                            <a href="https://www.shop.com/nbts/account/order-history?hca=1" class="navLink">
-                                <i class="fa-solid fa-truck"></i>
-                                Track Orders
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://www.shop.com/nbts/account/order-history?hca=2" class="navLink">
-                                <i class="fa-solid fa-arrow-rotate-left"></i>
-                                Reorder Items
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://www.shop.com/info/help?hca=3" class="navLink">
-                                <i class="fa-solid fa-circle-question"></i>
-                                Help
-                            </a>
-                        </li>
-                    </ul>
-
-                    <!-- features section  -->
-                    <h3 style="font-weight: normal;">Features</h3>
-                    <ul class="navList ">
-                        <li class="navItem">
-                            <a href="https://img.shop.com/Image/resources/images/icon-list-manager-24px.svg" class="navLink">
-                                <i class="fa-solid fa-list"></i>
-                                List Manager
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://img.shop.com/Image/resources/images/icon-gift-registry-24px.svg" class="navLink">
-                                <i class="fa-solid fa-gift"></i>
-                                Gift Registry
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://www.shop.com/ccn%5Fegift%5Fpurchase.xhtml?hcf=3" class="navLink">
-                                <i class="fa-brands fa-internet-explorer"></i>
-                                eGifts
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://img.shop.com/Image/resources/images/icon-price-alerts-24px.svg" class="navLink">
-                                <i class="fa-solid fa-dollar-sign"></i>
-                                Price Alerts
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://img.shop.com/Image/resources/images/icon-services-24px.svg" class="navLink">
-                                <i class="fa-solid fa-bell-concierge"></i>
-                                Shop Services 
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://img.shop.com/Image/resources/images/icon-shoplocal-24px.svg" class="navLink">
-                                <i class="fa-solid fa-location-dot"></i>
-                                Shop Local
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://img.shop.com/Image/resources/images/icon-shopbuddy-24px.svg" class="navLink">
-                                <i class="fa-solid fa-person"></i>
-                                Shopbuddy
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://img.shop.com/Image/resources/images/icon-trends-24px.svg" class="navLink">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                                Trends
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://img.shop.com/Image/resources/images/icon-deals-24px.svg" class="navLink">
-                                <i class="fa-solid fa-tag"></i>
-                                Deals
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://img.shop.com/Image/resources/images/icon-car-saver-24px.svg" class="navLink">
-                                <i class="fa-solid fa-car"></i>
-                                Carsaver
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://img.shop.com/Image/resources/images/icon-best-of-web-24px.svg" class="navLink">
-                                <i class="fa-solid fa-star"></i>
-                                Best of Web
-                            </a>
-                        </li>
-                        <li class="navItem">
-                            <a href="https://img.shop.com/Image/resources/images/np-icon.svg" class="navLink">
-                                <i class="fa-solid fa-stethoscope"></i>
-                                Nutri-Physical
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-         <!-- Right header box -->
-        <section id="headerRight">
-            <div class="headerRightTop">
-                <div id="quick-search">
-                    <form id="serch-form">
-                        <div class="header-search__input-container">
-                            <div class="header-dept__select">
-                                <select name="select_dept" id="search-in-dept">
-                                    <option value="All Departments">All Departments</option>
-                                    <option value="Auto">Auto</option>
-                                    <option value="Baby">Baby</option>
-                                    <option value="Beauty">Beauty</option>
-                                    <option value="Books">Books</option>
-                                    <option value="Business">Business</option>
-                                    <option value="Cameras">Cameras</option>
-                                    <option value="Clothes">Clothes</option>
-                                </select>
-                            </div>
-                            <div class="verticalLine"></div>
-                            <div class="header-search__input-box">
-                                <input type="search" placeholder="Search SHOP.COM…">
-                            </div>
-                            <div class="searchLogo">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div id="womenHistoryImg">
-                    <a href="womenshistory.html">
-                        <img src="https://img.shop.com/Image/header2013/shop-usa-99472-womans-history-month-banner-header1646750930780.png" alt="Celebrating Womens's History">
-                    </a>
-                </div>
-            </div>
-            <div class="headerRightBtm">
-                <section>
-                    <nav aria-label="Department List">
-                        <ul class="headerRightBtm-dept-list">
-                            <li class="headerRightBtm-dept-item">
-                                <a href="#">Exclusive Brands</a>
-                            </li>
-                            <li class="headerRightBtm-dept-item">
-                                <a href="stores.html">Stores</a>
-                            </li>
-                            <li class="headerRightBtm-dept-item">
-                                <a href="deals.html">Deals</a>
-                            </li>
-                            <li class="headerRightBtm-dept-item">
-                                <a href="shoptravel.html">SHOP Travel</a>
-                            </li>
-                            <li class="headerRightBtm-dept-item">
-                                <a href="department.html">Departments</a>
-                            </li>
-                            <li class="headerRightBtm-dept-item">
-                                <a href="shopebuddy.html">ShopBuddy</a>
-                            </li>
-                            <li class="headerRightBtm-dept-item">
-                                <a href="shoplocal.html">SHOP Local</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
-                <div>
-                    <div class="icon">
-                        <div><i class="fa-solid fa-user"></i></div>
-                        <div><span>Sign in</span></div>
-                        
-                    </div>
-
-                    <div class="icon">
-                        <div> <i class="fa-solid fa-arrow-rotate-left"></i></div>
-                        <div><span>Orders</span></div>
-                    </div>
-                    <div class="icon">
-                        <div> <i class="fa-solid fa-cart-shopping"></i></div>
-                        <div><span>Cart</span></div>
-                       
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-</header>
-
-<!-- Navbar/Header End-->
-
+  
+    
 
     <div class="container">
+    <div>
         <div>
-            <div>
-                <h1>Create an account</h1>
-                <p>*Indicates required field</p>
-                <p>First name*</p>
-                <input id="name" type="text" placeholder="First Name Here!">
-                <p>Email address*</p>
-                <input id="email" type="email" placeholder="yourname@example.com">
-                <p>Password* (At least 7 characters)</p>
-                <input id="password" type="password" placeholder="Please enter a minmum of 7 characters">
-            </div>
-            <div id="rightcoloumn">
-                <p>Last name*</p>
-                <input id="lastname" type="text" placeholder="Last Nmae">
-                <p>Confirm password* </p>
-                <input id="confirmpassword" type="password" placeholder="Confirm Password">
-            </div>
+            <h1>Create an account</h1>
+            <p>*Indicates required field</p>
+            <p>First name*</p>
+            <input id="name"  type="text" placeholder="First Name Here!">
+            <p>Email address*</p>
+            <input id="email" type="email" placeholder="yourname@example.com">
+            <p>Password* (At least 7 characters)</p>
+            <input id="password" type="password" placeholder="Please enter a minmum of 7 characters">
         </div>
+        <div id="rightcoloumn">
+            <p>Last name*</p>
+            <input id="lastname" type="text" placeholder="Last Nmae">
+            <p>Confirm password* </p>
+            <input id="confirmpassword" type="password" placeholder="Confirm Password">
+        </div>
+    </div>
     </div>
     <div id="box1">
         <h3>Text Message (SMS) Alerts: (Optional)</h3>
         <div class="checkbox-inputs">
-            <input type="checkbox" class="checkbox"> <span>Do you want to sign up for Shopper alerts from SHOP.COM?
-                (Message and data rates may apply.)</span>
+            <input type="checkbox" class="checkbox"> <span>Do you want to sign up for Shopper alerts from SHOP.COM? (Message and data rates may apply.)</span>
         </div>
         <p>Enter a mobile number</p>
-        <input id="mobilenumber" type="number"
-            placeholder="Please enter your 10 digits phone number (i.e 999 999 9999)">
+        <input id="mobilenumber" type="number"  placeholder="Please enter your 10 digits phone number (i.e 999 999 9999)">
     </div>
     <div id="box2">
         <p>Were you referred by a friend?</p>
@@ -559,12 +169,10 @@
         <div id="captchabox">
             <div>
                 <input class="checkbox" type="checkbox">
-                <span>I'm not a robot</span>
+                <span>Im Not A Robot</span>
             </div>
             <div>
-                <img id="captcha"
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA4VBMVEX///+rq6tChfQcOqmmpqajo6OgoKAAKqXd3d04gPSxuNzV1dWgvvnu7u77+/v4+Pjm5ubFxcWtrKnPz8+wsLAAJqSNn8UALqYtfPPy8vK6urrQ0NAnefMgQbDJycn3+PzD1ft9ice/v78AIaPm7v0AKKXv9P6hqdU+VLLJzudjc74UNajQ3vzl7f2ZmZmUtviEk9GTndDZ3e0XdPNygMPO0+kjSLYhPquJlMuor9i+xOIADp8uR66qxPl7pvZhcL1VkPWHrfeow/lrnPa4zvpJivSBqfestMWfpbCuu9Pc4eo+Gnd8AAALGklEQVR4nO2c/WObNhrHTSwwDgXDGZ8N7mhiJ2mbNM2aZbe0vW7rXdvt9v//QScJBJLMi0SJZO70/aG1CXr5SI8ePRLCk4mRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkXZd3T2T1d3nzz8+Pr57efrh/kp39UV09tNcXj+soWaXq/3+1cPLn1/oZujQ2fMTaf1jSnRzs16tXj2+1k3Rqh6IFWGOuV7tr0+PuCvlETlCTDlbXR9vT0oj1hAiyNUvL4+1I2UR6wmxuT4eqX+VRPyhgRBqvX88zn6UQ2whRIwvddPUSgqxlXA6nf3S7nPuFTFxkkHsIJze7K9bTPXhvToqRhKIXYTI53xoKuf846lKLFriiN2E0+n+ob6U89VMG+HkbDMg4XT9z4uaMs5XU42Ek7v5gIRwNB5aKgTUSfhp0D5ElsrPGwhQI+GdKKAw4XR/zpSAAfUR/ioMKE44vbw+ANRG+KvgGJQjnM5+4wF1EcoAyhBWiARQE+E3cROVJJzOHlhAPYTiTkaecLo6ZwC1EApPE70Ip/v3NKAOwjeya3xJwunsekZ/U054JeNkehFObxhe5YS/ywLKE7I9qppQNBgdLaH0IBwdoXwPjozw8/86YR8bHRfh1z6AJzeX65ubbpRjIPwiGczkmp9+ePzt1X4/60eplLDPIDw52eQ79/enD+tVD0iVhM++ixDp9cN+fcSEQT/Akw29ifbi3UySUSHhv4YghIw/7qVsVSGhIND8K9cSG34j9K9Xl0dJ+EWsCzff+N3wA8LJ5N3+GAnF1hSbLxN+w7+GcPL6UthSlRHeCs2F81t8M4NYRzi5X4siKiMUWzURGBqxlnByJRrmKCMUAZxXMx+FWE84uZh106kkfCNgpJtbKkGF2EA4ud8fFaHAsmlzxqQoEZsIJ++FEFURCpjoHZeEIDYSTq5FhqIiQgFP+vUgUYHYTDhZdQOqIvzUaaTP3xymyhGbCc9FQlRFhJ1PYubf6pJhRMYB0ToX6UJVhJ1duKk/voUQmwjFABURXnQNwwM3QwQRGwgFARURnnX1YfNYO3teTygKqIiwc3X/7+a0Zz/VEQoDKiLscjTzs5bEX2oIxQEVEXbtIm4kj1BKACoi/A4jrZMMoBrCqw5XOn8mlZ0UoBrCrphtUxPPNEsOUA1h19KpYbqvlySgGsKu6XAukZcsoBrCrm22w2VFo6QBj4KwPuqulTzgdKbiFPSn561vbm2EXenDx8tCs0rrBqG/wTs/qjjL//Pf2/VHlkW8dtFhPsHVC1YBVkOpQVDc9aRsubZ/a5d1KGAtFFRsMHmghqFDTT1znOpBOC7AiStNODJAecKxAUoTjg5QlnB8gJKEIwSUIxwjoBThKAFlCMcJKEE4UkBxwrECChOOFlCUsAeglQxf2z4SIgQ9AJcAHAeiGKErna9vw3RHsY4Us1L57sjTHQOi4DiMJbPdgaNBFCQEqVSuyzJX/YiiswXYSWRKbxxoRxSe8SUQt0yeuhHFozZhQ824LDUjyqwtYhGPGqQHOepFlFof2l5nfmFdOq2Icmt8kPrt2S3rs9MZ1cruRNlRi6m6VlNuGhHl90vBLmzIKm7OK9aHKE+IHlxkIV/jMGvsP82IfQghIwBx5Ll4UC58d5vCCx1JtCH2IySYRCK3y4a2R0AoK029qJBQUy+qJNSDqJRQC6JaQh2Iigk1uBvVhHZHYPvUhE+O22PXblDC+MWfdcdLBgTMlAMyhHCMXD0potRmz1MQIidw8ecTAspt2A1PmHu5W/vJCHXHNMSN3z8VoqbQuySs5qn7JzFUoHltwUzEt0/gbvSMQYqQjTQuBkcENQc2FQkTHoRSV38Mi2hvtcBhYcKaWPE/Q/ob0LB3pUSQsD4Y/muwEA7EuneEm6L93TCItoZIjZbbslnrim0xtQpYyhcTnMI2Cwp23zsa7aUykp7yW/axBTowPY7jGO1qfhbRyRfrdKEy6sc4Hj6ktmcu9XggHRMfkh9J+FVgZWMYfwdyUxFIABqfvo1AgRtZbZQA2FY2XrxCiZvFh4+b8JU0c3WfLBlMSehluzTOwaw4jZZuOMqRZ2RkZGRkZGRkZGRkZGRkZGRkZGT0/6jQy7JlzZ6177NPqROfKAnomzhV+8MLd5llHpXJgs0ygF/ZB+18kYPIA44N5Tg7jtF/67xlnkRETqWYHId96/AiJ6CSFGdsO1Z5dHbpOG+pDEO+hAW8MPQ52yB2AED1QP+y7be0gc0cZ4ps6lUZp/jdBAdwsouDpJ5jk5ydqMrSoTIMHeAwhB4scugjYhbM0955Xmah+jC9iB5N2Dxh8TQG1d7Bd4PqAU3xKcdxIboTL71tij4sxQjRgx/6hgEUoUbLh0LmlM2PlaDeYSqACMkfU5iQPnHosXXHqZ3c4BKUT97hHYQLXOSgZgrrUVkFrLRDPUXaIptkzJQizO+maocIaQtAfyZG7zsknw5C16asfBhFdL1QRahTdjH8RiNxhAu2yznCxKEbB3U4/tBBmNqoyD5mmlRlLxLK00/YgQ3ob5DAgVccyvswhKja1DeOcMvYg0c6tJ0wQEXG3NDskBvHKez70icvLcbTo16jrJ6ps2dD3MimT6axhAgioG5nCGFWVvUNlpOPrnZC6JxieIuUmUKPbWGnhvNJAPKXaDAXebjsyIvo2SpG8LAKFFPU0mscoc2YMJzmnG03ITJS3OoyhHgGK/pwgTw8SGPo6Z28Z5bNRo+MdIFmO8pMxQmhvdWeamsndHB7AykzzQm9ED9pR+Mdk8akNlEzIezeGKehasoSRjbd2CwhckN1v1DQSujmBgNHhsSxaUxYDJaEDIaqhdlKMsIWg0Gr8cQSojeemZIowkSM0GcId/mgD6XM1KMmrWVV2V3eQS2EQWGeC4caqQwhiukoCGFCEFeyGIskdeUDnS7CEgG6DuIX3eJyM6FLXExMzZEUYZA5bEgnTsiqgin7LrUljhbThNTMEOZupIUwJYNhS5kpIkyxYhyX0i0tTkitQphMIruYjT02zhAmXGDC/Geo/cIGmwlLS/EpM8Vri3y1gBw0Ez+Kj0NqJUkPIjTBuKSmjvAqkSWEtararpXQrUY7qOoaUT0AMnY12cvT0L4UfS58ogXEzZQiTNiFXDvhDllM3t+RXbpMRBhi+QcbAt9NiMvJi1xKmGkHYdY0HxJzzC2SVD1qKflwPqx7VaaFELBFipopS3iQjAu13OV2SUpmVu1Fd4gTIrdGGVoAMw7bCX2uSNFz/uw4PJhmuKhp59h5+TubNGfepLE0YcwsWnyYsddOmHFFUnG7KOGEXUdgceGjRVhsdDkofv+/qrsEITvCXULSTAhQp5MiXYdZEYgSWuAw3ovpxgqIaYWMQS/KppEgDB16N6Ic742EPh+Di77xRhMyzVpUxqUrUq5TOZLS4iQIkeOo2q5caDcScn9IbdHXTmnCkNpYyOxy6im7KykHHLc9Uy51ZQhdapNjZzeAVIQWuz3D5yZGOEGLJvyLZGFsk30yH2/1JUHgb0kYwFtMtUKXIcRrtThcBAtYWul2mggTzkk0rb46CBfQR+VRDWQh6V0S6tjlxYNZkuzfSBGiBgVFBGUTg20i3PKpYyBoph7x/zkiDpgREdVgISAXydue8CO77xzBXIL8/8aVGyqJs6uoyNh2SgNcOjazqw8T4UIt22aB0I1CZhpmGRPhhRE0eCtlZw03teACYkcuLmAaduL04RVkvy6XG18S/zZjkkEnBeJlwtzF3JDhN2yCKMtcLmlepJGRkZGRkZGRkZGRkZG0/gtBxf5dwenpZwAAAABJRU5ErkJggg=="
-                    alt="">
+                <img id="captcha" src="data:image/png;base64,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" alt="">
             </div>
         </div>
     </div>
@@ -572,192 +180,34 @@
         <button id="createacc">Create your new account</button>
         <p>By creating an account, you are agreeing to our Terms of Service and Privacy Policy.</p>
     </div>
-
-    <!-- Footer Start  -->
-<footer id="footer">
-    <div class="link-to">
-         <section id="footerSection1">
-             <div class="emailDeals-signUp">
-                 <form id="emailDeals-signUp">
-                     <label for="">Get Email Deals & Earn Cashback</label>
-                     <div>
-                         <input type="email"placeholder="enter email address...">
-                     </div>
-                     <button>Sign Up</button>
-                 </form>
-             </div>
-             <div class="linkToPage">
-                 <a href="">
-                     <div class="link-logo"></div>
-                     Link to this page
-                 </a>
-                 <div>
-                     and tell all of your friends!
-                 </div>
-                 
-             </div>
-             
-         </section>
-    </div>
-    <section class="footer_links">
-        <div>
-            <nav class="footer_lisnks BusinessInformation">
-                 <div class="left">
-                     <p class="aboutUs"><a href="https://www.shop.com/info/about-us">About Us</a></p>
-                 </div>
-                 <div id="verticalLine"></div>
-                 <div class="left">
-                     <p class="aboutUs"><a href="https://www.shop.com/info/help">Help</a></p>
-                 </div>
-                 <div id="verticalLine"></div>
-                 <div class="left">
-                     <p class="aboutUs"><a href="https://www.shop.com/accessibility.xhtml">Accessibility Statement</a></p>
-                 </div>
-                 <div id="verticalLine"></div>
-                 <div class="left">
-                     <p class="aboutUs"><a href="https://www.shop.com/info/contact-us">Contact Us</a></p>
-                 </div>
-                 <div id="verticalLine"></div>
-                 <div class="left">
-                     <p class="aboutUs"><a href="https://www.shop.com/info/partner-with-us">Partner With Us</a></p>
-                 </div>
-                 <div id="verticalLine"></div>
-                 <div class="left">
-                     <p class="aboutUs"><a href="https://www.shop.com/info/services">Services</a></p>
-                 </div>
-                 <div id="verticalLine"></div>
-
-                 <div class="left selectCountry">
-                     <select name="Country/Region" id="Country/Region">
-                         <option value="">Country/Region</option>
-                         <option value=""><a href="https://www.shop.com/?tkr=s16770">United State</a> </option>
-                         <option value=""><a href="https://ca.shop.com/?tkr=s16771">Canada</a></option>
-                         <option value=""><a href="https://uk.shop.com/?tkr=s16773">United Kingdom</a></option>
-                         <option value=""><a href="https://au.shop.com/?tkr=s16774">Australia</a></option>
-                         <option value=""><a href="https://tw.shop.com/?tkr=s16777">Taiwan</a></option>
-                         <option value=""><a href="https://hk.shop.com/?tkr=s16776">Hong King</a></option>
-                         <option value=""><a href="https://sg.shop.com/?tkr=s16778">Singapore</a></option>
-                         <option value=""><a href="https://my.shop.com/?tkr=s38724">Malaysia</a></option>
-                     </select>
-                 </div>
-                 <div id="verticalLine"></div>
-                 <div class="left selectCountry connect">
-                     <select name="connect" id="connect">
-                         <option value="">Connect</option>
-                         <option value=""><a href="https://www.instagram.com/shopcom/"><span></span> Instagram</a> </option>
-                         <option value=""><a href="http://www.facebook.com/shop.com">Facebook</a></option>
-                         <option value=""><a href="http://www.youtube.com/marketamerica">YouTube</a></option>
-                         <option value=""><a href="http://www.twitter.com/shopcom">Twitter</a></option>
-                         <option value=""><a href="http://www.pinterest.com/shopcom">Pinterest</a></option>
-                     </select>
-                 </div>
-                 <div id="verticalLine"></div>
-
-
-                 <div class="left">
-                     <p class="aboutUs"><a href="https://www.shop.com/info/launch-my-site">Own Your Own SHOP Site</a></p>
-                 </div>
-               
-             </nav>
-             <div class="socialMedia">
-                 <ul>
-                     <li><a href="" title="Share via Email"><i class="fa-solid fa-envelope"></i></a></li>
-                     <li><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1606041479702106&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv6.0%2Fdialog%2Fshare%3Fchannel%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df1bf23847ca3344%2526domain%253Dwww.shop.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.shop.com%25252Ff238a956d46e7a8%2526relation%253Dopener%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df2a20089b359314%2526domain%253Dwww.shop.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.shop.com%25252Ff238a956d46e7a8%2526relation%253Dopener%2526frame%253Df1237357fb0b0b8%2526result%253D%252522xxRESULTTOKENxx%252522%26display%3Dpopup%26href%3Dhttps%253A%252F%252Fwww.shop.com%252F%253Fcredituser%253DR0001007%26description%3DCome%2Blook%2Bat%2Bthis%2Bawesome%2Bpage%2Bat%2BSHOP.COM.%2BMake%2Ban%2Baccount%2Bto%2Bearn%2Bcashback%2Bon%2Bpurchases%2Bnow.%26client_id%3D1606041479702106%26ret%3Dlogin%26sdk%3Djoey%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.shop.com%252F&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2a20089b359314%26domain%3Dwww.shop.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.shop.com%252Ff238a956d46e7a8%26relation%3Dopener%26frame%3Df1237357fb0b0b8%26result%3D%257B%2522error_code%2522%253A4201%252C%2522error_message%2522%253A%2522User%2Bcanceled%2Bthe%2BDialog%2Bflow%2522%257D%26error_code%3D4201%26error_message%3DUser%2Bcanceled%2Bthe%2BDialog%2Bflow%26e2e%3D%257B%257D&display=popup&locale=en_GB" title="Share via Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                     <li><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fwww.shop.com&text=Come+look+at+this+awesome+page+at+SHOP.COM.+Make+an+account+to+earn+cashback+on+purchases+now.&url=https%3A%2F%2Fwww.shop.com%2F%3Fcredituser%3DR0001007" title="Share via Twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                     <li><a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.shop.com%2F%3Fcredituser%3DR0001007&description=Come+look+at+this+awesome+page+at+SHOP.COM.+Make+an+account+to+earn+cashback+on+purchases+now.&media=https://img.shop.com/Image/images/shopcom/shop-s-logo-1200x630.jpg" title="Share via Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                 </ul>
-
-             </div>
-        </div>
-    </section>
-    <section>
-        <div id="footer__policy-links">
-            <p class="copyright">
-                 © 1997-2022 Market America, Inc. or its affiliates. All other designated trademarks, copyrights, and brands are the property of their respective owners. 
-            </p>
-            <p class="cashback-disclaimer">
-                 Only Customers will receive cashback on qualifying purchases. UnFranchise Owners/Shop Consultants will receive increased IBV instead of cashback on qualifying purchases.
-            </p>
-            <p class="policy">
-                 <a href="https://www.shop.com/info/privacy-policy">Privacy Policy</a> |
-                 <a href="https://www.shop.com/info/terms-of-use">Terms of Use</a> |
-                 <a href="https://www.shop.com/info/advertising-disclosure">Advertising Disclosure</a> |
-                 <a href="https://www.shop.com/info/terms-of-use#return-policy">Return Policy</a> |
-                 <a href="https://www.shop.com/info/shipping-info">Shipping Information</a> 
-            </p>
-        </div>
-        <div id="footer__awards">
-            <div>
-                 <div>
-                     <img src="https://www.shop.com/feo-cdn/7/F/BIyWLz__s.webp" alt="Newsweek Magazine ranks SHOP.COM #19 Best Online Shops 2021 in the 'Universal Provider' Category">
-                 </div>
-                 <div>
-                     <img src="https://www.shop.com/feo-cdn/z/b/qA5FJf0J4.webp" alt="SHOP.COM ranks #11 in Digital Commerce 360's Top 500 and Top 1,000 Online Retailers">
-                 </div>
-                 <div>
-                     <img src="https://www.shop.com/feo-cdn/q/B/9huVMYs4g.webp" alt="SHOP.COM ranks #52 in Digital Commerce 360's Top 100 Marketplaces">
-                 </div>
-                 <div>
-                     <img src="https://www.shop.com/feo-cdn/9/y/SggnBCF2o.webp" alt="SHOP.COM ranks #79 in Digital Commerce 360's Top 1000 Marketplaces">
-                 </div>
-                 <div>
-                     <img src="https://www.shop.com/feo-cdn/o/0/XUDdhleMQ.webp" alt="Market America | SHOP.COM ranks #15 in The Business North Carolina Top 125 Private Companies for 2020">
-                 </div>
-                 <div>
-                     <img src="https://www.shop.com/feo-cdn/u/P/cg2zbaz_s.webp" alt="Market Taiwan Ranks 25th in CommonWealth Magazine's Top 2,000 Largest Enterprises in the 'General Merchandise Retail Business' Category">
-                 </div>
-                 <div>
-                     <img src="https://www.shop.com/feo-cdn/K/F/E44Pe49Qs.webp" alt="BBB Torch Awards for Ethics, 2018 Winner. Click for the Business Review of Market America|SHOP.COM, global e-commerce and digital marketing company in Greensboro NC">
-                 </div>
-                 <div>
-                     <img src="https://www.shop.com/feo-cdn/-/t/ClOpnn4rs.webp" alt="BBB Accredited Business. BBB Rating: A+ as of 2/1/2022. Click for Profile, Business Review of Market America|SHOP.COM, global e-commerce and digital marketing company Greensboro NC">
-                 </div>  
-            </div>
-        </div>
-        <div id="digicert">
-            <div>
-                 <img src="https://portsgroup.com/wp-content/uploads/2021/10/digicert-site-seal-static.png" alt="DigiCert Seal">
-            </div>
-        </div>
-    </section>
-    
-</footer>
-
-<!-- Footer End -->
 </body>
 <script>
-
-    document.querySelector("#createacc").addEventListener("click", signup)
-    function signup() {
-        var userdata = JSON.parse(localStorage.getItem("signupdata")) || [];
-        var emailid = document.querySelector("#email").value;
-        var firstpassword = document.querySelector("#password").value;
-        var secondpassword = document.querySelector("#confirmpassword").value;
-        if (emailid == "" || firstpassword == "" || secondpassword == "") {
-            alert("Please enter all details first");
-        } else {
-            if (firstpassword == secondpassword) {
-                var password = firstpassword;
-                alert("Sign Up Sucessfull");
-            }
-            else {
-                alert("Password Doesn't Match");
-            }
+   
+   document.querySelector("#createacc").addEventListener("click",signup)
+    function signup()
+    {
+        var userdata=JSON.parse(localStorage.getItem("signupdata"))||[];
+        var firstpassword=document.querySelector("#password").value;
+        var secondpassword=document.querySelector("#confirmpassword").value;
+        if(firstpassword==secondpassword)
+        {
+            var password=firstpassword;
+            alert("Sign Up Sucessfull");
         }
-        var signupobj = {
-            username: document.querySelector("#name").value + "." + document.querySelector("#lastname").value,
-            useremail: document.querySelector("#email").value,
-            userpassword: password,
-            usermobilenumber: document.querySelector("#mobilenumber").value,
-            refferlemail: document.querySelector("#friendemail").value,
+        else{
+            alert("Password Doesn't Match");
         }
-        window.location.href = "orders.html"
-        userdata.push(signupobj);
-        localStorage.setItem("signupdata", JSON.stringify(userdata));
-
+       var signupobj={
+           username:document.querySelector("#name").value+"."+document.querySelector("#lastname").value,
+           useremail:document.querySelector("#email").value,
+           userpassword:password,
+           usermobilenumber:document.querySelector("#mobilenumber").value,
+           refferlemail:document.querySelector("#friendemail").value,
+       }
+       window.location.href="orders.html"
+       userdata.push(signupobj);
+       localStorage.setItem("signupdata",JSON.stringify(userdata));
+       
     }
 </script>
-
 </html>
-
-<script src="JavaScript/header.js"></script>

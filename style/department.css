@@ -412,7 +412,7 @@ h2{
      display: grid;
      grid-template-columns: 1fr;
      grid-template-rows: auto;
-     border: 1px solid black;
+     /* border: 1px solid black; */
      width: 100%;
      margin: auto;
  }
