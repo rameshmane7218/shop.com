@@ -90,8 +90,8 @@
     <div id="sortdiv">Sort By :
         <select id="sort"> 
             <option value="">Best Match</option>
-            <option value="male">Male Product</option>
-            <option value="female">Female Product</option>
+            <option value="mens">Male Product</option>
+            <option value="women">Female Product</option>
             <option value="htl">Price High To Low</option>
             <option value="lth">Price Low To High</option>
         </select>
@@ -458,7 +458,7 @@ function display(shoesData){
         cartLogo.src=elem.cartLogo
         box3.append(cartLogo,soldBy)  
     var pricebox=document.createElement("div")   // price and stricked off price
-    pricebox.setAttribute("id","strick")
+        pricebox.setAttribute("id","strick")
     var strikedoffprice=document.createElement("p")
         strikedoffprice.innerText=elem.strikedoffprice
     var price=document.createElement("p")
@@ -497,25 +497,17 @@ function display(shoesData){
 }
 
 document.querySelector("#sort").addEventListener("change",myFunction)
-function myFunction(){
-    var selected=document.querySelector("#sort").value
-    if(selected == "") window.location.reload();
-    if(selected=="male"){
-        shoesData.sort(function(a,b){
-            if(a.gender>b.gender) return 1
-            if(a.gender<b.gender) return -1
-            return 0
-        })
-        display(shoesData)
-    }
-    if(selected=="female"){
-        shoesData.sort(function(a,b){
-            if(a.gender<b.gender) return 1
-            if(a.gender>b.gender) return -1
-            return 0
-        })
-        display(shoesData)
-    }
+function myFunction() {
+        var selected = document.querySelector("#sort").value
+        if (selected == "") window.location.reload();
+        if (selected == "mens" || selected == "women") {
+            var filteredList = shoesData.filter(function (el) {
+                return el.gender == selected;
+            });
+            console.log(filteredList);
+            display(filteredList);
+
+        }
     if(selected=="htl"){
         shoesData.sort(function(a,b){
             return b.price - a.price
