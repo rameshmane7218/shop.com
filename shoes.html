@@ -273,12 +273,12 @@
 
                     // Womens section       
             {
-            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1918012927.jpg?size=400x400",
-            name: "Cole Haan Womens Maxi Long Puffer Coat",
+            imgUrl:"https://img.shop.com/Image/260000/267800/267870/products/1886108809.jpg?size=400x400",
+            name: "Cougar Women's Vienna-S In Black",
             cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
             soldBy: "Sold by BHFO",
-            strikedoffprice: "$400.00",
-            price:92.99,
+            strikedoffprice: "$200.00",
+            price:185.80,
             cashback: "+ up to $3.02 / 2% $ Cashback",
             shipping: "",
             gender: "women"
@@ -462,7 +462,7 @@ function display(shoesData){
     var strikedoffprice=document.createElement("p")
         strikedoffprice.innerText=elem.strikedoffprice
     var price=document.createElement("p")
-        price.innerText=elem.price
+        price.innerText=`$ ${elem.price}`
         pricebox.append(strikedoffprice,price)
 
     var cashback=document.createElement("p")
