@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloths Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Inter', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+
+        }
+        #container>div{
+            /* padding: 20px; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+        #container>div:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #box2{
+            padding: 20px;
+        }
+        #strick{
+            display: flex;
+        }
+        #strick>p:first-child{
+            text-decoration: line-through;
+        }
+        h3{
+            font-size: 16px;
+            line-height: 20px;
+            margin: 0px;
+        }
+        p{
+            margin: 2px;
+        }
+        #logo{
+            height:15px ;
+            width: 15px;
+            margin-right: 5px;
+        }
+        
+        #sortdiv{
+            height: 100px;
+        }
+        #bottom{
+            display: flex;
+            /* border: 1px dashed red; */
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+        #bottom>div{
+            width: 50%;
+            /* border: 1px dashed blue; */
+        }
+       .detailBtn{
+            width: 100%;
+            height: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            /* background-color:#414467; */
+        }
+       .buyOptionBtn{
+            width: 100%;
+            height: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color:#414467;
+            color: white;
+        }
+        #bottom>div:nth-child(2){
+            background-color:#414467;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Shoes page</h1>
+    <div id="sortdiv">Sort By :
+        <select id="sort"> 
+            <option value="">Best Match</option>
+            <option value="mens">Male Product</option>
+            <option value="women">Female Product</option>
+            <option value="htl">Price High To Low</option>
+            <option value="lth">Price Low To High</option>
+        </select>
+    </div>
+    <div id="container"></div>
+</body>
+</html>
+
+<script>
+
+   var shoesData=[
+            // Mens section 
+            {
+            imgUrl:"https://img.shop.com/Image/260000/263300/263362/products/1776480807.jpg?size=400x400",
+            name: "Keen Mens Targhee II Leather Closed Toe Ankle Cold Weather Boots",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by PairMySole",
+            strikedoffprice: "$134.95",
+            price:80.29,
+            cashback: "+ up to $4.26 / 4% $ Cashback",
+            shipping: "Free shipping",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/260000/260000/260090/products/1902085122.jpg?size=400x400",
+            name: "Ellesse Plazza 6-10108 Mens Gray Suede Lace Up Lifestyle Sneakers Shoes",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by RuzeShoes",
+            strikedoffprice: "$95.00",
+            price:26.99,
+            cashback: "+ $0.54 / 2% $ Cashback",
+            shipping: "",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/279100/279185/products/1891728073.jpg?size=400x400",
+            name: "Dickies Escape Men's Steel Toe Electrical Hazard Work Boot",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by Lehigh Outfitters",
+            strikedoffprice: "",
+            price:45.99,
+            cashback: "+ $2.76 / 6% $ Cashback",
+            shipping: "Free shipping",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/279100/279185/products/1897352296.jpg?size=400x400",
+            name: "Reebok Leelap Retro Jogger Steel Toe Electrical Hazard Work Shoe",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by Lehigh Outfitters",
+            strikedoffprice: "",
+            price:73.99,
+            cashback: "+ $4.44 / 6% $ Cashback",
+            shipping: "Free shipping",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1913641008.jpg?size=400x400",
+            name: "Adidas Mens Supernova Fitness Lifestyle Running Shoes",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by BHFO",
+            strikedoffprice: "$100.00",
+            price:53.99,
+            cashback: "+ $1.08 / 2% $ Cashback",
+            shipping: "",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/260000/260000/260090/products/1902902088.jpg?size=400x400",
+            name: "AGlobe Attic GBATTIC Mens Black Canvas Lace Up Skate Sneakers Shoes",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by RuzeShoes",
+            strikedoffprice: "$64.95",
+            price:31.99,
+            cashback: "+ $0.64 / 2% $ Cashback",
+            shipping: "",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/260000/260000/260090/products/1923401395.jpg?size=400x400",
+            name: "DC Anvil 303190 Mens Gray Canvas Lace Up Skate Inspired Sneakers Shoes",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by RuzeShoes",
+            strikedoffprice: "$55.00",
+            price:53.99,
+            cashback: "+ $1.08 / 2% $ Cashback",
+            shipping: "",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/279100/279185/products/1790456645.jpg?size=400x400",
+            name: "Rocky Original Ride Roper Western Boot",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by Lehigh Outfitters",
+            strikedoffprice: "$162.00",
+            price:89.99,
+            cashback: "+ $5.40 / 6% $ Cashback",
+            shipping: "Free shipping",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/279100/279185/products/1790456874.jpg?size=400x400",
+            name: "Rocky Core Neoprene Waterproof 1000G Insulated Outdoor Boot",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by Lehigh Outfitters",
+            strikedoffprice: "$142.00",
+            price:69.99,
+            cashback: "+ $4.20 / 6% $ Cashback",
+            shipping: "Free shipping",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/260000/267800/267870/products/1903738650.jpg?size=400x400",
+            name: "Ted Baker Men's MFS-RAYZIN-Nubuck Saddle Loafer in Navy",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by Soled",
+            strikedoffprice: "",
+            price:206.30,
+            cashback: "+ $12.38 / 6% $ Cashback",
+            shipping: "Free shipping",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/260000/260000/260090/products/1919804814.jpg?size=400x400",
+            name: "Tommy Hilfiger Brazen 5 Mens Yellow Synthetic Loafers & Slip Ons Boat Shoes",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by RuzeShoes",
+            strikedoffprice: "$80.00",
+            price:42.99,
+            cashback: "+ $12.38 / 6% $ Cashback",
+            shipping: "",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/279100/279185/products/1793025041.jpg?size=400x400",
+            name: "Rocky Square Toe Logger Composite Toe Waterproof Work Boot",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by Lehigh Outfitters",
+            strikedoffprice: "$197.00",
+            price:77.56,
+            cashback: "+ $4.65 / 6% $ Cashback",
+            shipping: "Free shipping",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1922290320.jpg?size=400x400",
+            name: "Mark Nason Mens Shogun-Pastime Leather Lifestyle Athletic and Training Shoes",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by BHFO",
+            strikedoffprice: "$50.00",
+            price:21.99,
+            cashback: "+ up to $0.58 / 2% $ Cashback",
+            shipping: "",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/280000/282100/282141/products/1903857921.jpg?size=400x400",
+            name: "Vans Ultrarange EXO Dijon/Antique White VN0A4U1K50O Men's",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by KixRx",
+            strikedoffprice: "$133.00",
+            price:106.00,
+            cashback: "+ $6.36 / 6% $ Cashback",
+            shipping: "Free shipping",
+            gender: "mens"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/280000/282100/282141/products/1910701225.jpg?size=400x400",
+            name: "Converse All Star BB Evo Mid Black/White/Nightfall Violet 170763C Men's",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by KixRx",
+            strikedoffprice: "$149.00",
+            price:126.00,
+            cashback: "+ $7.56 / 6% $ Cashback",
+            shipping: "Free shipping",
+            gender: "mens"
+            },
+
+
+                    // Womens section       
+            {
+            imgUrl:"https://img.shop.com/Image/260000/267800/267870/products/1886108809.jpg?size=400x400",
+            name: "Cougar Women's Vienna-S In Black",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by BHFO",
+            strikedoffprice: "$200.00",
+            price:185.80,
+            cashback: "+ up to $3.02 / 2% $ Cashback",
+            shipping: "",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/260000/267800/267870/products/1852316127.jpg?size=400x400",
+            name: "Keds Women's Champion Daisy Eyelet in White",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by Soled",
+            strikedoffprice: "$400.00",
+            price:87.40,
+            cashback: "+ $5.24 / 6% $ Cashback",
+            shipping: "Free shipping",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1844646122.jpg?size=400x400",
+            name: "Giani Bernini Womens Camdenn Faux Leather Open Toe Wedge Sandals",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by BHFO",
+            strikedoffprice: "",
+            price:15.20,
+            cashback: "+ up to $0.64 / 2% $ Cashback",
+            shipping: "",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1915600512.jpg?size=400x400",
+            name: "Journee Collection Womens Edna Faux Suede Ankle Strap Dress Heels",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by BHFO",
+            strikedoffprice: "$65.00",
+            price:19.99,
+            cashback: "+ up to $0.84 / 2% $ Cashback",
+            shipping: "",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1913091122.jpg?size=400x400",
+            name: "Ed Hardy Womens Poppy Tie-Die Slip On Slip-On Sneakers",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by BHFO",
+            strikedoffprice: "$59.00",
+            price:14.99,
+            cashback: "+ up to $0.50 / 2% $ Cashback",
+            shipping: "",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1855994703.jpg?size=400x400",
+            name: "Rocket Dog Womens Myrna Silk Knot Front Ballet Flats",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by BHFO",
+            strikedoffprice: "$44.95",
+            price:1.99,
+            cashback: "+ up to $0.24 / 2% $ Cashback",
+            shipping: "",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1900916086.jpg?size=400x400",
+            name: "Softinos Womens IM0447 Leather Slip On Slides",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by BHFO",
+            strikedoffprice: "$165.00",
+            price:15.99,
+            cashback: "+ up to $0.36 / 2% $ Cashback",
+            shipping: "",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/260000/267800/267870/products/1895138965.jpg?size=400x400",
+            name: "Vince Camuto Women's Meddrina Nude M",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by Soled",
+            strikedoffprice: "",
+            price:128.40,
+            cashback: "+ $7.70 / 6% $ Cashback",
+            shipping: "Free shipping",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1864540498.jpg?size=400x400",
+            name: "Cole Haan Womens ZeroGrand Explore Shearling Lined Lace-Up Hiking Boots",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by BHFO",
+            strikedoffprice: "$200.00",
+            price:35.99,
+            cashback: "+ $0.96 / 2% $ Cashback",
+            shipping: "",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1790335763.jpg?size=400x400",
+            name: "MICHAEL Michael Kors Womens Blaze Open Toe Booties",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by BHFO",
+            strikedoffprice: "$165.00",
+            price:70.99,
+            cashback: "+ $1.42 / 2% $ Cashback",
+            shipping: "",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/260000/267800/267870/products/1890470065.jpg?size=400x400",
+            name: "Frye Women's 77400 Engineer 12R Black M",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by Soled",
+            strikedoffprice: "$356.36",
+            price:281.09,
+            cashback: "+ up to $17.88 / 6% $ Cashback",
+            shipping: "Free shipping",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1899581842.jpg?size=400x400",
+            name: "Clarks Womens Gracelin Jonas Suede Comfort Insole Loafers",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by BHFO",
+            strikedoffprice: "$85.00",
+            price:49.99,
+            cashback: "+ $1.00 / 2% $ Cashback",
+            shipping: "",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/260000/267800/267870/products/1910630823.jpg?size=400x400",
+            name: "Casta Women's Delira in Multi Red",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by Soled",
+            strikedoffprice: "$226.76",
+            price:183.58,
+            cashback: "+ $11.01 / 6% $ Cashback",
+            shipping: "Free shipping",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1903397499.jpg?size=400x400",
+            name: "Gentle Souls by Kenneth Cole Womens Elyssa Easy T-Strap Leather Wedge Sandals",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by BHFO",
+            strikedoffprice: "$229.00",
+            price:50.99,
+            cashback: "+ $1.56 / 2% $ Cashback",
+            shipping: "",
+            gender: "women"
+            },
+            {
+            imgUrl:"https://img.shop.com/Image/270000/273200/273200/products/1903484611.jpg?size=400x400",
+            name: "Steve Madden Womens Leilana Suede Square Toe Knee-High Boots",
+            cartLogo: "https://img.shop.com/Image/resources/images/onecart-icon.svg",
+            soldBy: "Sold by BHFO",
+            strikedoffprice: "$169.95",
+            price:22.99,
+            cashback: "+ up to $0.52 / 2% $ Cashback",
+            shipping: "",
+            gender: "women"
+            },
+]
+
+display(shoesData)
+function display(shoesData){
+    document.querySelector("#container").innerHTML=""
+    shoesData.map(function (elem){
+    var box=document.createElement("div")   // product div
+    var image=document.createElement("img") // product image
+        image.src=elem.imgUrl
+    var box2=document.createElement("div")
+    box2.setAttribute("id","box2");
+    var name=document.createElement("h3")   // product name
+        name.innerText=elem.name 
+    var box3=document.createElement("div")  // cart logo and seller name
+    var cartLogo=document.createElement("img")
+    var soldBy=document.createElement("span")  
+        soldBy.innerText=elem.soldBy 
+        cartLogo.setAttribute("id","logo")
+        cartLogo.src=elem.cartLogo
+        box3.append(cartLogo,soldBy)  
+    var pricebox=document.createElement("div")   // price and stricked off price
+        pricebox.setAttribute("id","strick")
+    var strikedoffprice=document.createElement("p")
+        strikedoffprice.innerText=elem.strikedoffprice
+    var price=document.createElement("p")
+        price.innerText=`$ ${elem.price}`
+        pricebox.append(strikedoffprice,price)
+
+    var cashback=document.createElement("p")
+        cashback.innerText=elem.cashback
+    var shipping=document.createElement("p")
+        shipping.innerText=elem.shipping
+        
+        box2.append(name,box3,pricebox,cashback,shipping)
+
+    var bottom=document.createElement("div")
+        bottom.setAttribute("id","bottom")
+
+    var detail=document.createElement("div")
+        detail.setAttribute("class","detail")
+    var detailBtn = document.createElement("button");
+        detailBtn.setAttribute("class","detailBtn");
+        detailBtn.textContent = "See details"
+        detail.append(detailBtn);
+
+    var buyOption=document.createElement("div")
+        detail.setAttribute("class","buyOption")
+    var buyOptionBtn = document.createElement("button");
+        buyOptionBtn.setAttribute("class","buyOptionBtn");
+        buyOptionBtn.textContent = "Buying Options"
+        buyOption.append(buyOptionBtn);
+
+        bottom.append(detail,buyOption)        
+        
+    box.append(image,box2,bottom)
+    document.querySelector("#container").append(box)        
+})   
+}
+
+document.querySelector("#sort").addEventListener("change",myFunction)
+function myFunction() {
+        var selected = document.querySelector("#sort").value
+        if (selected == "") window.location.reload();
+        if (selected == "mens" || selected == "women") {
+            var filteredList = shoesData.filter(function (el) {
+                return el.gender == selected;
+            });
+            console.log(filteredList);
+            display(filteredList);
+
+        }
+    if(selected=="htl"){
+        shoesData.sort(function(a,b){
+            return b.price - a.price
+        })
+        display(shoesData)
+    }
+    if(selected=="lth"){
+        shoesData.sort(function(a,b){
+            return a.price - b.price
+        })
+        display(shoesData)
+    }
+}    
+
+
+</script>
+
