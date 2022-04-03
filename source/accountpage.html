@@ -4,24 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stores A-Z | Search SHOP Partner Stores | SHOP.COM</title>
+    <title>SHOP.COM - Online Shopping Marketplace: Clothes, Shoes, Beauty, Electronics and More</title>
     <link rel="icon" href="//img.shop.com/Image/resources/images/favicon.ico">
     
-    <script src="https://kit.fontawesome.com/b0071033d8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style/header.css">
-    <link rel="stylesheet" href="/style/footer.css">
-    <link rel="stylesheet" href="/style/stores.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+   <style>
+       #heading{
+           padding-left: 30px;
+           font-family: sans-serif;
+       }
+       #container{
+           width: 95%;
+           height: 500px;
+           border: 0px solid;
+           margin: auto;
+           display: flex;
+           justify-content: space-between;
+       }
+       #container>div{
+           width: 32%;
+           height: 390px;
+           border: 0.2px solid grey;
+
+       }
+    .parthead{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-family: sans-serif;
+
+    }
+    .parthead img{
+        width: 30px;
+        height: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /* .list{
+        line-height: 10px;
+        font-family: sans-serif;
+        padding-left: 15px;
+        font-size: 14px;
+        margin-top: -15px;
+    } */
+    .list a{
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        background-color: aqua;
+    }
+    .list h3{
+        font-family: sans-serif;
+        font-size: 15px;
+        line-height: 10px;
+        padding-left: 15px;
+    }
+    #heading2{
+        margin: auto;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight:300;
+        font-size: 27px;
+        margin-top: -30px;
+      }
+   a h3:hover{
+color: rgb(17, 134, 134);
+    }
+    #lastbox{
+        width: 100%;
+        height: 310px;
+        border: 0px solid;
+        background-color:#f0f1f7;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+       
+    }
+    #lastbox>div{
+        width: 200px;
+        height: 280px;
+        border: 0px solid; margin-left: 10px;
+        margin-right: 10px;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 20px;
+        margin-top: 10px;
+    }
+    #lastbox>div>img{
+        width: 100px;
+        height: 100px;
+        margin: auto;align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        padding-top: 10px;
+        
+    }
+    a h4{
+        color: rgb(8, 10, 8);
+        font-weight: 300;
+        font-size: 17px;
+    }
+    
+  #lastbox   p{
+        line-height: 5px;
+        font-family: sans-serif;
+        margin-top: -10px;
+       
+    }
+    #lastbox h4{
+       line-height: 20px;
+        font-family: sans-serif;
+    }
+    #lastbox a h4:hover{
+color: rgb(1, 143, 143);
+    }
+    #shipping{
+        padding-top: 10px;
+        font-size: 12px;
+        color: rgb(19, 162, 162);
+    }
+    #price{
+        margin-top: -18px;
+    }
+    #rating{
+        color: #d3a82d;
+    }
+   </style>
 </head>
 <body>
  
- <!-- Navbar/Header Start-->
+    <!-- Navbar/Header Start-->
 
 <header id="main_header">
     <section id="mainSection">
         <!-- Left header box -->
         <section id="headerLeft">
             <div class="leftHeaderLogoBox" title="SHOP.COM helps you Shop Smart and Save Big by helping you compare prices across your favorite online stores!">
-                <a href="/index.html">
+                <a href="index.html">
                     <div>
                         <img src="https://img.shop.com/Image/resources/logos/shop-logo-us.svg" alt="SHOP.COM">
                     </div>
@@ -44,19 +165,19 @@
                     <h3 class="account" style="font-weight: normal;">Account</h3>
                     <ul class="navList account1">
                         <li class="navItem account2">
-                            <a href="#" class="navLink">
+                            <a href="https://www.shop.com/nbts/login-myaccount.xhtml?hamm=1" class="navLink">
                                 <i class="fa-solid fa-user"></i>
                                     Sign In
                             </a>
                         </li>
                         <li class="navItem">
-                            <a href="#" class="navLink">
+                            <a href="https://www.shop.com/nbts/account/order-history?hca=1" class="navLink">
                                 <i class="fa-solid fa-truck"></i>
                                 Track Orders
                             </a>
                         </li>
                         <li class="navItem">
-                            <a href="#" class="navLink">
+                            <a href="https://www.shop.com/nbts/account/order-history?hca=2" class="navLink">
                                 <i class="fa-solid fa-arrow-rotate-left"></i>
                                 Reorder Items
                             </a>
@@ -68,7 +189,7 @@
                             </a>
                         </li>
                         <li class="navItem">
-                            <a href="/src/accountpage.html" class="navLink">
+                            <a href="#" class="navLink">
                                 <i class="fa-solid fa-circle-user"></i>
                                 My Account 
                             </a>
@@ -99,25 +220,25 @@
                             </a>
                         </li>
                         <li class="navItem">
-                            <a href="/src/cloths.html" class="navLink shops">
+                            <a href="cloths.html" class="navLink shops">
                                 <span> Clothes </span> 
                                 <span><i class="fa-solid fa-chevron-right"></i></span>
                             </a>
                         </li>
                         <li class="navItem">
-                            <a href="/src/shoes.html" class="navLink shops">
+                            <a href="#" class="navLink shops">
                                 <span>  Shoes  </span> 
                                 <span><i class="fa-solid fa-chevron-right"></i></span>
                             </a>
                         </li>
                         <li class="navItem">
-                            <a href="/src/beauty.html" class="navLink shops">
+                            <a href="#" class="navLink shops">
                                 <span>  Beauty  </span> 
                                 <span><i class="fa-solid fa-chevron-right"></i></span>
                             </a>
                         </li>
                         <li class="navItem">
-                            <a href="/index.html" class="navLink shops">
+                            <a href="#" class="navLink shops">
                                 <span>  Home  </span> 
                                 <span><i class="fa-solid fa-chevron-right"></i></span>
                             </a>
@@ -171,7 +292,7 @@
                             </a>
                         </li>
                         <li class="navItem">
-                            <a href="/src/shoptravel.html" class="navLink">
+                            <a href="#" class="navLink">
                                 SHOP Travel 
                             </a>
                         </li>
@@ -197,13 +318,13 @@
                     <h3 style="font-weight: normal;">Account</h3>
                     <ul class="navList hrline">
                         <li class="navItem">
-                            <a href="#" class="navLink">
+                            <a href="https://www.shop.com/nbts/account/order-history?hca=1" class="navLink">
                                 <i class="fa-solid fa-truck"></i>
                                 Track Orders
                             </a>
                         </li>
                         <li class="navItem">
-                            <a href="#" class="navLink">
+                            <a href="https://www.shop.com/nbts/account/order-history?hca=2" class="navLink">
                                 <i class="fa-solid fa-arrow-rotate-left"></i>
                                 Reorder Items
                             </a>
@@ -250,13 +371,13 @@
                             </a>
                         </li>
                         <li class="navItem">
-                            <a href="/src/shoplocal.html" class="navLink">
+                            <a href="https://img.shop.com/Image/resources/images/icon-shoplocal-24px.svg" class="navLink">
                                 <i class="fa-solid fa-location-dot"></i>
                                 Shop Local
                             </a>
                         </li>
                         <li class="navItem">
-                            <a href="/src/shopebuddy.html" class="navLink">
+                            <a href="https://img.shop.com/Image/resources/images/icon-shopbuddy-24px.svg" class="navLink">
                                 <i class="fa-solid fa-person"></i>
                                 Shopbuddy
                             </a>
@@ -268,7 +389,7 @@
                             </a>
                         </li>
                         <li class="navItem">
-                            <a href="/src/deals.html" class="navLink">
+                            <a href="https://img.shop.com/Image/resources/images/icon-deals-24px.svg" class="navLink">
                                 <i class="fa-solid fa-tag"></i>
                                 Deals
                             </a>
@@ -325,7 +446,7 @@
                     </form>
                 </div>
                 <div id="womenHistoryImg">
-                    <a href="/src/womenshistory.html">
+                    <a href="womenshistory.html">
                         <img src="https://img.shop.com/Image/header2013/shop-usa-99472-womans-history-month-banner-header1646750930780.png" alt="Celebrating Womens's History">
                     </a>
                 </div>
@@ -338,22 +459,22 @@
                                 <a href="#">Exclusive Brands</a>
                             </li>
                             <li class="headerRightBtm-dept-item">
-                                <a href="/src/stores.html">Stores</a>
+                                <a href="stores.html">Stores</a>
                             </li>
                             <li class="headerRightBtm-dept-item">
-                                <a href="/src/deals.html">Deals</a>
+                                <a href="deals.html">Deals</a>
                             </li>
                             <li class="headerRightBtm-dept-item">
-                                <a href="/src/shoptravel.html">SHOP Travel</a>
+                                <a href="shoptravel.html">SHOP Travel</a>
                             </li>
                             <li class="headerRightBtm-dept-item">
-                                <a href="/src/department.html">Departments</a>
+                                <a href="department.html">Departments</a>
                             </li>
                             <li class="headerRightBtm-dept-item">
-                                <a href="/src/shopebuddy.html">ShopBuddy</a>
+                                <a href="shopebuddy.html">ShopBuddy</a>
                             </li>
                             <li class="headerRightBtm-dept-item">
-                                <a href="/src/shoplocal.html">SHOP Local</a>
+                                <a href="shoplocal.html">SHOP Local</a>
                             </li>
                         </ul>
                     </nav>
@@ -361,15 +482,15 @@
                 <div>
                     <div class="icon">
                         <div><i class="fa-solid fa-user"></i></div>
-                        <div><span id="userName">Sign in</span></div>
+                        <div><span>Sign in</span></div>
                         
                     </div>
 
-                    <div class="icon" onclick="window.location.href='/src/orders.html'">
+                    <div class="icon">
                         <div> <i class="fa-solid fa-arrow-rotate-left"></i></div>
                         <div><span>Orders</span></div>
                     </div>
-                    <div class="icon" onclick="window.location.href='/src/cartpage.html'">
+                    <div class="icon">
                         <div> <i class="fa-solid fa-cart-shopping"></i></div>
                         <div><span>Cart</span></div>
                        
@@ -383,15 +504,130 @@
 <!-- Navbar/Header End-->
 
 
-    <h2 style="margin-left: 10px;">Featured Stores</h2>
-    <div id="container"></div>
+    <!-- .......... -->
+    <div id="heading">
+        <h1>Account</h1>
+        <p>Life is complicated-why should your shopping be? We’ve made it easy to manage all aspects of your account right here, all on one page. You can track your orders, update your account information, and access your favorite SHOP.COM features right here!</p>
+    
+    </div>
+   <div id="container">
+    <div>
+<div class="parthead">
+    <img src="https://img.shop.com/Image/images/icons/myaccount-history.png" alt="">
+    <h2>Account History</h2>
+</div>
+<div class="list">
+  <a href=""> <h3>Orders </h3></a> 
+<a href=""><h3>Manage AutoShip</h3></a>
+<a href=""><h3>Gift Cards</h3></a>
+<a href=""><h3>Online Shopping Trips</h3></a>
+<a href=""><h3>Cashback Activity</h3></a>
+</div>
+    </div>
+    <div>
+        <div class="parthead">
+            <img src="https://img.shop.com/Image/images/icons/myaccount-personal.png" alt="">
+            <h2> Personal Settings</h2>
+        </div>
+        <div class="list">
+       <a href=""> <h3> Profile</h3>
+       </a>
+        <a href=""><h3>Password</h3></a> 
+        <a href=""><h3>Addresses</h3></a>   
+        <a href=""><h3>Communication Preferences</h3></a>  
+        <a href=""><h3>Payment Methods</h3></a>  
+        <a href=""><h3>Default/Express Pay Settings</h3></a>  
+        <a href=""><h3>Favorite Stores</h3></a> 
+        </div>
+    </div>
+    <div>
+        <div class="parthead">
+            <img src="https://img.shop.com/Image/images/icons/myaccount-services.png" alt="">
+            <h2>Shopping Services</h2>
+        </div>
+        <div class="list" >
+        
+            <a href=""><h3>Invite Friends</h3></a>
+            <a href=""><h3>List Manager</h3></a>
+            <a href=""><h3> Subscription Manager</h3></a>
+            <a href=""><h3> Trends</h3></a>
+            <a href=""><h3> Price Alerts</h3></a>
+            <a href=""><h3>  eGifts</h3></a>
+            <a href=""><h3>Gift Registry</h3></a>
+            <a href=""><h3>SHOP Local</h3></a>
+            <a href=""><h3> Shopping Advisor</h3></a>
+        </div>
+    </div>
+</div>
+<div id="heading2">
+    <p>Recently Viewed</p>
+</div>
 
-    <div id="head">
-        <h1>All Stores</h1>
-        <img src="https://img.shop.com/Image/resources/images/adobe_pdf_icon_32x32.png" class="allstoreImg"></div>
-        <div id="container1"></div>
+<div id="lastbox">
+<div>
+    <img src="https://img.shop.com/Image/240000/243300/243380/products/792868345__175x175__.jpg" alt="">
+<a href=""><h4>Motives® for La La Liquid Foundation</h4></a>
+<h4 id="price">$29.95</h4>
+<p>$0.60 / 2%  Cashback</p>
+<p id="shipping">Free shipping with $99 orders</p>
+<div id="rating">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star-half-stroke"></i>
 
-    <!-- Footer Start  -->
+</div>
+</div>
+<div>
+    <img src="https://img.shop.com/Image/270000/275200/275288/products/1730212093__175x175__.jpg" alt="">
+    <a href=""><h4>Bliss® Anti-Stress Formula</h4></a>
+    <h4 id="price">$29.95</h4>
+    <p>$0.60 / 2%  Cashback</p>
+    <p id="shipping">Free shipping with $99 orders</p>
+    <div id="rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+    
+    </div>
+
+</div>
+<div>
+    <img src="https://img.shop.com/Image/240000/243500/243545/products/1755946147__175x175__.jpg" alt="">
+    <a href=""><h4>Willow Pet Easter Basket In Green</h4></a>
+    <h4 id="price">$20.95</h4>
+    <p>$0.60 / 2%  Cashback</p>
+    <p id="shipping">Free shipping with $99 orders</p>
+    <div id="rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+    
+    </div>
+
+</div>
+<div>
+    <img src="https://img.shop.com/Image/240000/243300/243380/products/792868345__175x175__.jpg" alt="">
+    <a href=""><h4>Motives® for La La Liquid Foundation</h4></a>
+    <h4 id="price">$29.95</h4>
+    <p>$0.60 / 2%  Cashback</p>
+    <p id="shipping">Free shipping with $99 orders</p>
+    <div id="rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+    
+    </div>
+</div>
+</div>
+<!-- ....... -->
+<!-- Footer Start  -->
 <footer id="footer">
     <div class="link-to">
          <section id="footerSection1">
@@ -544,307 +780,5 @@
 <!-- Footer End -->
 </body>
 </html>
-<script src="/JavaScript/header.js"></script>
-<script>
-var arrobj=[
-    {
-        image:"https://img.shop.com/Image/featuredstore/ca_eng_bedbathandbeyond_cuisinart_hd_mp-14316_dec181549553338902.jpg",
-        name:"Bed Bath & Beyond",
-        button:"Visit Partener store",
-        para:"One of the largest selections of products for your home anywhere, at everyday low prices!art, technology,",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/ellenmoves1617140728088.jpg",
-        name:"Eleven Moves",
-        button:"Visit Partener store",
-        para:"Innovative yoga mats created through a combinat of art, technology, and spirituality.Made for your",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us-en-blairtech-featuredstore-fillin-oct201602867043361.jpg",
-        name:" Blair Tech",
-        button:"shop now",
-        para:"Blair Technology Group is one of just 20 official Microsoft Authorized Refurbishers (MAR) in the",
-        cash:" +Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us-en-aloyoaga-featuredstore-hd-fillin-oct201602866346016.jpg",
-        name:"Alo Yoga",
-        button:"shop Now",
-        para:"At Alo Yoga, we are relentless about making the best yoga clothing in the world explicitly to inspire yogis",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us-en-underarmour-featuredstore-fillin-oct20_125x125-img1602866537073.jpg",
-        name:"Under Armour",
-        button:"Shop Now",
-        para:"Under Armour’s mission is to make you be That means everything Under Armour makes—shoes",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us_eng_buybuybaby_logo_featuredstore_fillin_aug20164.png",
-        name:"BuyBuyBaby",
-        button:"Visit Partener store",
-        para:"Shop buybuy BABY for a fantastic selection of baby merchandise. we are relentless about making the best yoga clothing ",
-        cash:" +Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us-en-kiwico-featuredstore-fillin-oct201602867353502.png",
-        name:"KiwiCo Store",
-        button:"Shop now",
-        para:"KiwiCo offers eight different product lines spanning a variety of interests and age ranges -- for kids from",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us_eng_kohls_hd_june1915598778667431560460720972.jpg",
-        name:"Kohls",
-        button:"Visit Partener store",
-        para:"Kohl’s is a leading retailer with a commitment to inspiring & empowering families to lead fulfilled.",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us_eng_raise.com_logo_featuredstore_fillin_aug20168.jpg",
-        name:"Raise.com",
-        button:"Visit Partener store",
-        para:"Shoppers buy discounted gift cards to save,and sellers earn cash to spend however they want.",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us_eng_egiftcardcenter_featuredstores_20177.png",
-        name:"eGift Cards from SHOP.COM",
-        button:"Shop Now",
-        para:"Looking for a last-minute gift? Fuel your Shopping Annuity with the SHOP.COM eGift Card Center.",
-        cash:"+Up to 2.00%Cashback",
-    },
-    {
-        image:"https://img.shop.com/Image/featuredstore/us_eng_shopgroceries_logo_featuredstore_fillin_aug20161.gif",
-        name:"SHOP.COM Groceries",
-        button:"Shop Now",
-        para:"Shop from 1,000s of items and get them delivered right to your front door. we are relentless about making the best yoga",
-        cash:"+Up to 2.00%Cashback",
-    },
-]
-arrobj.map(function(e){
-var box=document.createElement("div");
-box.setAttribute("id","box")
-var box1=document.createElement("div");
-box1.setAttribute("class","box1")
-    var imgbox=document.createElement("div");
-       var image=document.createElement("img");
-       image.src=e.image;
-       imgbox.append(image);
-    var namebox=document.createElement("div");
-    namebox.setAttribute("class","namebox")
-       var name=document.createElement("h3");
-       name.innerText=e.name;
-       var btn=document.createElement("div");
-       btn.innerText=e.button;
-       btn.setAttribute("class","btn");
-       namebox.append(name,btn)
-box1.append(imgbox,namebox);
 
-var box2=document.createElement("div");
-    var parabox=document.createElement("div");
-        var par=document.createElement("p")
-        par.setAttribute("class","par")
-        par.innerText=e.para;
-        parabox.append(par);
-    var cashbox=document.createElement("div");
-        var cas=document.createElement("p")
-        cas.innerText=e.cash;
-        cas.setAttribute("class","cas")
-        cashbox.append(cas);
-    var div2=document.createElement("div");
-    div2.setAttribute("class","div2")
-            var sym1 = document.createElement("i");
-            sym1.setAttribute("class","fa-solid fa-envelope");
-
-            var sym2 = document.createElement("i");
-            sym2.setAttribute("class","fa-brands fa-facebook-f");
-
-            var sym3 = document.createElement("i");
-            sym3.setAttribute("class","fa-brands fa-twitter");
-
-            div2.append(sym1,sym2,sym3);
-box2.append(parabox,cashbox,div2);
-box.append(box1,box2)
-document.querySelector("#container").append(box);
-});
-</script>
-
-<script>
-    var allstore=[
-        {
-            name:"1-800-GOT-JUNK?",
-            store:"Hot Deals    Special Conditions",
-            pick:"",
-            cashback:"",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"123 Office",
-            store:"",
-            pick:"",
-            cashback:"+Up to 2.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"123InkJets",
-            store:"Hot Deals",
-            pick:"",
-            cashback:"+Up to 8.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"143Vinyl",
-            store:"Hot Deals",
-            pick:"",
-            cashback:"+Up to 2.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"1800AnyLens",
-            store:"Hot Deals  Special Conditions",
-            pick:"",
-            cashback:"+Up to 5.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"1800Baskets.com",
-            store:"Hot Deals  Special Conditions",
-            pick:"",
-            cashback:"+Up to 3.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"1800Flowers.com",
-            store:"Hot Deals",
-            pick:"",
-            cashback:"+Up to 3.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"1800PetMeds",
-            store:"Special Conditions",
-            pick:"",
-            cashback:"+Up to 6.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"1Thrive",
-            store:"Hot Deals",
-            pick:"",
-            cashback:"+Up to 5.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"2xist",
-            store:"Hot Deals  Special Conditions",
-            pick:"",
-            cashback:"+Up to 3.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"360 Cookware",
-            store:"Hot Deals",
-            pick:"",
-            cashback:"+Up to 2.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"39DollarGlasses.com",
-            store:"",
-            pick:"",
-            cashback:"+Up to 6.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"The 3D Gift",
-            store:"Hot Deals",
-            pick:"",
-            cashback:"+Up to 5.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"3D Laser Gifts" ,
-            store:"Hot Deals",       
-            pick:"",
-            cashback:"+Up to 5.00% $ Cashback",
-            btntext:"Visit Partner Store"
-        },
-        {
-            name:"3PExperts",
-            store:" OneCart®",
-            pick:"",
-            cashback:"+Up to 2.00% $ Cashback",
-            btntext:"shop Now"
-        },
-    ]
-    allstore.map(function(e){
-        var mainbox=document.createElement("div");
-        mainbox.setAttribute("id","main")
-
-        var box1=document.createElement("div");
-        box1.setAttribute("id","box1")
-            var b=document.createElement("div");
-                 var name=document.createElement("p");
-                 name.innerText=e.name;
-                 name.setAttribute("id","nam")
-                 b.append(name);
-            var b1=document.createElement("div");
-            b1.setAttribute("id","b1")
-                // var icon=document.createElement("i");
-                // icon.setAttribute("class","fa-solid fa-fire-flame-curved");
-                 var store=document.createElement("p");
-                 store.innerText=e.store;
-                 store.setAttribute("class","str")
-                 b1.append(store);
-      box1.append(b,b1);
-
-      var box2=document.createElement("div");
-      var b3=document.createElement("div");
-          var cash=document.createElement("p");
-          cash.innerText=e.cashback;
-          cash.setAttribute("class","csh")
-          b3.append(cash);
-      box2.append(b3);
-
-      var box3=document.createElement("div");
-      box3.setAttribute("id","box3")
-         var b4=document.createElement("div");
-             var button=document.createElement("div");
-             button.innerText=e.btntext;
-             button.setAttribute("id","btn")
-             b4.append(button);
-             
-        var b5=document.createElement("div");
-        b5.setAttribute("id","b5")
-            var div1=document.createElement("div");
-            div1.setAttribute("id","red")
-                var sym = document.createElement("i");
-                sym.setAttribute("class","fa-solid fa-heart");
-                div1.append(sym);
-            var div2=document.createElement("div");
-            div2.setAttribute("class","div")
-                var sym1 = document.createElement("i");
-                sym1.setAttribute("class","fa-solid fa-envelope");
-
-                var sym2 = document.createElement("i");
-                sym2.setAttribute("class","fa-brands fa-facebook-f");
-
-                var sym3 = document.createElement("i");
-                sym3.setAttribute("class","fa-brands fa-twitter");
-
-                div2.append(sym1,sym2,sym3);
-                b5.append(div1,div2);
-                box3.append(b4,b5);
-
-    mainbox.append(box1,box2,box3);
-    document.querySelector("#container1").append(mainbox);
-    })
-  
-
-</script>
-
-
+<script src="JavaScript/header.js"></script>

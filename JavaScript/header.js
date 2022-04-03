@@ -27,3 +27,10 @@ function closebar(){
     document.querySelector(".navbar").style.width = "0";
 }
 
+  //Myname
+  var myname = localStorage.getItem("name")
+  if (myname != null) {
+      document.querySelector("#userName").innerText = `Hello ${myname}`;
+  } else {
+      document.querySelector("#userName").innerText = `Sign In`;
+  }

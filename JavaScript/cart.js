@@ -182,5 +182,5 @@ function removeItem(el, index) {
 }
 
 function checkout() {
-    window.location.href = "payment.html"
+    window.location.href = "/src/payment.html"
 }

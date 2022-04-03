@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style/header.css">
+<link rel="stylesheet" href="/style/footer.css">
+    <style>
+        #toppart
+        {
+            padding-left: 280px;
+        }
+        #output
+        {
+           width: 70%;
+           background-color: brown;
+           color: black;
+           border-radius: 4px;
+           padding-left: 30px;
+        }
+    #container
+    {
+        width: 800px;
+        display: flex;
+        margin: auto;
+    }
+    #container>div
+    {
+        height: 300px;
+        width: 400px;
+    }
+    div>h1{
+        font-family: 'Roboto', sans-serif;
+        color:#202340;
+    }
+    form>input
+    {
+        height: 35px;
+        width: 350px;
+    }
+    #signin
+    {
+        height: 35px;
+        width: 350px;
+        font-size: 18px;
+        color: white;
+        border: 1px solid #202340;
+        background-color: #202340;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    p
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        color: black;
+        font-weight: 400;
+    }
+    #signup
+    {
+        height: 40px;
+        width: 250px;
+        border: 1px solid #202340;
+        color:#202340;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+    }    
+    div>p:nth-child(1)
+    {
+        font-size: 22px;
+    }
+    #signup:hover
+    {
+        border: 1px solid #202340;
+        background-color: #202340;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        
+    }
+    #inner-text
+    {
+        font-size: 18px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+   
+
+
+    </style>
+</head>
+
+<body>
+   <div id="toppart">
+    <h1>Sign in</h1>
+    <div id="output"></div>
+   </div>
+    
+     <div id="container">
+        
+        <div>
+            
+            <form action="">
+                
+                <p>Email address:</p>
+                <input id="email1" type="email" placeholder="yourname@example.com">
+                <p>Password:</p>
+                <input id="password1" type="Password" placeholder="please enter your password">
+                <p>Forgot your password?</p>
+                <button id="signin">Sign In</button>
+            </form>
+        </div>
+        <div>
+            <p>Don't have an account?</p> 
+            <p>With a SHOP.COM account, you can enjoy the following benefits: up to 50% Cashback on eligible purchases, redeem discount coupons, order status and history, saved payment options and addresses, exclusive emails and more. <a href="learnmore.html" style="color: black; font-weight: 800; font-size: 12px;">Learn More</a></p>
+            <button id="signup">Create Your New Account</button>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    document.querySelector("#signup").addEventListener("click",signupfunction);
+    function signupfunction()
+    {
+        window.location.href="signup.html"
+    }
+    document.querySelector("#signin").addEventListener("click",loginfunction);
+    function loginfunction()
+    {
+        event.preventDefault();
+        var signupdetails =JSON.parse(localStorage.getItem("signupdata"));
+        var emailaddress=document.querySelector("#email1").value;
+        var password1=document.querySelector("#password1").value;
+        var x=false;
+        for(var i=0;i<signupdetails.length;i++)
+       {
+           if(emailaddress==signupdetails[i].useremail&&password1==signupdetails[i].userpassword)
+           {
+               x=true;
+               break;
+           }
+       }
+       if(x==true)
+       {
+           alert("Login Sucessful");
+           window.location.href="index.html";
+       }
+       else{
+           var output=document.createElement("p");
+           output.innerText="Incorrect Email Or Password";
+           output.setAttribute("id","inner-text")
+           document.querySelector("#output").append(output);
+          
+       }
+    }
+    
+    
+   
+</script>
+</html>

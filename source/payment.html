@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP.COM – Online Shopping Marketplace: Clothes, Shoes, Beauty, Electronics and More</title>
+    <link rel="icon" href="//img.shop.com/Image/resources/images/favicon.ico">
+
+    <!-- CSS file -->
+    <!-- <link rel="stylesheet" href="style/header.css"> -->
+    <!-- <link rel="stylesheet" href="style/index.css"> -->
+    <!-- <link rel="stylesheet" href="style/footer.css"> -->
+    <!-- <link rel="stylesheet" href="style/cartpage.css">  -->
+
+    <script src="https://kit.fontawesome.com/b0071033d8.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Open+Sans&family=Oswald&family=Poppins:wght@500;600&family=Roboto:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: roboto;
+        }
+
+        #containerSec>h1 {
+            margin-left: 10px;
+        }
+
+        /* Right part  */
+        #contData {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            /* border: 1px solid red; */
+        }
+
+        #totalValue {
+            width: 25%;
+            /* border: 1px solid yellow; */
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            margin-top: 10px;
+            padding: 20px;
+            padding-top: 0px;
+            background-color: #f0f1f7;
+            height: 300px;
+            min-width: 300px;
+
+        }
+
+        #totalValue>h3 {
+            font-size: 22px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #545871;
+        }
+
+        .tItems,
+        .tAmt {
+            display: flex;
+            /* border: 1px dashed teal; */
+            margin: 10px;
+            justify-content: space-between;
+            margin-right: 20px;
+
+        }
+
+        .tItems>div,
+        .tAmt>div {
+            font-size: 18px;
+        }
+
+        .tItems2,
+        .tAmt2 {
+            font-weight: bold;
+        }
+
+        .checkout {
+            /* border: 1px dashed violet; */
+            display: flex;
+            justify-content: end;
+            margin-top: 50px;
+        }
+
+        .checkout>button {
+            height: 40px;
+            padding: 10px 20px 10px 20px;
+            border: none;
+            background-color: #414467;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            visibility: hidden;
+        }
+
+        .checkout>button:hover {
+            background-color: rgb(23, 23, 23);
+        }
+
+        #form2 {
+            /* border: 1px solid blue; */
+            /* display: block; */
+            margin-right: 500px;
+            width: 350px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            padding: 20px;
+            border-radius: 5px;
+            /* content-visibility: hidden;  */
+        }
+
+        #form3 {
+            /* border: 1px solid blue; */
+            /* display: block; */
+            margin-right: 500px;
+            width: 350px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            padding: 20px;
+            border-radius: 5px;
+            /* visibility: hidden;   */
+            /* content-visibility: hidden;  */
+        }
+
+        input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+        }
+
+        .containerPay {
+            padding: 5px;
+            margin-left: -10px;
+            border-radius: 4px;
+            margin-top: 5px;
+            /* border: 1px solid teal; */
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        .containerPay>div {
+            margin-right: 10px;
+            /* border: 1px dashed goldenrod; */
+        }
+
+        .containerPay label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .containerPay label:hover {
+            color: teal;
+        }
+
+        .cardPayOption img {
+            margin-left: 5px;
+            margin-right: 5px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+        .cardPayOption {
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+        }
+
+        input[type="text"],
+        input[type="month"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            margin: auto;
+            padding: 10px 20px;
+            border: 1px solid blue;
+            border-radius: 5px;
+            background-color: white;
+            font-weight: bold;
+            color: blue;
+        }
+
+        input[type="submit"]:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        h2 {
+            margin-top: 3px;
+        }
+
+        #containerBox img {
+            height: 50px;
+            width: 90px;
+        }
+
+        .cardPay {
+            content-visibility: hidden;
+        }
+
+        .UPIPay {
+            content-visibility: hidden;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <section id="containerSec">
+        <h1>Select Payment option</h1>
+        <section id="contData">
+            <div id="containerBox">
+                <form action="">
+                    <div class="containerPay">
+                        <div>
+                            <input type="checkbox" id="cardPayment" onclick="visiblecard()">
+                            <label for=""> Card Payment</label>
+                        </div>
+                        <div class="cardPayOption">
+                            <span><img
+                                    src="https://www.freepnglogos.com/uploads/visa-card-and-mastercard-logo-png-28.png"
+                                    alt=""></span>
+                            <span><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6khjRtYsB5ttPcwhErq0fVPNTDGGeXBZgkYXOhy-60Iyd8btTY_f6U2q-oOnzm2px_lw&usqp=CAU"
+                                    alt=""></span>
+                            <span><img
+                                    src="https://d28wu8o6itv89t.cloudfront.net/images/mastercardlogopng-1579603310730.png"
+                                    alt=""></span>
+
+
+                        </div>
+                    </div>
+                    <div class="containerPay">
+                        <div>
+                            <input type="checkbox" id="UPI" onclick="visibleUPI()">
+                            <label for="">UPI Payment</label>
+                        </div>
+                        <div class="cardPayOption">
+                            <span><img src="https://logodix.com/logo/1763558.jpg" alt=""></span>
+                            <span><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNP1yGGI3Z9E4y3V9B4vo1CIEKu215W5RumQ&usqp=CAU"
+                                    alt=""></span>
+                            <span><img
+                                    src="https://www.howtogeek.com/wp-content/uploads/2020/11/Google-Pay-hero.png?height=200p&trim=2,2,2,2"
+                                    alt=""></span>
+                            <span><img src="https://mma.prnewswire.com/media/1607489/PhonePe_Logo.jpg?p=twitter"
+                                    alt=""></span>
+
+
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="cardPay">
+                <form id="form2">
+                    <h2>Payment Details</h2>
+                    <label for="">Credit / Debit / ATM Card</label> <br>
+                    <input id="cardNum" type="text" name="cardNumber" maxlength="16" autocomplete="cc-number"
+                        placeholder="Enter Card number"> <br>
+                    <label for="">CCV</label> <br>
+                    <input id="ccv" type="password" name="ccv" autocomplete="cc-csc" maxlength="4"
+                        placeholder="Enter mobile number"> <br>
+                    <label for=""> Expiry data</label> <br>
+                    <input id="exp" type="month" name="month" placeholder="Enter month"> <br>
+                    <label for="">Name as per Card</label><br>
+                    <input id="name" type="text" placeholder="Enter your name"> <br>
+                    <input id="sendOtp" type="submit" value="Send OTP">
+                </form>
+            </div>
+            <div class="UPIPay">
+                <form id="form3">
+                    <h2>Payment Details</h2>
+                    <label for="">UPI</label> <br>
+                    <input id="UPIID" type="text" name="UPI ID" autocomplete="cc-number"
+                        placeholder="Enter UPI ID"> <br>
+                    
+                    <input id="placeOrder" type="submit" value="Place order">
+                </form>
+            </div>
+            <div id="totalValue">
+                <h3>Order Summary</h3>
+                <div class="tItems">
+                    <div>Total Items:</div>
+                    <div class="tItems2"></div>
+                </div>
+                <div class="tAmt">
+                    <div>Total Amount:</div>
+                    <div class="tAmt2"></div>
+                </div>
+
+                <div class="checkout">
+                    <button onclick="checkout()">Place order</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+</body>
+
+</html>
+
+<script>
+    var price = localStorage.getItem("total")
+    document.querySelector(".tAmt2").innerHTML = price;
+    var len = localStorage.getItem("length")
+    document.querySelector(".tItems2").innerHTML = len;
+
+    var option = document.querySelector("#cardPayment").value;
+    // console.log("card",option)
+    var option = document.querySelector("#UPI").value;
+    // console.log("UPI",option)
+
+    function visiblecard() {
+        // console.log("checked");
+        var change1 = document.querySelector(".UPIPay");
+        change1.style.contentVisibility = "hidden";
+
+        var btn = document.querySelector("#UPI");
+        btn.checked = "";
+
+        var change = document.querySelector(".cardPay");
+        change.style.contentVisibility = "visible"
+
+    }
+    function visibleUPI() {
+        // console.log("checked");
+        var change = document.querySelector(".cardPay");
+        change.style.contentVisibility = "hidden";
+
+        var btn = document.querySelector("#cardPayment");
+        btn.checked = "";
+
+        var change1 = document.querySelector(".UPIPay");
+        change1.style.contentVisibility = "visible";
+    }
+
+    document.querySelector("#form2").addEventListener("submit", crossCheck);
+
+    function crossCheck() {
+        event.preventDefault();
+        var cardNum = document.querySelector("#cardNum").value;
+        var ccv = document.querySelector("#ccv").value;
+        var expiry = document.querySelector("#exp").value;
+
+        // console.log(cardNum,ccv,expiry);
+
+        if (cardNum == "9999999999999999" && ccv == "1234" && expiry == "2022-05") {
+            alert("OTP Send Successfully");
+            window.location.href = "OTP.html";
+        } else {
+            alert("Enter Valid Card Details")
+            window.location.reload();
+        }
+
+
+    }
+
+    document.querySelector("#form3").addEventListener("submit",procced);
+
+    function procced(){
+        event.preventDefault();
+        var UPI = document.querySelector("#UPIID").value;
+        // console.log(UPI)
+        
+
+        if(UPI == "1234"){
+            alert("Order Placed Successful");
+            localStorage.removeItem("cartList");
+            window.location.href = "index.html";
+        } else{
+            alert("Enter Valid UPI ID");
+            window.location.reload();
+        }
+    }
+
+</script>

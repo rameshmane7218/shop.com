@@ -1,5 +1,6 @@
 // before "S" logo container
 // cashback_6 starts here 
+
 all_2_cashbackData = [
     {
         imgUrl: "https://www.shop.com/feo-cdn/M/6/sX-B3itR8.webp",
