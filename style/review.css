@@ -1,0 +1,107 @@
+#containerSec{
+    margin-top: 20px;
+    margin: auto;
+}
+#containerBox{
+    /* height: 450px; */
+    box-sizing: border-box;
+    box-sizing: content-box;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.containerBoxLeft{
+    width: 35%;
+    height: 100%;
+    /* margin-left: 100px; */
+    border: 1px solid #cfd1dc;
+    display: flex;
+    justify-content: center;
+    
+}
+.containerBoxLeft img{
+    height: 400px;
+    width: 350px;
+}
+.containerBoxMiddle{
+    padding-left: 50px;
+    /* padding-right: 20px; */
+    /* border: 1px solid black; */
+    width: 35%;
+    
+}
+.inlineDiv{
+    display: flex;
+    /* border: 1px solid red; */  
+}
+.inlineDiv>div{
+    padding: 10px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    
+}
+.name{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0px;
+    margin-top: 20px;
+}
+.price{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.shipping, .cashback{
+    font-size: 16px;
+}
+.shippingBox{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.bitpay{
+    display: flex; 
+    align-items: center;
+    background-color:#f0f1f7;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.bitpay img{
+    height: 30px;
+    margin: 5px;
+}
+.cartbox{
+    border: 1px solid #cfd1dc;
+    border-radius: 5px;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    /* display: flex; */
+    
+}
+
+.cartbox button{
+   
+    height: 40px;
+    width: 170px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    color: blue;
+    border: none;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+.btnn{
+    display: flex;  
+    justify-content: center;
+}
+.cartbox button:hover{
+    background-color: blue;
+    color: white;
+}
