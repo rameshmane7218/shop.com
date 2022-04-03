@@ -925,7 +925,7 @@ function appendAllData(el){
     anch.addEventListener("click",function(){
         addToReview(el);
     });
-    anch.href = "review.html";
+    anch.href = "src/review.html";
 
     var imgBox = document.createElement("div");
     var img = document.createElement("img");

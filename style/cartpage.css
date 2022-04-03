@@ -1,6 +1,9 @@
 *{
     font-family: roboto;
 }
+body{
+    background-color: white !important;
+}
 #containerSec{
     width: 100%;
 }
