@@ -1153,7 +1153,7 @@
     document.querySelector("#sort").addEventListener("change", myFunction)
     function myFunction() {
         var selected = document.querySelector("#sort").value
-        if (selected == "") window.location.reload();
+        // if (selected == "") window.location.reload();
         if (selected == "mens" || selected == "women") {
             var filteredList = clothsData.filter(function (el) {
                 return el.gender == selected;
