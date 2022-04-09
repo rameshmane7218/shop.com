@@ -2,7 +2,7 @@
 var cartData = JSON.parse(localStorage.getItem("cartList"));
 // console.log(cartData.length)
 
-cartData.map(function (el) {
+cartData.map(function (el,index) {
     var box = document.createElement("div");
 
     var shippingFrom = document.createElement("section");
@@ -113,7 +113,7 @@ cartData.map(function (el) {
     var removebtn = document.createElement("button")
     removebtn.textContent = "Remove";
     removebtn.addEventListener("click", function () {
-        removeItem(el);
+        removeItem(el,index);
     })
     removePart.append(savebtn, removebtn)
 
