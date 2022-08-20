@@ -41,13 +41,13 @@ Here users can browse and add items to the cart by clicking on the Add to Cart b
 
 ![Products Page](./Screenshots/Review%20Page.png)
 
-#### Cart Page -
+### Cart Page -
 
 Here all the products added to the cart will be shown. On this page, you can also remove the items. By clicking on the “Proceed to Checkout” button you will be redirected to the checkout page.
 
 ![Cart](./Screenshots/Cart%20Page.png)
 
-#### Payment Page -
+### Payment Page -
 
 On this page, users can add their address details and add their payment details.
 
@@ -55,10 +55,10 @@ By providing these details users can send OTP and after OTP varification user wi
 
 ![Products Page](./Screenshots/Payment%20Page.png)
 
-After Proceeding users get will get OTP page
-
 ## Team Contributions
+
 ## Abdus Salam:
+
 Myself Abdus Salam. This is my first collaborative team project at Masai school. I’m going to tell you my contribution in this project.
 
 Here’s my LinkedIn profile:- https://www.linkedin.com/in/abdus-salam-25921394
@@ -70,7 +70,8 @@ Here’s my LinkedIn profile:- https://www.linkedin.com/in/abdus-salam-25921394
 3 . For filtration and sorting data we used sort and filter function.
 
 4 . My team members are very helpful
-___________________________________________________________________
+
+---
 
 ## Deepak Mandal:
 
@@ -86,7 +87,7 @@ Here’s my LinkedIn profile:-https://www.linkedin.com/in/nomercy-hunter-32b8852
 
 4 . I tried my best to make webpage exactly look original with the contribution and help of my team.
 
-___________________________________________________________________
+---
 
 ## Gagan Chandan:
 
@@ -100,7 +101,7 @@ Login page
 Learn More page regarding the cashback part
 And also using some parts like LocalStorage, Html, Css, JS, etc…
 
-___________________________________________________________________
+---
 
 ## Maheendran KP:
 
@@ -116,7 +117,7 @@ Here’s my LinkedIn profile:- https://www.linkedin.com/mwlite/in/maheendran-kp-
 
 4 . my contribution in this project to create few pages like Shop Buddy, Shop Local, women’s history page.
 
-___________________________________________________________________
+---
 
 ## Pooja Dhuri:
 
@@ -126,9 +127,9 @@ Here’s my LinkedIn profile:- https://www.linkedin.com/in/pooja-dhuri-a0b63b221
 
 1 . My contribution in in this project:
 
-*stores Page
+\*stores Page
 
-*Deals Page
+\*Deals Page
 
 with a help of html,css and javascript.
 
@@ -138,7 +139,7 @@ using javascript we easily debug the code and it reduce time.
 
 3 . I tried to clone exactly link original website’s page.
 
-___________________________________________________________________
+---
 
 ## Ramesh Mane
 
@@ -152,9 +153,10 @@ I also worked on Review, Cart and Payment pages and linking all pages together.
 
 I learn so many things from project, like how to deal with time management, as a team leader how to manage all things.
 
-___________________________________________________________________
+---
 
 ## Challenges -
+
 ## Communication
 
 Distance always matters for group work. As we are from different parts of India, miscommunications were the common challenges for us. But, we make it happen with the help of slack and WhatsApp
@@ -166,8 +168,6 @@ As we are using Git collaboration, initially we were facing some technical issue
 These two challenges improve our abilities to be a good Team Player
 
 And we all thank every single team member for contributing and giving there 100% , and completing on time, and making thing simple….
-
-
 
 ## Netlify Link
 
