@@ -12,7 +12,6 @@ This is our first project at Masai School using JavaScript, HTML, and CSS. We wo
 2. Javascript for back-end
 3. Localstorage is used for the data-storing purpose (as we are not introduced to the databases till now)
 
-## 🚀 Our Team Members:-
 
 ## Screenshots
 
